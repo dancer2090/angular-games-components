@@ -36,12 +36,13 @@ import {Subscription} from 'rxjs';
   `
 })
 export class NewActivity implements OnInit, OnDestroy {
+  // @Output() activate = new EventEmitter(); //todo: impl it later
+
   private fullText: string;
   private showingText: string;
   private speedWPM: number = 50;
   private groupSize: number = 2;
   private internalTimer: any;
-
   private settingsView: boolean = false;
 
   public preferencesChangedSubscriber: Subscription;
@@ -71,11 +72,7 @@ export class NewActivity implements OnInit, OnDestroy {
       this.activityService.sendResults(results, true);
     }, 10000);
 
-    const fullTextArray = this.fullText.split(' ');
-    const wordsArray = fullTextArray.splice(0, this.groupSize);
-    this.fullText = fullTextArray.join(' ');
-    this.showingText = wordsArray.join(' ');
-
+    this.getShowingText(this.groupSize);
     this.gameStarts();
   }
 
@@ -98,6 +95,7 @@ export class NewActivity implements OnInit, OnDestroy {
     if (fullTextArray.length === 0) {
       clearTimeout(this.internalTimer);
       this.gameOver = true;
+      this.activate.emit('game is over');
     }
   }
 
@@ -121,6 +119,7 @@ export class NewActivity implements OnInit, OnDestroy {
 
   private toggle(): void {
     this.settingsView = !this.settingsView;
+    // this.settingsView ?  clearTimeout(this.internalTimer) : this.gameStarts();  //todo: check, why ternary operator dosnt works (
     if (this.settingsView) {
       clearTimeout(this.internalTimer);
     } else {
