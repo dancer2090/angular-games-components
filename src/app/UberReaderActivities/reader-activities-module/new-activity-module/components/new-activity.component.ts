@@ -95,7 +95,7 @@ export class NewActivity implements OnInit, OnDestroy {
     if (fullTextArray.length === 0) {
       clearTimeout(this.internalTimer);
       this.gameOver = true;
-      this.activate.emit('game is over');
+      // this.activate.emit('game is over'); //todo: impl it later
     }
   }
 
