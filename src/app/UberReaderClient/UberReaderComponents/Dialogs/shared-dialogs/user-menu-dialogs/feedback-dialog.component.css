@@ -1,0 +1,80 @@
+:host /deep/ .mdl-textfield {
+    width:              100%;
+}
+
+:host /deep/ .feedback .mdl-textfield__label {
+    color:              #757575;
+    padding-left:       5px;
+    box-sizing:         border-box;
+}
+
+.col {
+    float:              left;
+}
+
+.margins {
+    margin:             8px;
+}
+
+.setting-label {
+    line-height:        35px;
+}
+
+.login-button {
+    min-width: 120px    !important;
+}
+
+:host /deep/ .mdl-list__item .mdl-list__item-primary-content .mdl-list__item-icon {
+    margin-right:       10px;
+}
+
+:host /deep/ .mdl-list__item {
+    padding:            0px;
+    font-size:          14px;
+    cursor:             default !important;
+}
+
+:host /deep/ .mdl-list__item-icon,
+.mdl-list__item-icon.material-icons {
+    font-size:          20px;
+}
+
+ul.demo-list-icon.mdl-list {
+    padding:            0px;
+    margin:             0px;
+
+}
+
+
+:host /deep/ .typesy-radio-btns .mdl-radio__label {
+    font-size:          14px;
+    color:              #454545;
+}
+
+:host /deep/ .mdl-textfield textarea.mdl-textfield__input {
+    height:             80px;
+    border:             1px solid #ccc;
+    padding:            5px;
+    box-sizing:         border-box;
+    resize:             none;
+}
+
+@media (max-height: 750px) {
+
+    .feedback-content-div {
+        margin-top:         -20px;
+    }
+
+    :host /deep/ .mdl-textfield{
+        margin-top:         -25px;
+
+    }
+
+    ul.demo-list-icon.mdl-list{
+        margin-top:         -30px;
+    }
+
+    :host /deep/ .mdl-textfield textarea.mdl-textfield__input {
+        height:             60px;
+    }
+}

@@ -1,0 +1,72 @@
+.progress-bar-box {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    background: #fff;
+    right: 30px;
+    bottom: 20px;
+    z-index: 9999;
+    border-radius: 5px;
+  }
+
+  #header {
+    width: 100%;
+    height: 40px;
+    background: #444;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  #header-text {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 20px;
+  }
+
+  .x-button {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    min-width: 20px;
+    padding: 0px 5px;
+    background: transparent !important;
+    box-shadow: none !important;
+    width: auto !important;
+    color: #ccc !important;
+  }
+
+  .items-container {
+    max-height: 350px;
+    overflow-y: scroll;
+  }
+
+  .item-div {
+    height: 60px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0px 20px;
+  }
+
+  .item-text {
+    font-size: 14px;
+    line-height: 40px;
+  }
+
+  .item-col1 {
+    float: left;
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .item-col2 {
+    float: left;
+    width: 20%;
+    text-align: right;
+  }
+
+  .item-col3 {
+    float: left;
+    width: 100%;
+  }

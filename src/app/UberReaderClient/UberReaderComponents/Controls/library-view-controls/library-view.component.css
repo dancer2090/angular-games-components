@@ -1,0 +1,225 @@
+
+#libraryGroupContainer {
+
+  /*  position: relative;
+    height: 640px;
+    overflow-y: auto;
+    width: 815px;
+    float: left;*/
+    margin-top: 20px;
+}
+
+.libraryGroup.ng-star-inserted {
+    overflow: hidden;
+}
+
+.exercises-header {
+    height:             52px !important;
+    border-bottom:      1px solid #ccc;
+    box-sizing:         border-box;
+    background:         #fff;
+    position:           fixed;
+    width:              100%;
+    z-index:            2;
+}
+
+.inner-header {
+    height:             60px;
+    box-sizing:         border-box;
+    padding:            0px;
+    margin-top:         -4px;
+}
+		
+.inner-cell {
+    margin:             0px 8px;
+}
+
+.center-item {	
+    margin:             0 auto;
+}
+
+.exercises-floating-button {
+	position:           fixed;
+    right:              20%;
+    top:                140px;
+    z-index:            4;
+}
+
+.mdl-cell.mdl-cell--8-col.inner-cell{
+
+    position:           relative;
+}
+
+.libClearSearchBtn{
+
+    position:           absolute;
+    right:              16px;
+    top:                8px;
+    cursor:             pointer;
+}
+
+.mdlClearBtn{
+
+   /* margin-left:        -430px !important;*/
+    top:                50px !important;
+    left:               410px !important;
+    position:           absolute;
+    z-index:            9999999;
+
+}
+
+/*
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE fix 
+
+    .mdlClearBtn{
+
+        margin-left:        -33px !important;
+        top:                175px !important;
+    }
+
+}*/
+
+.add-button {
+    background:         #34ad07;
+    color:              #fff;
+    width:              70px;
+    height:             70px;
+	box-shadow:         0 4px 5px 0 rgba(0,0,0,.14), 
+                        0 1px 10px 0 rgba(0,0,0,.12), 
+                        0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.button-container{
+
+    float:              left;
+    width:              220px;
+}
+
+.browse-dd {
+    background:         #ececec !important;
+    box-shadow:         0 2px 2px 0 rgba(0,0,0,.14),
+                        0 3px 1px -2px rgba(0,0,0,.2),
+                        0 1px 5px 0 rgba(0,0,0,.12);
+    border:             none;
+    border-radius:      2px;
+    color:              #000 !important;
+    position:           relative;
+    height:             36px;
+    margin:             0;
+    padding:            0 10px;
+    display:            inline-block;
+    font-family:        "Roboto","Helvetica","Arial",sans-serif;
+    font-size:          14px;
+    font-weight:        500;
+    text-transform:     uppercase;
+    letter-spacing:     0;
+    overflow:           hidden;
+    will-change:        box-shadow;
+    transition:         box-shadow .2s cubic-bezier(.4,0,1,1),
+                        background-color .2s cubic-bezier(.4,0,.2,1),
+                        color .2s cubic-bezier(.4,0,.2,1);
+    outline:            none;
+    cursor:             pointer;
+    text-decoration:    none;
+    text-align:         center;
+    line-height:        36px;
+    vertical-align:     middle;
+    margin-top:         -4px;
+    margin-left:        10px;
+    float:              right;
+}
+
+#zeroResultLbl {
+    color:              #444444;
+    font-family:        'thinfont';
+    font-size:          30px;
+    text-align:         center;
+}
+
+.course-header-title {
+	padding-left:       15px;
+	margin:             0px 0px 20px;
+	display:            block;
+}
+
+.libraryEmptyScreen {
+    position:           absolute;
+    width:              50%;
+    height:             400px;
+    top:                50%;
+    margin-top:         -200px;
+    left:               50%;
+    margin-left:        -25%;                
+}
+
+@media (max-width: 1150px) {
+
+    .mdl-cell.mdl-cell--8-col.inner-cell{
+
+        width:          calc(100% - 16px) !important;
+    }
+
+
+}
+
+
+.page-content-courses-outer {
+    position:           absolute;
+    width:              100%;
+    overflow-y:         auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-x:         hidden;
+    top:                0px;
+    bottom:             0px;
+   
+}
+
+.page-content-courses{
+    height:             100%;
+}
+
+
+@media only screen and (max-width: 1150px){
+
+    .mdlClearBtn{
+
+        left:               350px !important;
+    }          
+}     
+
+
+@media (max-height: 830px) {
+
+	
+	.course-header-title {
+    	margin: 		20px 0px 20px !important;
+	}
+
+    :host /deep/ .mdl-menu{
+        max-height:     340px;
+        overflow-y:     auto;
+        -webkit-overflow-scrolling: touch;
+        overflow-x:     hidden;
+    }
+
+
+}
+
+@media (max-height: 870px){
+
+    #libraryGroupContainer {
+
+        margin-top: 0px;
+    }
+}
+
+@media (max-height: 870px) and (max-width: 1280px){
+
+    #libraryGroupContainer {
+
+        margin-top: 0px;
+    }
+}
+

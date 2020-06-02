@@ -1,0 +1,7 @@
+{
+  "appId": "com.ereflect.typesy",
+  "appName": "Typesy",
+  "bundledWebRuntime": true,
+  "webDir": "dist",
+  "play_store_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl5M90w9dTRdsU67yLj4qKvaUUtkGqG0s3GYGSNp1V+j/sC23vBYyNjSMeNAA2zqPfCoC6Us6J8m6c6gRR1RhM4YnfcfdiV49x+Oxj42x5W5c562kBQXGlfnH6u+by1pmnPL9htgZ06rFqebZd/4NQSe6ae0LnDR6DIVMVY315hMES64oEjMi7ITEaA5F+rWvMHxvWBParWat4vGDQMr8W5MIou/sqqOgos7KBgh9AK6eNbd44RPmbSmx9rEs6B5NRNj6mlPyBpRKBnG2+H7dKgBgkos+V3QKh9e3Hb0u6Pwj0zaVruWYwmfhpQ5pUMUGhecuk6xoIGR/miZ8ff+L/wIDAQAB"
+}

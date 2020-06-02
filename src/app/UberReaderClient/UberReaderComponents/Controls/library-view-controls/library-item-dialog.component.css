@@ -1,0 +1,379 @@
+* {
+    box-sizing:         border-box;
+}
+
+.library-tile {
+    width:              100%;
+	box-sizing:         border-box;
+	background-size:    100%;
+	min-height:         130px;
+    height:             130px;
+    border:             2px solid #ffffff;
+    overflow:           visible;
+}
+
+.library-tile:hover {
+    border:             2px solid #34ad07;
+    cursor:             pointer;
+    border-radius:      10px;
+}
+
+.current-text,
+.selected {
+    border:             2px solid #34ad07 !important;
+    border-radius:      10px;
+}
+
+i.material-icons.current-text-icon {
+    position:           absolute;
+    top:                -10px;
+    right:              -20px;
+    font-size:          40px;
+	color:              #34ad07;
+}
+
+:host /deep/ .mdl-card__supporting-text {	
+	position:           relative;
+	box-sizing:         border-box;
+	width:              100%;
+	padding:            10px;
+    height:             80px;
+}
+
+.supporting-text-3 {
+	padding:            10px 13px;
+}
+
+.book-author { 
+	margin:             0px;
+    font-weight:        400 !important;
+    color:              #757575;
+    font-size:          14px;
+    margin-left:        3px;
+    overflow:           hidden;
+    text-overflow:      ellipsis;
+    white-space:        nowrap;
+}
+
+.tile-button {
+    width:              80px;
+    font-size:          12px;
+    /*background-color: #34ad07 !important;*/
+}
+
+.library-col {
+	width: 145px !important;
+	margin: 3px;
+}
+
+.library-image {
+
+    background:         transparent;
+    height:             70px;
+    position:           relative;
+   /* padding:            30px 10px 10px 15px;*/
+}
+
+.book-title {    
+    font-size:          13px;
+    text-align:         center;
+    width:              100%;
+    color:              #757575;
+    display:            block; /* Fallback for non-webkit */
+    display:            -webkit-box;
+    line-height:        1.4rem;
+    -webkit-line-clamp: 3;
+    line-clamp:         3; /* fix for browser compatibility issue */
+    -webkit-box-orient: vertical;
+    overflow:           hidden;
+    text-overflow:      ellipsis;
+    margin:             0px;
+    padding:            25px 10px 3px 15px;
+    box-sizing:         border-box;
+}
+
+
+/* ellipses 
+.book-title {
+    overflow: hidden;
+    position: relative; 
+    line-height: 1.2em;
+    max-height: 3.6em; 
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+  }
+  .book-title:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .book-title:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+  }*/ 
+
+/* ellipses */ 
+
+.card-buttons {	
+	visibility:         hidden;
+}
+
+.current-text.div-label {
+    position:           absolute;
+    top:                0px;
+    width:              100%;
+    text-align:         center;
+    background:         rgba(52,173,7,.8);
+    color:              #fff;
+    border:             none;
+    height:             25px;
+    line-height:        20px;
+    z-index:            1;
+    font-size:          11px;
+    font-weight:        bold;
+    border-radius:      0px;
+}
+
+.selectCheckbox {	
+	position: 			absolute;
+	top: 				5px;
+	right: 				10px;
+    width: 				0%;
+    visibility: 		hidden;
+} 
+
+.checked {
+    visibility: 		visible !important;
+}
+
+.library-tile:hover .selectCheckbox {	
+	visibility: 		visible;
+}
+
+:host /deep/ .selectCheckbox .mdl-checkbox__box-outline { 
+	width: 				22px;
+    height: 			22px;    
+}
+
+:host /deep/ .mdl-checkbox.is-checked .mdl-checkbox__box-outline{
+    border:             2px solid rgb(76,175,80);
+}
+
+:host /deep/ .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+    background-color:   rgb(76,175,80);
+}
+
+.mdl-card__actions.library-actions {
+	padding:            5px 8px 15px 50px;
+    height:             56px;
+    box-sizing:         border-box;
+}
+
+.book-dot-menu {	
+	width:              initial;
+    color:              #757575 !important;
+    background-color:   transparent !important;
+    position:           absolute;
+    right:              5px;
+    bottom:             5px;
+}
+
+@media (max-width: 1280px) {
+
+    .mdl-card__actions.library-actions {
+        padding:        5px 8px 20px 35px;
+        height:         80px;
+    }
+
+    .library-col{
+        width:          140px;
+        margin:         2px;
+    }
+
+}
+
+/*
+@media (max-width: 1230px) {	
+	.book-dot-menu {
+        right: 5px;
+    }
+
+    .mdl-card__actions.library-actions {
+        padding: 15px 8px 15px 40px;
+    }
+	
+	.library-tile {
+		min-height: 220px;
+		height: 220px;
+	}
+	
+	.book-title {
+		font-size: 16px;
+	}
+	
+	.book-author {
+		font-size: 14px;
+	}
+
+    .library-col {
+        /*width: calc(25% - 16px);
+        width: 175px;
+	}
+}
+
+@media (max-width: 950px) {
+	.library-tile {
+		min-height: 200px ;
+		height: 220px;
+	}
+
+	.library-col {
+        /*width: calc(25% - 16px);
+        width: 180px;
+	}
+}*/
+
+/*
+@media (max-width: 750px) {
+	.library-tile {
+    	min-height: 280px;
+		height: 340px;
+	}
+
+	.library-col {
+        /*width: calc(50% - 16px);
+        width: 276px;
+	}
+}*/
+/*
+@media (max-width: 500px) {
+	.mdl-card__actions.library-actions {
+        padding: 15px 5px 8px 20px;
+    }
+
+    .supporting-text-3 {
+        padding: 10px 10px 10px 35px;
+    }
+
+    .tile-button {
+		font-size: 12px;
+		min-width: 50px;
+	}
+
+    /*
+
+    .library-tile {
+        min-height: 200px;
+        height: 200px;
+    }
+	
+    .library-col {
+        /*width: calc(50% - 16px)
+        width: 151px;
+	};
+}
+
+@media (max-width: 430px) {
+    
+
+    .library-tile{
+  
+        height: 270px;
+    }
+
+    .library-col{
+        width: 230px;
+    }
+    
+}  */
+
+/*
+#mainContainer {
+    width: 160px;
+    display: inline-block;
+    margin: 0 30px 30px 0;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-family: arial;
+    color: white;
+}
+
+#upperContainer {
+    height: 127px;
+    background-color: #E4EFF9;
+    padding: 33px 10px 10px;
+    text-align: center;
+    color: black;
+}
+
+#upperContainer #title {
+    color: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+#lowerContainer {
+    height: 63px;
+    background-color: #1E73BE;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+    padding: 10px;
+}
+
+#itemInfoTwo {
+    bottom: 0;
+}
+
+#hoverGroup {
+    width: 160px;
+    height: 190px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;          
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background: rgba(0,0,0,.6);
+}
+
+#hoverGroup button {
+    width: 110px;
+    height: 35px;
+    color: white;
+    font-size: 14px;
+    font-family: arial;
+    margin: 5px 0;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#hoverGroup button:hover:enabled {
+    background: rgba(0,0,0,.8);
+}
+
+.roundButtonGroup {
+    display: flex;          
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.roundButtonGroup button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+*/

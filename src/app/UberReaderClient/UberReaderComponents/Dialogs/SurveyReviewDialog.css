@@ -1,0 +1,104 @@
+.form-cell {
+    margin:             0px 8px;
+}
+
+.login-headline {
+    margin:             0px;
+}
+
+.name-label {
+    width:              300px;
+    text-overflow:      ellipsis;
+    white-space:        nowrap;
+    overflow:           hidden;
+}
+
+.labels {
+    width:              100%;
+    clear:              both;
+    float:              left;
+    margin:             10px 0px 20px;
+    color:              #757575;
+}
+
+.labels2 {
+    color:              #757575;
+    line-height:        20px;
+    width:              100%;
+}
+
+.star-rating {
+    width:              200px;
+    margin:             0px auto;
+}
+
+:host /deep/ .mdl-textfield{
+    width:              100%;
+}
+
+:host /deep/ .mdl-textfield textarea.mdl-textfield__input {
+    height:             60px;
+    resize:             none;
+    border:             1px solid #ccc;
+    padding:            5px;
+    box-sizing:         border-box;
+}
+
+:host /deep/ .mdl-textfield__label:after{
+    background-color:   #09539d;
+}
+
+.bottom-content {
+    position:           absolute;
+    bottom:             10px;
+    /* width: 100%; */
+    box-sizing:         border-box;
+    padding:            8px;
+    right:              20px;
+    left:               20px;
+}
+
+.show-cbox-div {
+    margin-bottom:      20px;
+}
+
+.mdl-radio {
+    width:              100%;
+    margin-bottom:      10px;
+    color:              #757575;
+    float:              left;
+}
+
+.step-label {
+
+    position:           absolute;
+    left:               10px;
+    bottom:             0px;
+    color:              #757575;
+
+}
+
+:host /deep/ .mdl-checkbox__label{
+    color:              #757575;
+}
+
+:host /deep/ .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+    border:             2px solid #3e92d7;
+}
+
+:host /deep/ .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+    background-color:   #3e92d7;
+}
+
+
+:host /deep/ .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+    background-color:   #3e92d7;
+}
+
+:host /deep/ .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+    background-color:   #3e92d7;
+}
+
+:host /deep/ .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+    background-color:   #fff;
+}	

@@ -1,0 +1,239 @@
+
+        <!-- DIALOG HEADER -->
+        <h3 class="mdl-typography--headline mdl-color-text--grey-800 dialog-headline">{{ userDisplayName }} preferences</h3>
+        <button class="x-button close" (click)="closeDialog()" mdl-button mdl-button-type="raised" mdl-ripple mdl-colored>
+            <mdl-icon>close</mdl-icon>   
+        </button>
+        <!-- END OF DIALOG HEADER -->                 
+       <div class="mdl-dialog__content">
+        <mdl-tabs mdl-ripple mdl-tab-active-index="0" class="prefTabs" style="margin-top: -20px;">
+            <!-- FONT SETTINGS TAB-->
+            <mdl-tab-panel mdl-tab-panel-title="Typing Exercise">
+               
+                <!-- <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--4-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Background</p>
+                    </div>				   
+                    <div *ngIf="lock_fontSettings; else bgWithoutTooltip" class="mdl-cell mdl-cell--7-col pref-cell" [mdl-tooltip]="ttFonts1">
+                        <input [(colorPicker)]="bgColor" [disabled]="true" (colorPickerChange)="bgColorChanged()" [style.background]="bgColor" style="width:20px;" [cpPosition]="'bottom'"/>
+                         <mdl-tooltip #ttFonts1="mdlTooltip" class="toolTipPos">This setting has been set by an administrator.</mdl-tooltip>
+                    </div>
+                    <ng-template #bgWithoutTooltip>
+                        <div class="mdl-cell mdl-cell--8-col pref-cell">
+                            <input readonly [(colorPicker)]="bgColor" (colorPickerChange)="bgColorChanged()" [style.background]="bgColor" style="width:20px; cursor: pointer;" [cpPosition]="'bottom'"/>
+                        </div>
+                    </ng-template>              
+                </div> -->
+    
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--4-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Font</p>
+                    </div>				   
+                    <div *ngIf="lock_fontSettings; else withoutTooltip" class="mdl-cell mdl-cell--7-col pref-menus" [mdl-tooltip]="ttFonts2">
+                        <!-- <input [(colorPicker)]="textColor" [disabled]="true" (colorPickerChange)="textColorChanged()" [style.background]="textColor" style="width:20px;" [cpPosition]="'bottom'"/> -->
+                        
+                        <button mdl-button [disabled]="true" id="demo-menu-lower-right-2" #fontsBtn="mdlButton" (click)="fontsMenu.toggle($event, fontsBtn)" class="button--dropdown mdl-button mdl-js-button {{ getFontStyle(fontSelected) }}">
+                            {{ fontSelected }}<mdl-icon>arrow_drop_down</mdl-icon></button>
+                        <mdl-menu #fontsMenu="mdlMenu" mdl-menu-position="bottom-left">
+                            <mdl-menu-item *ngFor="let font of fonts" mdl-ripple (click)="setTypingFontName(font);" class="{{ getFontStyle(font) }}">{{ font }}</mdl-menu-item>
+                        </mdl-menu>                        
+
+                        <button mdl-button [disabled]="true" id="demo-menu-lower-right-3" #fontSizesBtn="mdlButton" (click)="fontSizesMenu.toggle($event, fontSizesBtn)" class="button--dropdown marginNext">{{ fontSizeSelected }}<mdl-icon>arrow_drop_down</mdl-icon></button>
+                        <mdl-menu #fontSizesMenu="mdlMenu" mdl-menu-position="bottom-left">
+                            <mdl-menu-item *ngFor="let size of fontSizes" mdl-ripple (click)="setTypingFontSize(size);">{{ size }}</mdl-menu-item>
+                        </mdl-menu>
+                        <mdl-tooltip #ttFonts2="mdlTooltip" class="toolTipPos">This setting has been set by an administrator.</mdl-tooltip>
+                    </div>
+                    <ng-template #withoutTooltip>
+                        <div class="mdl-cell mdl-cell--8-col pref-menus">
+                            <!-- <input readonly [(colorPicker)]="textColor" (colorPickerChange)="textColorChanged()" [style.background]="textColor" style="float:left; width:20px; cursor: pointer;" [cpPosition]="'bottom'"/> -->
+                           
+                            <button mat-button [matMenuTriggerFor]="fontsMenu" class="button--mat-dropdown">
+                                <span class="{{ getFontStyle(fontSelected) }}">{{ fontSelected }}</span>
+                                <mdl-icon>arrow_drop_down</mdl-icon>
+                            </button>
+                            <mat-menu #fontsMenu="matMenu" class="fontsMatMenu">
+                                <button mat-menu-item *ngFor="let font of fonts" (click)="setTypingFontName(font)">
+                                    <span class="{{ getFontStyle(font) }}">{{ font }}</span>
+                                </button>                            
+                            </mat-menu>
+
+                            <button mat-button [matMenuTriggerFor]="fontSizesMenu" class="fontsMatMenu" class="button--mat-dropdown" style="margin-left: 3px;">{{ fontSizeSelected }}<mdl-icon>arrow_drop_down</mdl-icon></button>
+                            <mat-menu #fontSizesMenu="matMenu" class="fontsMatMenu">
+                                <button mat-menu-item *ngFor="let size of fontSizes" (click)="setTypingFontSize(size)">{{ size }}</button>                            
+                            </mat-menu>                            
+                        </div>
+                    </ng-template>
+                </div>
+
+                <div class="font-preview" [style.background-color]="bgColor">
+                    <span class="{{ getFontStyle(fontSelected) }}" [style.font-size]="fontSizeSelected + 'px'" [style.color]="textColor" [style.line-height]="fontSizeSelected + 'px'">Sample Text</span>
+                </div>                           
+            </mdl-tab-panel>
+            <!-- END OF FONT SETTINGS TAB-->
+
+            <!-- TYPING SETTINGS TAB-->
+            <mdl-tab-panel mdl-tab-panel-title="Typing" id="typing-tab">
+              
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Keyboard Layout</p>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <!--
+                        <button mdl-button id="demo-menu-lower-right-key" #kbLayoutBtn="mdlButton" (click)="kbLayoutMenu.toggle($event, kbLayoutBtn)">{{ keyboardLayoutSelected }}<mdl-icon>arrow_drop_down</mdl-icon></button>
+                        <mdl-menu #kbLayoutMenu="mdlMenu" mdl-menu-position="bottom-left">
+                            <mdl-menu-item *ngFor="let layout of keyboardLayouts" mdl-ripple (click)="setKeyboardLayout(layout);">{{ layout }}</mdl-menu-item>
+                        </mdl-menu>
+                        -->
+
+                        <button mat-button [matMenuTriggerFor]="kbLayoutBtn" class="button--mat-dropdown">{{ keyboardLayoutSelected }}<mdl-icon>arrow_drop_down</mdl-icon></button>
+                        <mat-menu #kbLayoutBtn="matMenu">
+                            <button mat-menu-item *ngFor="let layout of keyboardLayouts" (click)="setKeyboardLayout(layout)">{{ layout }}</button>                            
+                        </mat-menu> 
+                    </div>
+                </div>
+
+                <!--<div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Display Hands</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <mdl-switch mdl-ripple></mdl-switch>
+                    </div>
+                </div>-->
+
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Display Keyboard</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <mdl-switch *ngIf="lock_useKeyboard; else kbSwitchWithoutTooltip" [(ngModel)]="_useKeyboard" [mdl-tooltip]="tt1" [disabled]="lock_useKeyboard" (change)="toggleUseKeyboard()" mdl-ripple></mdl-switch>
+                        <ng-template #kbSwitchWithoutTooltip>
+                            <mdl-switch [(ngModel)]="_useKeyboard" (change)="toggleUseKeyboard()" mdl-ripple></mdl-switch>
+                        </ng-template>      
+                         <mdl-tooltip #tt1="mdlTooltip" class="toolTipPos">This setting has been set by an administrator.</mdl-tooltip>                  
+                    </div>
+                </div>
+
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Allow Backspace</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <mdl-switch *ngIf="lock_allowBackspace && !enableVoiceover; else backspaceSwitchWithoutTooltip" [(ngModel)]="_allowBackspace" [mdl-tooltip]="tt2" [disabled]="lock_allowBackspace" (change)="toggleAllowBackspace()" mdl-ripple></mdl-switch>
+                        <ng-template #backspaceSwitchWithoutTooltip>
+                            <mdl-switch [(ngModel)]="_allowBackspace" [disabled]="enableVoiceover" (change)="toggleAllowBackspace()" mdl-ripple></mdl-switch>
+                        </ng-template>
+                         <mdl-tooltip #tt2="mdlTooltip" class="toolTipPos">This setting has been set by an administrator.</mdl-tooltip>
+                    </div>
+                </div>
+
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Activity Sound</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <mdl-switch *ngIf="lock_beepOnError; else beepSwitchWithoutTooltip" [(ngModel)]="_beepOnError" [mdl-tooltip]="tt3" [disabled]="lock_beepOnError" (change)="toggleBeepOnError()" mdl-ripple></mdl-switch>
+                        <ng-template #beepSwitchWithoutTooltip>
+                            <mdl-switch [(ngModel)]="_beepOnError" (change)="toggleBeepOnError()" mdl-ripple></mdl-switch>
+                        </ng-template>
+                        <mdl-tooltip #tt3="mdlTooltip" class="toolTipPos">This setting has been set by an administrator.</mdl-tooltip>
+                    </div>
+                </div>
+
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Voiceover</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <mdl-switch [(ngModel)]="enableVoiceover" (change)="toggleVoiceover()" mdl-ripple></mdl-switch>
+                    </div>
+                </div>                
+            </mdl-tab-panel>
+            <!-- END OF TYPING SETTINGS TAB-->
+
+            <!-- GENERAL SETTINGS TAB-->
+            <mdl-tab-panel mdl-tab-panel-title="Other">
+                <!--<div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Appearance</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <button mdl-button class="setting-button" [class.active]="isDarkAppearance" (click)="appearanceChangeHandler('Dark style')">Dark</button>
+                        <button mdl-button class="setting-button" [class.active]="!isDarkAppearance" (click)="appearanceChangeHandler('Light style')">Light</button>
+                    </div>
+                </div>
+
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Video Quality</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <button mdl-button class="setting-button" [class.active]="!isHighVidQuality" (click)="videoQualityChangeHandler('low')">Low</button>
+                        <button mdl-button class="setting-button" [class.active]="isHighVidQuality" (click)="videoQualityChangeHandler('high')">High </button>
+                    </div>
+                </div>-->
+
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Game Help</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <mdl-switch [(ngModel)]="showTrainingHelp" (click)="toggleTrainingHelp()" class="trainingHelp" mdl-ripple></mdl-switch>
+                        <mdl-icon [mdl-tooltip]="ttGameHelp" class="ttGameHelp">help</mdl-icon>
+                    </div>                   
+                    <mdl-tooltip #ttGameHelp="mdlTooltip" class="ttGameHelpPos">Display the instructions for play before each game.</mdl-tooltip>
+                </div>
+
+                <!--<div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Game Sound</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <mdl-switch [(ngModel)]="useGameSounds" (change)="toggleGameSounds()" mdl-ripple></mdl-switch>
+                    </div>
+                </div>-->
+
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Closed Captions</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <mdl-switch [(ngModel)]="enableClosedCaptions" (click)="toggleClosedCaptions()" class="trainingHelp" mdl-ripple></mdl-switch>
+                         <mdl-icon [mdl-tooltip]="ttClosedCaptions" class="ttGameHelp">help</mdl-icon>
+                    </div>                   
+                    <mdl-tooltip #ttClosedCaptions="mdlTooltip" class="ttGameHelpPos">Enable closed captions for videos and audio.</mdl-tooltip>
+                </div>
+
+                <div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Themes</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <button mat-button [matMenuTriggerFor]="themesMenu" class="button--mat-dropdown">{{ selectedTheme }}<mdl-icon>arrow_drop_down</mdl-icon></button>
+                        <mat-menu #themesMenu="matMenu" mdl-menu-position="bottom-left">
+                            <button mat-menu-item (click)="changeTheme('Dark')">Dark</button>   
+                            <button mat-menu-item (click)="changeTheme('Light')">Light</button>   
+                        </mat-menu>
+                    </div>                       
+                </div>
+
+                <!--<div class="mdl-grid pref-grid">
+                    <div class="mdl-cell mdl-cell--5-col pref-cell">
+                        <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Hide Schools Button</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col pref-cell">
+                        <mdl-switch [(ngModel)]="hideSchoolsButton" (click)="toggleHideSchoolsButton()" mdl-ripple></mdl-switch>
+                    </div>
+                </div>-->
+            </mdl-tab-panel>
+            <!-- END OF GENERAL SETTINGS TAB-->
+        </mdl-tabs>
+    </div> 
+
+<div class="mdl-dialog__actions">
+    <!--button mdl-button mdl-ripple (click)="restoreDefaults()">Restore Defaults</button-->
+    <button mat-raised-button class="button--mat-secondary" (click)="restoreDefaults()">Restore Defaults</button>
+</div>

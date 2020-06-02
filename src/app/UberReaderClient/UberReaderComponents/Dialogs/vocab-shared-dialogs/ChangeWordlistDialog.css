@@ -1,0 +1,130 @@
+.wordlist-container{
+		
+		height: 400px;
+    	border: 1px solid #ccc;
+    	padding: 0px;
+    	box-sizing: border-box;
+		margin-bottom: 10px;
+		overflow-y:auto;
+		-webkit-overflow-scrolling: touch;
+		overflow-x:auto;
+		position: relative;
+	}
+	
+	#wordlist{
+		
+		position: relative;
+	}
+	
+	/*
+	.wordlist-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+	}*/
+
+    .login-form-grid{
+		
+		padding:0px 8px;
+	}
+	
+	.login-form-cell{
+		
+		margin:0px 8px;
+	}
+
+    .login-headline{    
+    margin: 10px 0px;
+}
+
+.x-button{    
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    min-width: 20px;
+    padding: 0px 5px;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.green-button{    
+    background:    #338B03 !important;
+    color: #fff ;
+}
+
+.green-button:hover{    
+    background:    #286e02 !important;
+}
+
+.w120-button{    
+    width: 120px;
+}
+
+.blue-button{
+		
+		background: #09539d !important;
+		color: #fff !important;		
+	}
+	
+	.blue-button:hover{
+		
+		background: #266db4 !important;
+	}
+	
+	.mdl-list{
+		
+		padding: 0px;
+	}
+	
+	.mdl-list__item:hover{
+		
+		cursor: pointer;
+		background: #f5f5f5;
+	}
+	
+	.mdl-list__item.active{
+		
+		
+		background: #90caf9 !important;
+	}
+	
+	.mdl-list__item:checked{
+		
+		
+		background: #90caf9 !important;
+	}
+
+    .mdl-button--fab{
+		
+		position: absolute;
+		bottom: 100px;
+		right:60px;
+	}
+
+	:host /deep/ mdl-simple-tooltip.mdl-tooltip{
+
+		left: 400px !important;
+    	top: 450px !important;
+
+	}
+
+@media only screen and (max-height: 650px){
+
+	.wordlist-container{
+
+    	height:                  200px;
+
+	}
+
+
+
+}
+
+@media only screen and (max-height: 600px){
+
+	.mdl-button--fab{
+
+		top: 80px;
+		bottom: inherit;
+	}
+}

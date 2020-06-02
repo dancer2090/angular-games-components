@@ -1,0 +1,218 @@
+#certificateMainContainer{
+    width: 1100px;
+    position: relative;
+  
+    
+}
+
+#contentContainer{
+    width: 800px;
+    height: 700px;
+    position: absolute;
+    top: 180px;
+    margin-left: -400px;
+    left: 50%;
+}
+
+.certificateText{
+    font-size: 22px;
+    text-align: center;
+    color: #212121;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.studentName{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+    color: #212121;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 55px;
+    overflow: hidden;
+}
+
+.courseTestName { font-weight: bold; }
+.skillLevelContainer{
+    width: 800px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.skillLevelContainer2 { 
+    width: 600px; 
+    height: auto; 
+    margin-top: 40px; 
+    position: relative; 
+    margin: 40px auto 0px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.col{
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+    background: #c5e3fa;
+    border: 5px solid #4593cf;
+    border-radius: 5px;
+    margin: 5px 25px;
+    position: relative;
+}
+
+.col img{
+    width: 250px;
+    height: 150px;
+}
+
+.skillLevelHeadline{
+    font-size: 20px;
+    font-weight: bold;
+    color: #212121;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.skillLevel{
+    font-size: 70px;
+    font-weight: bold;
+    color: #212121;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.smallText { font-size: 30px;margin-left: -20px; }
+.smallText1 { font-size: 18px; margin-left: -20px; }
+.skillContent1{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 60px;
+}
+.skillContent2 { position: absolute; top: 0px; right: 0px; left: 55px; }
+.skillContent3 { position: absolute; top: 0px; width: 100%; }
+
+
+    
+@media only screen and (max-width: 1650px) {
+  #certificateMainContainer {  width: 850px; height: 612px;     margin: 20px auto 0px; }
+    #contentContainer { width: 620px; height: 400px; margin-left: -310px; top: 150px; }
+    .certificateText { font-size: 16px; line-height: 25px; }
+    .studentName { font-size: 40px; height: 80px; line-height: 40px; }
+    .skillLevelContainer { width: 450px; height: 150px; margin-top: 20px; margin-left: 20px; }
+    .skillLevelContainer2 { margin-top: 30px; }
+    .col, .col img { width: 160px; height: 95px; }
+    .skillContent1 { left: 30px; }
+    .skillContent2 { left: 15px; }
+    .skillLevelHeadline { font-size: 16px; margin-top: 10px; }
+    .skillLevel { margin-top: 25px; font-size: 40px; }
+    .smallText1 { font-size: 12px; margin-left: 0px; }
+    .smallText { font-size: 18px; margin-left: -10px; }
+}   
+    
+@media only screen and (max-height: 920px)  {
+  #certificateMainContainer {  width: 850px; height: 612px;     margin: 20px auto 0px;}
+    #contentContainer { width: 620px; height: 400px; margin-left: -310px; top: 150px; }
+    .certificateText { font-size: 16px; line-height: 25px; }
+    .studentName { font-size: 40px; height: 80px; line-height: 40px; }
+    .skillLevelContainer { width: 450px; height: 150px; margin-top: 20px; margin-left: 20px; }
+    .skillLevelContainer2 { margin-top: 30px; }
+    .col, .col img { width: 160px; height: 95px; }
+    .skillContent1 { left: 30px; }
+    .skillContent2 { left: 15px; }
+    .skillLevelHeadline { font-size: 16px; margin-top: 10px; }
+    .skillLevel { margin-top: 25px; font-size: 40px; }
+     .smallText1 { font-size: 12px; margin-left: 0px; }
+    .smallText { font-size: 18px; margin-left: -10px; }
+} 
+
+@media only screen and (max-height: 920px) and (max-width: 1650px) {
+   #certificateMainContainer {  width: 850px; height: 612px;    margin: 20px auto 0px; }
+    #contentContainer { width: 620px; height: 400px; margin-left: -310px; top: 150px; }
+    .certificateText { font-size: 16px; line-height: 25px; }
+    .studentName { font-size: 40px; height: 80px; line-height: 40px; }
+    .skillLevelContainer { width: 450px; height: 150px; margin-top: 20px; margin-left: 20px; }
+    .skillLevelContainer2 { margin-top: 30px; }
+    .col, .col img { width: 160px; height: 95px; }
+    .skillContent1 { left: 30px; }
+    .skillContent2 { left: 15px; }
+    .skillLevelHeadline { font-size: 16px; margin-top: 10px; }
+    .skillLevel { margin-top: 25px; font-size: 40px; }
+    .smallText1 { font-size: 12px; }
+    .smallText { font-size: 18px; }
+}
+
+@media only screen and  (max-width: 1100px)  {
+    #certificateMainContainer {  width: 600px; height: 612px; }
+    #contentContainer { width: 470px; height: 400px; margin-left: -235px; top: 100px; }
+    .certificateText { font-size: 13px; line-height: 18px; }
+    .studentName { font-size: 35px; height: 60px; line-height: 40px; }
+    .skillLevelContainer { width: 450px; height: 150px; margin-top: 10px; margin-left: 0px; }
+    .skillLevelContainer2 { margin-top: 20px; }
+    .col, .col img { width: 140px; height: 75px; }
+    .skillContent1 { left: 30px; }
+    .skillContent2 { left: 15px; }
+    .skillLevelHeadline { font-size: 12px; margin-top: 10px; }
+    .skillLevel { margin-top: 10px; font-size: 35px; }
+    .smallText1 { font-size: 12px; }
+    .smallText { font-size: 18px; }
+    _:-ms-fullscreen, #certificateMainContainer img { margin-top: -100px; }
+}
+
+@media only screen and (max-height: 700px)   {
+    #certificateMainContainer {  width: 600px; height: 612px; }
+    #contentContainer { width: 470px; height: 400px; margin-left: -235px; top: 100px; }
+    .certificateText { font-size: 13px; line-height: 18px; }
+    .studentName { font-size: 35px; height: 60px; line-height: 40px; }
+    .skillLevelContainer { width: 450px; height: 150px; margin-top: 10px; margin-left: 0px; }
+    .skillLevelContainer2 { margin-top: 20px; }
+    .col, .col img { width: 130px; height: 75px; }
+    .skillContent1 { left: 30px; }
+    .skillContent2 { left: 15px; }
+    .skillLevelHeadline { font-size: 12px; margin-top: 10px; }
+    .skillLevel { margin-top: 10px; font-size: 35px; }
+    .smallText1 { font-size: 12px; }
+    .smallText { font-size: 18px; }
+    _:-ms-fullscreen, #certificateMainContainer img { margin-top: -100px; }
+}
+
+
+@media (max-height: 500px){
+    #certificate {
+        overflow: auto;
+        height: 400px;
+    }
+
+    #certificateMainContainer{
+        height: 312px;
+    }
+}
+
+
+@media only screen and (max-height: 700px) and (max-width: 1100px) {
+     #certificateMainContainer {  width: 600px; height: 612px; }
+    #contentContainer { width: 470px; height: 400px; margin-left: -235px; top: 100px; }
+    .certificateText { font-size: 13px; line-height: 18px; }
+    .studentName { font-size: 35px; height: 60px; line-height: 40px; }
+    .skillLevelContainer { width: 450px; height: 150px; margin-top: 10px; margin-left: 0px; }
+    .skillLevelContainer2 { width: 450px; height: 150px; margin-top: 20px; }
+    .col, .col img { width: 130px; height: 75px; }
+    .skillContent1 { left: 30px; }
+    .skillContent2 { left: 15px; }
+    .skillLevelHeadline { font-size: 12px; margin-top: 10px; }
+    .skillLevel { margin-top: 10px; font-size: 35px; }
+    .smallText1 { font-size: 12px; }
+    .smallText { font-size: 18px; }
+    _:-ms-fullscreen, #certificateMainContainer img { margin-top: -100px; }
+}
+

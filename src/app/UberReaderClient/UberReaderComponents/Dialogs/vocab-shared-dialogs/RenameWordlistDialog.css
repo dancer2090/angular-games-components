@@ -1,0 +1,25 @@
+.mdl-textfield{
+    width: 100%;
+}
+
+:host /deep/ .mdl-textfield__label{
+    padding-left: 5px;
+    color: #757575;
+    box-sizing: border-box;
+}
+
+:host /deep/ .mdl-textfield.is-focused .mdl-textfield__label,
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label{
+    color: #09539d;
+}
+
+:host /deep/ .mdl-textfield.is-focused .mdl-textfield__label:after{    
+    background-color: #09539d;
+}
+
+:host /deep/ .mdl-textfield textarea.mdl-textfield__input {		
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+}

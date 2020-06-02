@@ -1,0 +1,235 @@
+/** GENERAL SETTINGS **/
+.pref-cell, .pref-menus {
+    margin:             0px 8px;
+    position:           relative;
+}
+
+/*
+
+.green-button {
+    background:         #338B03 !important;
+    color:              #fff !important;
+}
+
+.green-button:hover {
+    background:         #286e02 !important;
+}
+
+
+.mdl-dialog__actions {
+    position:           absolute; 
+    bottom:             20px;
+    right:              0px;
+}*/
+
+:host /deep/ .mdl-tabs__tab-bar{
+    margin:             20px 0px 10px;
+}
+
+.toolTipPos{
+
+    /*margin-left:        -750px !important;
+    margin-top:         -270px !important;*/
+    position:           absolute;
+    top:                30px !important;
+    z-index:            9999999 !important;
+    left:               0px !important;
+}
+
+:host /deep/ .mdl-cell.mdl-cell--5-col.pref-cell{
+
+    width:              calc(41.6666666667% - 16px) !important;
+}             
+
+:host /deep/ .mdl-cell.mdl-cell--7-col.pref-cell{
+
+    width:              calc(58.3333333333% - 16px) !important;
+}            
+
+:host /deep/ .mat-button{
+    height:             36px;
+    float:              left;
+    vertical-align:     middle;
+    margin-top:         -8px;
+
+}
+
+:host /deep/ .mat-button-wrapper{
+
+    display:            inline-block;
+    max-width:          130px;
+    overflow-x:         hidden;
+    height:             36px;
+    text-overflow:      ellipsis;
+}
+
+/*
+:host /deep/ .mat-button-wrapper .material-icons{
+    position:           absolute;
+    right:              -5px;
+    top:                5px;   
+}*/
+
+:host /deep/ .mdl-dialog__content {
+    height:             380px;
+}
+
+:host /deep/ .mdl-dialog__actions{
+    /*left:               10px;
+    width:              100%;*/
+    float:              left;
+}
+
+:host /deep/ .mdl-dialog__actions button{
+    /*position:           absolute;
+    left:               10px;
+    top:                -20px;*/
+    float:              left;
+}
+    
+
+:host /deep/ .fontsMatMenu{
+    width:              50px;  
+    min-width:          50px;
+    padding:            0px 8px;
+}
+                                                                                                      
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+    .toolTipPos{
+
+        margin-left:        -63px !important;
+        margin-top:         -30px !important;
+    }
+}
+
+.setting-button {
+        color:              #424242;
+        width:              115px;
+}
+
+.active.mdl-button {
+        background:         #ccc;
+}
+/** END LINE FOR GENERAL SETTINGS **/
+
+/** FONT SETTINGS **/
+#demo-menu-lower-right-2 {
+    width:                  130px;
+    max-width:              130px;
+    border-radius:          0px;
+    color:                  #454545;
+    padding:                0px 10px;
+    box-sizing:             border-box;
+    font-size:              14px;
+    text-align:             left;
+    text-overflow:          ellipsis;
+    white-space:            nowrap;
+    overflow:               hidden;
+    padding-right:          30px;
+}
+
+#demo-menu-lower-right-3 {
+    width:                  50px;
+    border-radius:          0px;
+    color:                  #454545;
+    padding:                0px 10px;
+    box-sizing:             border-box;
+    font-size:              14px;
+    text-align:             left;
+}
+
+.font-preview {
+    height:                 120px;
+    margin:                 0px 20px;
+    position:               relative;
+}
+
+.font-preview span {
+    position:               absolute;
+    top:                    50%;
+    left:                   50%;
+    transform:              translate(-50%, -50%);
+    width:                  100%;
+    text-align:             center;
+}
+
+
+/** END LINE FOR FONT SETTINGS **/
+
+/** TYPING SETTINGS **/
+#demo-menu-lower-right-key {
+    min-width:              50px;
+    border-radius:          0px;
+    color:                  #454545;
+    font-size:              14px;
+    text-align:             left;
+    padding:                0px 10px;
+    box-sizing:             border-box;
+}
+/** END LINE FOR TYPING SETTINGS **/
+
+:host /deep/ .pref-menus .mdl-menu__container{
+    max-height:             200px;
+    overflow-y:             auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-x:             hidden;
+    box-shadow:             0 6px 10px 0 rgba(0,0,0,.14), 
+                            0 1px 18px 0 rgba(0,0,0,.12), 
+                            0 3px 5px -1px rgba(0,0,0,.2);
+}
+
+#demo-menu-lower-right-2 .material-icons{
+
+    position:               absolute;
+    top:                    5px;
+    right:                  5px;
+}
+
+:host /deep/ .prefTabs.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+    color:                  #3e92d7;
+}
+
+:host /deep/ .prefTabs.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+    background:             #3e92d7;
+}
+
+.trainingHelp{
+
+    width:                  40px;
+}
+
+.ttGameHelp {
+    cursor:                 default;
+    color:                  #757575;
+    font-size:              22px;
+    vertical-align:         middle;
+
+}
+
+.ttGameHelpPos{
+
+    top:                    30px !important;
+    left:                   200px !important;
+    position:               absolute;
+    z-index:                9999999;
+    margin-left:            0px !important;
+    width:                  200px;
+}
+
+:host /deep/ .mdl-grid.pref-grid,
+:host /deep/ .mdl-cell.mdl-cell--7-col.pref-cell{
+
+    position:               relative;
+}
+@media (max-width: 850px) {
+
+    #typing-tab{
+
+        overflow:           hidden;
+        overflow-y:         auto;
+        height:             300px;
+
+    }
+
+}

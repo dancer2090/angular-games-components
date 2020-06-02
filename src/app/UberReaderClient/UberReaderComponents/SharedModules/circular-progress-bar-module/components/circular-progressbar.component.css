@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+.radial-progress .circle .mask, 
+.radial-progress .circle .fill, 
+.radial-progress .circle .shadow {
+    width:    100%;
+    height:   100%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.radial-progress .circle .shadow {
+    box-shadow: rgb(225,225,225) inset;
+}
+
+.radial-progress .circle .mask,
+.radial-progress .circle .fill {    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform 1s;
+    transition: -ms-transform 1s;
+    transition: transform 1s;
+    border-radius: 50%;
+}
+
+.insetContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inset {
+    position:    relative;
+    background-color: #fbfbfb;
+    border-radius: 50%;
+    box-shadow: rgba(0,0,0,0.2);
+}
+
+.radial-progress2 {
+    position: relative;
+	border-radius: 50%;
+}
+
+.radial-progress {
+    position: relative;
+	border-radius: 50%;
+    width: 258px;
+    height: 258px;
+}
+
+
+@media (max-width: 1000px){
+
+    .radial-progress{
+		width: 210px !important;
+    	height: 210px !important;
+	}
+
+    .radial-progress .inset{
+    	width: 160px !important;
+    	height: 160px !important;
+	}
+}
+
+@media (max-height: 925px){
+
+
+
+	.radial-progress{
+		width: 200px !important;
+    		height: 200px !important;
+	}
+
+	.radial-progress .inset{
+    		width: 160px !important;
+    		height: 160px !important;
+	}
+}
+
+
+@media (max-height: 865px){
+
+
+	.radial-progress{
+
+    		width: 160px !important;
+    		height: 160px !important;
+    		margin: 0 auto;
+	}
+
+	.radial-progress .inset{
+    		width: 130px !important;
+    		height: 130px !important;
+	}
+
+
+}
+
+
+
+
+@media (max-width: 839px) and (min-width: 480px){
+
+
+
+	.radial-progress{
+
+		margin: 0 auto;
+	}
+}

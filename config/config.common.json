@@ -1,0 +1,68 @@
+{
+  "bugsnagApiKey": "3599c4745b1611fe693637f78c958a24",
+  "builderName": "Jomelyn Aldave",
+  "DEFAULT": {
+    "title": "Typesy",
+    "appVersion": "2018.1.21",
+    "description": "",
+    "googleClientId": "47697474457-5goatp6cjvm00h7136m8dag534adm0of.apps.googleusercontent.com",
+    "baseVer": "",
+    "cssFileName": "styles.css",
+    "cdnLocation": "/",
+    "baseUrl": "/"    
+  },
+  "TYPESY": {
+    "title": "Typesy",
+    "appVersion": "2020.3.0.1",
+    "description": "First test build for April version",
+    "googleClientId": "47697474457-5goatp6cjvm00h7136m8dag534adm0of.apps.googleusercontent.com",    
+    "test": {
+      "baseVer": "130",
+      "cssFileName": "styles.css",
+      "cdnLocation": "https://resources2.ereflect.com/appfiles/",
+      "baseUrl": "/apps/test2"
+    },
+    "live": {
+      "baseVer": "128",
+      "cssFileName": "styles.css",
+      "cdnLocation": "https://resources.ereflect.com/Typesy/webApp/",
+      "baseUrl": "/type"
+    },
+    "iPad": {
+      "baseVer": "59",
+      "cssFileName": "styles.css",
+      "cdnLocation": "/",
+      "baseUrl": "/"
+    },
+    "android": {
+      "baseVer": "2",
+      "cssFileName": "styles.css",
+      "cdnLocation": "/",
+      "baseUrl": "/"
+    },
+    "electron": {
+      "baseVer": "1",
+      "cssFileName": "styles.min.css",
+      "cdnLocation": "/",
+      "baseUrl": "/"
+    }       
+  },
+
+  "PREPED": {
+    "title": "PrepEd",
+    "description": "",
+    "googleClientId": "1043885528797-deb5juftahpeiq9a4q87vq3sieeoj9s6.apps.googleusercontent.com",
+    "test": {
+      "baseVer": "55",
+      "cssFileName": "styles.css",
+      "cdnLocation": "https://resources.ereflect.com/PrepEd/webApp/",
+      "baseUrl": "/apps/test2/"
+    },
+    "live": {
+      "baseVer": "55",
+      "cssFileName": "styles.css",
+      "cdnLocation": "https://resources.ereflect.com/PrepEd/webApp/",
+      "baseUrl": "/"
+    }    
+  }
+}

@@ -1,0 +1,659 @@
+.container--top-bar-half {
+	width: 				69%;
+	float:              left;
+	margin-top:         10px;
+}
+
+.button-container {
+	float: 				left;
+}
+
+.dropdown--exercises{
+	max-width: 			250px;
+    text-overflow: 		ellipsis;
+    white-space: 		nowrap;
+    overflow: 			hidden;
+    display: 			block;
+    padding-right: 		20px;
+}
+
+.option-li:hover {
+	background: 		#ececec;
+}
+
+.preview-pane .mdl-textfield__label:after {
+    background: 		transparent !important;
+}
+
+.column {
+    width: 				69%;
+    float: 				left;
+}
+
+.container--searchField{
+    width:              450px;
+    margin-left:        10px;
+    position:           relative;
+    float:              right;
+}
+
+
+:host /deep/ .mdl-textfield__label:after {
+	background:         transparent;
+}
+
+.libClearSearchBtn {
+    position:           absolute;
+    right:              16px;
+    top:                6px;
+    cursor:             pointer;
+}
+
+.mdlClearBtn{
+	 top:                50px !important;
+	 left:               410px !important;
+	 position:           absolute;
+	 z-index:            9999999; 
+ }
+
+.main-dialog-content {
+	float: 				left;
+	width: 				100%;
+	margin-top: 		30px;
+}
+
+.course-header-title {
+	padding-left: 0px;
+    margin: 0px 0px 10px;
+    display: block;
+    font-size: 24px;
+}
+
+.one.menutabs--links.active ~ hr {
+    width: 120px;
+}
+
+.two.menutabs--links.active ~ hr {
+    margin-left: 118px;
+    width: 80px;
+}
+
+.three.menutabs--links.active ~ hr {
+    margin-left: 198px;
+    width: 90px;
+}
+  
+
+.main-button-container {
+
+	float: 				left;
+	width: 				100%;
+	padding: 			10px 20px;
+	box-sizing: 		border-box;
+	text-align: 		right;
+}
+
+.exercise-wrap {
+	float: 				left;
+	width: 				100%;
+	margin-top: 		10px;
+}
+
+.exercises-container{
+    position: relative;
+    height: 590px;
+    overflow-y: auto;
+}
+
+.exercises-container .mdl-grid {
+	padding: 0px 0px;
+}
+
+.submit-button {
+	width: 				85px;
+	margin-left: 		8px;
+	float: 				right;
+
+}
+
+:host /deep/ .mdl-menu__container.is-visible{
+    z-index: 999;
+    visibility: visible;
+    max-height: 400px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 
+				0 3px 1px -2px rgba(0,0,0,.2), 
+				0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+:host /deep/ .mdl-dialog__content {
+	padding: 16px 16px 8px;
+}
+
+:host /deep/ .exercises-header {
+    border-bottom: 		none !important;
+    position: 			inherit !important;
+    width: 				inherit !important;
+}
+
+:host /deep/ .exercises-floating-button {
+    display: 			none !important;
+}
+
+.preview-pane {
+    height: 80%;
+    margin-left: 10px;
+    padding: 0px 0px 0px 10px;
+    box-sizing: border-box;
+}
+
+/*
+:host /deep/ .preview-pane .mdl-textfield .mdl-textfield__input {
+    display: block;
+    height: 420px;
+    border: 1px solid #ccc;
+    resize: none;
+    box-sizing: border-box;
+    padding: 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #757575;
+	margin-top: -4px;
+}	 */
+
+:host /deep/ #libraryGroupContainer{
+	margin-top: 		0px !important;
+}
+
+:host /deep/ .preview-pane .mdl-textfield {
+    width: 				100%;
+}
+
+:host /deep/ .preview-pane .mdl-textfield{
+    padding: 10px 5px;
+   /* border: 1px solid #ccc;*/
+    border-radius: 10px;
+}
+
+:host /deep/ .preview-pane .mdl-textfield .mdl-textfield__input {
+    display: 			block;
+    height: 			550px;
+	/*border:				1px solid #ccc;*/
+	border:  			none;
+    resize:				none;
+    box-sizing: 		border-box;
+    padding: 			10px;
+	border-radius: 		10px;
+	font-size: 			14px;
+	color: 				#757575;
+	margin-top: 		-4px;
+	cursor:  			default;
+}
+
+.preview-header-title{
+	font-size: 24px;
+}
+/*
+.menutabs--container {
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #ececec;
+	margin-bottom: 10px;
+}
+ 
+.menutabs--wrap {
+	width: 350px;
+	display: inline-block;
+	margin-top: 5px;
+	position: relative;
+}
+
+.menutabs--wrap.dropdown{
+	width: 150px;
+}
+ 
+.menutabs--links {
+	height: 40px;
+	display: block;
+	padding: 0px 16px;
+	float: left;
+	text-decoration: none;
+	font-weight: 400;
+	color: #757575;
+	font-size: 14px;
+	background: transparent;
+	box-shadow: none;
+	text-transform: none;
+	line-height: 40px;
+	position: relative;
+	border-radius: 0px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.menutabs--links.active {
+	color: #34ad07;
+	font-weight: 500;
+}
+
+.menutabs--links.mdl-button:hover {
+	background-color: transparent !important;
+	color: #34ad07 !important;
+}
+
+hr {
+	margin: 0;
+	width: 96px;
+	height: 3px;
+	position: absolute;
+	bottom: 0px;
+	background: #34ad07;
+	border: none;
+	transition: .2s ease-in-out;
+}
+*/
+
+.one.dropdown.menutabs--links.active ~  hr{
+	width: 70px;
+}
+
+.two.menutabs--links.active ~ hr{
+	/*margin-left: 118px;*/
+	margin-left: 130px;
+	width: 80px;
+}
+ 
+.three.menutabs--links.active ~ hr {
+	margin-left: 198px;
+	width: 90px;
+}
+
+.button--paste span{
+    font-size: 24px;
+}
+
+.button--paste{
+    padding: 0px 10px;
+    font-size: 13px;
+    margin-right: 5px;
+    background: transparent;
+    color: #616161;
+    box-shadow: none;
+}
+
+.option-li {
+	border-radius: 			0px;
+	padding: 				0px 10px;
+	box-sizing: 			border-box;
+	text-align: 			left;
+	text-transform: 		none;
+	letter-spacing: 		.04em;
+	font-weight: 			400;
+	padding-right: 			0px;
+	background: 			transparent;
+	height: 				48px !important;
+	padding: 				0px 16px !important;
+	border-radius: 			0px !important;
+	line-height: 			48px !important;
+	font-weight: 			400;
+	font-size: 				14px;
+	width: 					310px;
+	color: 					rgba(0,0,0,.87);
+}
+
+:host /deep/ .sub-menu .mdl-menu__container.is-upgraded.is-visible {
+	margin-top: -300px;
+	right: -300px !important;
+}
+
+.option-label{
+	font-size: 18px;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+	color: #757575;
+	float: left;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+}
+
+/* NEW CSS */
+/* .button--oval {
+	background: #fff;
+    border-radius: 20px;
+	text-transform: none;
+	color: #757575;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.iconGreen {
+	margin-right: 10px;
+	color: #34ad07;
+} */
+	 
+.search-form {
+    width: 650px;
+    margin-left: 10px;
+    position: relative;
+    float: right;
+}
+
+.search-box {
+	float: left;
+	position: relative;
+}
+
+.search-box {
+    background: #edf0f2;
+    border-radius: 2px;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 36px;
+    width: 400px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    z-index: 1;
+    color: #757575;
+}
+
+.search-txt {
+    width: 100%;
+}
+
+:host /deep/ .search-box .search-txt.mdl-textfield {
+    padding: 0px 0px;
+}
+
+:host /deep/ .search-box .search-txt .mdl-textfield__label {
+    top: 3px;
+    color: #757575;
+    font-size: 14px;
+    left: 40px;
+}
+
+:host /deep/ .search-txt .mdl-textfield__input {
+    border-bottom: none;
+    padding-left: 40px;
+    position: relative;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: #212121;
+    padding-bottom: 8px;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.button--browse-dropdown {
+    padding: 0px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	font-size: 14px;
+	margin-right: 20px;
+	/*width: 130px;*/
+	width: auto;
+	text-align: left;
+	color: #757575;
+	text-transform: none;
+	font-weight: 400;
+	max-width: 200px;
+}
+
+.categoryLbl{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 160px;
+    display: block;
+	min-width: 100px;
+	padding-right: 16px;
+}
+
+:host /deep/ .mdl-dialog__actions {
+    width: 100%;
+}
+
+.arrowdd {		
+	position: absolute;
+	right: 0px;
+	top: 5px;
+}
+
+.mdl-cell.mdl-cell--8-col.col1{
+	margin:8px 0px 15px; 
+	width: 70%;
+	}
+	
+	
+.mdl-cell.mdl-cell--4-col.col2{
+	margin:8px 0px 15px;
+	width: 30%; 
+	padding-left: 20px; 
+	padding-top: 5px;
+}
+
+.selectedMenuItem {
+	background-color: rgb(238, 238, 238) !important;
+}
+
+@media (max-height: 830px) {
+	.exercise-wrap {
+		height: 		450px;
+	}
+
+	.course-header-title{
+
+    	margin: 0px 0px 20px !important;
+
+	}
+	
+
+}
+
+@media (max-height: 870px) {
+	.main-dialog-content{
+		margin-bottom: 20px;
+	}
+
+	.exercises-container{
+
+		height: 460px;
+	}
+
+
+	:host /deep/ .preview-pane .mdl-textfield textarea.mdl-textfield__input {
+
+		height: 420px;
+	}
+
+	:host /deep/ .mdl-dialog__actions {
+		margin-top: 10px;
+	}
+
+	/*:host /deep/ .preview-pane .mdl-textfield {
+
+		padding: 20px 0 10px;
+	}
+
+	:host /deep/ .main-button-container{
+		padding: 20px 20px;
+	}  */
+}
+	 
+@media (max-width: 1300px) {
+	.search-form {
+    	width: 480px;
+	}
+	
+	.search-box {
+		width: 250px;
+	}	
+
+	.mdl-cell.mdl-cell--4-col.col2{
+		padding-left: 0px;
+		margin-left: -5px;
+	}
+}
+
+@media (max-width: 1280px) {
+
+
+	/*.exercises-container {
+
+		width: 457px;
+	}
+
+	.preview-pane {
+
+		width: 190px;
+	}*/
+
+	.main-dialog-content{
+		margin-bottom: 20px;
+	}
+
+	.container--searchField {
+		width: 420px;
+	}
+
+	.container--top-bar-half{
+		width: auto;
+		padding-right: 0px;
+	}
+
+	/*.button-container{
+		width: 230px;
+	}*/
+	
+	.dropdown--exercises{
+    	max-width: 200px;
+	}
+}
+
+@media (max-height: 870px) and (max-width: 1280px) {
+
+
+	/*.exercises-container {
+
+		width: 457px;
+	}
+
+	.preview-pane {
+
+		width: 190px;
+	}*/
+
+	.main-dialog-content{
+		margin-bottom: 20px;
+	}
+	.container--searchField{
+		width: 420px;
+	}
+
+	.container--top-bar-half{
+		width: auto;
+		padding-right: 0px;
+	}
+
+	/*.button-container{
+		width: 230px;
+	}*/
+
+	.dropdown--exercises{
+    	max-width: 200px;
+	}
+
+}
+
+@media (max-width: 1050px) {
+
+	.mdl-cell.mdl-cell--8-col.col1{
+
+		width: 90%;
+	}
+		
+		
+	.mdl-cell.mdl-cell--4-col.col2{
+
+		width: 10%; 
+	}
+
+	:host /deep/ .mdl-switch__label{
+		line-height: 16px;
+		font-size: 13px;
+		margin-left: -10px;
+		display: block;
+	}
+
+}
+
+@media (max-height: 800px){
+
+	/*.exercises-container{
+		height: 430px;
+	}
+
+	.preview-pane{ 
+		height: 310px;
+	}
+
+	:host /deep/ .preview-pane .mdl-textfield textarea.mdl-textfield__input {
+		height: 380px;
+	}
+*/
+	:host /deep/ .mdl-dialog__actions {
+		margin-top: 30px;
+	}
+
+	:host /deep/ .mdl-menu__container.is-visible, .mdl-menu__container.is-animating{
+
+		max-height: 250px !important;
+    	-webkit-overflow-scrolling: touch;
+    	overflow-x: hidden;
+    	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 
+					0 3px 1px -2px rgba(0,0,0,.2), 
+					0 1px 5px 0 rgba(0,0,0,.12);	
+	}
+
+}
+
+
+@media (max-height: 750px){
+
+	.exercises-container{
+		height: 380px;
+	}
+
+	.preview-pane{ 
+		height: 330px;
+	}
+
+	:host /deep/ .preview-pane .mdl-textfield textarea.mdl-textfield__input {
+		height: 330px;
+	}
+}
+
+@media (max-height: 690px){
+
+	.exercises-container{
+		height: 290px;
+	}
+
+	.preview-pane{ 
+		height: 330px;
+	}
+
+	:host /deep/ .preview-pane .mdl-textfield textarea.mdl-textfield__input {
+		height: 250px;
+	}
+
+	:host /deep/ .mdl-dialog__actions {
+		margin-top: -20px;
+	}
+}

@@ -1,0 +1,11 @@
+:host /deep/ .mdl-progress {
+    width:                 100%;
+}
+
+:host /deep/ .mdl-progress > .progressbar{
+    background-color:      #338c03;
+}
+
+:host /deep/ .mdl-progress > .bufferbar {
+    background:             #CCCCCC;
+}

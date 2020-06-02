@@ -1,0 +1,74 @@
+<div class="mdl-card mdl-shadow--2dp {{ forPublicProfile ? 'card--sectionsHome' : 'card--sectionsHome' }}" style="overflow: visible !important;">
+    <div class="mdl-grid card-header">
+        <h6 class="mdl-color-text--grey-700 mdl-typography--title header-title">Vital Stats</h6>
+    </div>
+    <div class="mdl-grid inner-grid">
+        <div class="mdl-cell mdl-cell--4-col" >
+            <h6 class="mdl-color-text--grey-700 mdl-typography--title  mdl-typography--font-light mdl-typography--text-center header-title-2">Typing Mastery</h6>  
+            <div class="canvasContainer">
+                <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 150px;" id="odometer-container">
+                    <div #odometer class="odometer" [mdl-tooltip]="typingMasteryTooltip">1.1</div>
+                </div>	
+                <!-- <i class="material-icons toolTip1" [mdl-tooltip]="typingMasteryTooltip">help_outline</i> -->
+            </div>     
+        </div>
+        <div class="mdl-cell mdl-cell--4-col" >
+            <h6 class="mdl-color-text--grey-700 mdl-typography--title  mdl-typography--font-light mdl-typography--text-center header-title-2">Speed</h6>
+            <!-- <semi-circle-progressbar class="hide" #currentSpeed progressUnit="wpm"></semi-circle-progressbar> 
+            <button (click)="clickMe()">Click</button> -->
+            <!--p class="subtitle mdl-color-text--grey-700">Current: {{ currentGoal1 }} WPM</p>
+            <p class="subtitle mdl-color-text--grey-700">Target: {{ targetGoal1 }} WPM</p-->
+            <div class="canvasContainer">
+                <!-- <semi-circle-progressbar2 #speedDial2 type="circular" size="154"></semi-circle-progressbar2> -->
+                <div #speedChartDiv id="{{ forPublicProfile ? 'chart_div' : 'chart_div'}}" [mdl-tooltip]="typingSpeedTooltip"></div>    
+                <!--label class="subtitle mdl-color-text--grey-700" style="margin-right:8px;">Current: {{ currentGoal1 }} WPM</label>
+                <label class="subtitle mdl-color-text--grey-700">Target: {{ targetGoal1 }} WPM</label-->      
+                <!-- <i class="material-icons toolTip" [mdl-tooltip]="typingSpeedTooltip">help_outline</i>               -->
+            </div>      
+        </div>
+        
+        <div class="mdl-cell mdl-cell--4-col ">
+            <h6 class="mdl-color-text--grey-700 mdl-typography--title  mdl-typography--font-light mdl-typography--text-center header-title-2">Accuracy</h6>
+            <!-- <semi-circle-progressbar class="hide" #targetSpeed fillColor="#34ad07" progressUnit="wpm"></semi-circle-progressbar> -->
+            <!--p class="subtitle mdl-color-text--grey-700">Current: {{ currentGoal2 }}%</p>
+            <p class="subtitle mdl-color-text--grey-700">Target: {{ targetGoal2 }}%</p-->
+            <div class="canvasContainer">
+                <!-- <semi-circle-progressbar2 #accuracyDial2 type="linear" size="195"></semi-circle-progressbar2> -->
+                <div #accuracyChartDiv id="{{ forPublicProfile ? 'chart_div2' : 'chart_div2'}}" [mdl-tooltip]="typingAccuracyTooltip"></div>   
+                <!--label class="subtitle mdl-color-text--grey-700" style="margin-right:8px;">Current: {{ currentGoal2 }}%</label>
+                <label class="subtitle mdl-color-text--grey-700">Target: {{ targetGoal2 }}%</label-->           
+                <!-- <i class="material-icons toolTip"  [mdl-tooltip]="typingAccuracyTooltip">help_outline</i> -->
+               
+            </div>                                      
+        </div>    
+        <!--button class="mdl-button mdl-js-button mdl-button--icon toolTip"><i class="material-icons"  >help_outline</i></button-->
+         
+    </div>                
+    <br/>
+<!--
+<div class="mdl-grid inner-grid hide">
+    <div class="mdl-cell mdl-cell--6-col inner-col mobile-width-1">
+        <h6 class="mdl-color-text--grey-700 mdl-typography--title mdl-typography--text-center header-title-2 mtop">Current Accuracy</h6>
+        <div class="progressBarGroup">
+            <progress-bar animate="true" progressBarColor="#E0E0E0" trackBarColor="#3E92D7" barHeight="20px" value="{{currentGoal2 + '%'}}"></progress-bar>
+            <label class="mdl-color-text--grey-700 mdl-typography--body-1 mdl-typography--text-center header-title-2">{{ currentGoal2 + '/' + maxTargetGoal2}}</label>
+        </div>                              
+    </div>
+        
+    <div class="mdl-cell mdl-cell--6-col inner-col mobile-width-1">
+        <h6 class="mdl-color-text--grey-700 mdl-typography--title mdl-typography--text-center header-title-2 mtop">Target Accuracy</h6>
+        <div class="progressBarGroup">
+            <progress-bar animate="true" progressBarColor="#E0E0E0" trackBarColor="#34ad07" barHeight="20px" value="{{targetGoal2 + '%'}}"></progress-bar>
+            <label class="mdl-color-text--grey-700 mdl-typography--body-1 mdl-typography--text-center header-title-2">{{ targetGoal2 + '/' + maxTargetGoal2}}</label>                    
+        </div>
+    </div>
+</div>   
+-->                                 
+</div>      
+<!--
+<mdl-tooltip #typingSpeedTooltip="mdlTooltip">Your current speed is {{currentGoal1}} wpm and your target speed is {{targetGoal1}} wpm</mdl-tooltip>  
+<mdl-tooltip #typingAccuracyTooltip="mdlTooltip">Your current accuracy is {{currentGoal2}}% and your target accuracy is {{targetGoal2}}%</mdl-tooltip>  -->  
+
+<mdl-tooltip #typingMasteryTooltip="mdlTooltip">Typing Mastery is your rating out of 10 on Typesy, and is your most important number to improve. It is calculated using our "secret sauce" that considers your keyboard knowledge, your speed, and your accuracy.</mdl-tooltip> 
+<mdl-tooltip #typingSpeedTooltip="mdlTooltip">{{ currentGoal1 }} Words Per Minute - This is your most recent typing speed recorded by Typesy.</mdl-tooltip>  
+<mdl-tooltip #typingAccuracyTooltip="mdlTooltip">{{ currentGoal2 }}% Accuracy - This is your most recent typing accuracy recorded by Typesy.</mdl-tooltip> 

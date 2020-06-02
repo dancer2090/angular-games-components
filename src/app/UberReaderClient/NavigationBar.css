@@ -1,0 +1,1895 @@
+/* notes viewer */
+
+.mdl-navigation__link.typesyPublicProfileLink {
+    text-transform: uppercase;
+    color: #444;
+    padding: 0px !important;
+    line-height: 60px;
+}
+
+.notification-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+  }
+  
+.mdl-textfield--expandable {
+    display: none;
+}
+
+.logo-row.mobile,
+.logo-row2.mobile,
+.typesy-logo.mobile {
+    display: none;
+}
+
+.header-title-main a{
+	
+	font-weight: 400;
+	color: #616161;
+	margin: 0px;
+	font-family: 'googleFont';
+    font-size: 18px;
+    padding: 8px;
+    
+}
+
+/* .header-title-main a:hover{
+    text-decoration: underline;
+} */
+
+.breadcrumbLabelWithHover:hover {
+    text-decoration: underline;
+}
+
+/*
+.header-title-main a:hover{
+
+	background: 			#ececec;
+	border-radius:          10px;
+}*/
+
+.breadcrumbDiv{
+	float: 					left;
+	/*line-height: 			45px;*/
+}       
+
+.breadcrumbmainLabel {
+    float: 					left;
+    max-width: 				400px;
+   /* text-overflow: 			ellipsis;
+    white-space: 			nowrap;
+    overflow: 				hidden;*/
+}   
+
+
+.breadCrubmSeparator {
+  
+    float: 					right;
+    margin-right: 		    5px;
+}
+
+.breadcrumbLabel{
+
+	color: 					#616161;
+	font-weight:            400;
+	padding:                8px;
+	cursor: 				default !important;
+}
+
+.breadcrumbLabel:hover{
+
+	background: 			transparent !important;
+	
+}
+
+.ellipsis__content {
+
+    text-overflow:          ellipsis;
+    white-space:            nowrap;
+    overflow:               hidden;
+}
+
+
+/*
+.ellipsis {
+    white-space:            nowrap;
+    overflow:               hidden;
+    text-overflow:          ellipsis;
+}
+
+.reverse-ellipsis {
+  text-overflow:            initial;
+  line-height:              1.35;
+  padding-top:              0;
+}
+
+.ellipsis__content {
+  float:                    right;
+  min-width:                100%;
+  margin-left:              -1px;
+}
+
+.reverse-ellipsis:after {
+  content:                  "…";
+  float:                    left;
+  width:                    .7em;
+  padding:                  0 1px 0 1em;
+  margin:                   -1.35em -1.1em;
+  background:               #fafafa;
+}
+*/
+
+.school-logo {
+    width:              auto;
+    height:             40px;
+    margin-left:        10px;
+}
+
+.avatarDiv {
+    flex-direction:     row;
+}
+
+#examTypeSelect .mdl-textfield {
+    width:              150px;    
+}
+
+.typesy-desktop-navigation {
+    max-width:           650px;
+    margin:              0px auto !important;
+}
+
+div#typesy-desktop-menu-container {
+    position:           absolute;
+    top:                50%;
+    left:               49.5%;
+    transform:          translate(-50%, -50%);
+    display:            block !important;
+}
+
+.nav-tabs {
+    width: 				75px;
+    height: 			64px;
+	cursor: 			pointer;
+    display:            inline-block;
+    position:           relative;
+}
+
+.admin-tab:after{
+
+    content:            " ";
+    position:           absolute;
+    border-left:        1px #a09f9f solid;
+    top:                15%;
+    left:               8px;
+    height:             70%;
+    margin-top:         auto;
+    margin-bottom:      auto;
+}
+
+.nav-icons {
+    text-align: 		center;
+    padding-top: 		10px;
+    height: 			40px;
+    box-sizing: 		border-box;
+}
+
+.nav-icons .material-icons,
+.nav-icons span {
+    font-size: 			30px;
+	color: 				#616161;
+	width: 				30px;
+}
+
+.nav-icons .material-icons.lgrey{
+	
+	color: 				#757575 !important;
+}
+
+.material-icons.courses {
+    -moz-transform: 	scale(-1, -1);
+    -o-transform: 		scale(-1, -1);
+    -webkit-transform: 	scale(-1, -1);
+    transform: 			scale(-1, -1);
+}
+.nav-text {
+    text-align: 		center;
+    font-size: 			11px;
+	color: 				rgba(66,66,66,.8);
+}
+
+.nav-tabs.active .nav-icons .material-icons,
+.nav-tabs.active .nav-icons span,
+.nav-tabs.active .nav-text{
+	
+	color: 				#3f93d8 !important;
+}
+
+.nav-tabs.active .nav-text{
+	
+	font-weight: 		bold;
+}
+
+
+.nav-tabs:hover .nav-icons .material-icons,
+.nav-tabs:hover .nav-icons span,
+.nav-tabs:hover .nav-text{
+	
+	color: 				#3f93d8 !important;
+}
+
+
+
+.back-button-grey {
+    color: 				rgba(66,66,66,1);
+}
+
+
+.typesy-text-grey {
+    color: 				rgba(66,66,66,1);
+}
+
+ :host /deep/ .mdl-badge.mdl-badge--overlap{
+
+    margin-right:       0px; 
+ }
+
+/** moved to styles.css
+#searchInputDiv .mdl-textfield {
+    width:                  100%;    
+    padding:                0px;
+}
+
+.searchIcon {
+    padding:                15px;
+    position:               absolute;
+    z-index:                3;     
+    color:                  #fff;        
+}
+
+.searchIconFocused {
+    padding:                15px;
+    position:               absolute;
+    z-index:                3;
+    color:                  #757575;
+}
+
+#searchInputDiv{
+
+    margin-left:            30px;
+    width:                  100%;
+    position:               relative;
+ 
+}
+
+#searchInputDiv .mdl-textfield__input{
+
+    height:                 50px;
+    width:                  100%;
+    box-sizing:             border-box;
+    border:                 none;    
+    font-family:            'osans';
+    background-color:       #266db4;    
+    outline:                none;
+    text-overflow:          ellipsis;
+    white-space:            nowrap;
+    overflow:               hidden;
+    font-size:              16px;
+    display:                flex;
+    align-items:            center;
+    border-radius:          2px;
+    padding-left:           50px;
+    padding-right:          10px;
+    color:                  #fff !important;
+}
+
+#searchInputDiv .mdl-textfield__input:focus{
+
+    background-color:       #fff;   
+    -webkit-transition:     all .3s ease;
+    -moz-transition:        all .3s ease;
+    -ms-transition:         all .3s ease;
+    -o-transition:          all .3s ease;
+    transition:             all .3s ease; 
+    color:                  #757575 !important;    
+}
+
+.mdl-textfield__input{
+
+    border-bottom:          none !important;
+    font-family:            "Roboto","Helvetica","Arial",sans-serif !important;
+}
+
+.mdl-textfield__input:focus,
+.mdl-textfield__input:selected{
+
+    border-bottom:          none !important;
+
+}
+
+.mdl-textfield__label:after{
+
+    background-color:       transparent;
+}
+*/
+
+
+/*
+#searchInputDiv .inputFocused .mdl-textfield__input::-webkit-input-placeholder {
+   color:                   #757575 !important; 
+   font-family:           "Roboto","Helvetica","Arial",sans-serif;
+   font-size:              16px;
+}*/
+
+mdl-layout-header.mdl-layout__header.is-casting-shadow.mdl-layout__header--seamed{
+
+    background-color:       #09539d !important;
+    box-shadow:             none;
+   
+    
+}
+
+.prepedNavLinkActive{	
+	border-bottom:          4px solid #a8ee82;
+	height:                 60px !important;
+    color:                  #a8ee82;
+	font-weight:            bold;
+}
+
+.typesyNavLinkActive {
+    /*border-bottom: 2px solid white;*/
+	height:                 63px !important;
+}
+
+/*
+.typesyNavLinkActive.typesyNavLinkActive::after {
+    height: 3px;
+    width: 100%;
+    display: block;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    -webkit-animation: border-expand .2s cubic-bezier(.4,0,.4,1).01s alternate forwards;
+    animation: border-expand .2s cubic-bezier(.4,0,.4,1).01s alternate forwards;
+    transition: all 1s cubic-bezier(.4,0,1,1);
+}
+
+*/
+#typesyMenu{
+
+    position:               relative;
+}
+
+/*
+hr {
+  height: .17rem;
+  width: 96px;
+  margin: 0;
+  position: absolute;
+  bottom: 1px;
+  background: #fff;
+  border: none;
+  transition: .1s ease-in-out;
+  visibility: hidden;
+}
+
+.one.typesyNavLinkActive ~ hr,
+.two.typesyNavLinkActive ~ hr,
+.three.typesyNavLinkActive ~ hr,
+.four.typesyNavLinkActive ~ hr,
+.five.typesyNavLinkActive ~ hr,
+.six.typesyNavLinkActive ~ hr{
+
+  visibility: visible;
+}
+
+.six.typesyNavLinkActive ~ hr{
+
+  width: 6.5%;
+}
+*/
+
+hr {
+  height:               .17rem;
+  width:                94px;
+  margin:               0;
+  position:             absolute;
+  bottom:               1px;
+  background:           #fff;
+  border:               none;
+  transition:           .2s ease-in-out;
+  margin-left:          15px;
+ /* visibility: hidden;*/
+}
+
+/*admin*/
+
+.one.typesyNavLinkActive ~ hr {
+  
+  margin-left:          15px;
+}
+
+.two.typesyNavLinkActive ~ hr {
+  
+  margin-left:          125px;
+}
+
+.three.typesyNavLinkActive ~ hr {
+  
+  margin-left:          230px;
+}
+
+.four.typesyNavLinkActive ~ hr{
+
+    margin-left:        345px;
+}
+
+.five.typesyNavLinkActive ~ hr{
+
+    margin-left:        418px;
+}
+
+.six.typesyNavLinkActive ~ hr{
+
+    margin-left:        450px;
+}
+
+
+.seven.typesyNavLinkActive ~ hr{
+
+    margin-left:        570px;
+    width:              110px;
+}
+
+/* user */
+
+.oneUser.typesyNavLinkActive ~ hr {
+  
+  margin-left:          15px;
+}
+
+.twoUser.typesyNavLinkActive ~ hr {
+  
+  margin-left:          125px;
+}
+
+.threeUser.typesyNavLinkActive ~ hr {
+  
+  margin-left:          230px;
+}
+
+.fourUser.typesyNavLinkActive ~ hr{
+
+    margin-left:        345px;
+}
+
+/*
+.fiveUser.typesyNavLinkActive ~ hr{
+
+    margin-left: 418px;
+}
+*/
+
+.sixUser.typesyNavLinkActive ~ hr{
+
+    margin-left:        340px;
+}
+
+.sevenUser.typesyNavLinkActive ~ hr{
+
+    margin-left:        460px;
+    width:              110px;
+}
+
+/*
+.test-message {
+    font-size:          18px;
+    position:           absolute;
+    left:               230px;
+    height:             64px;
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+    color:              rgb(66,66,66);
+    top:                0px;
+}
+
+
+.test-message {
+    font-size:          18px;
+    position:           relative;
+    height:             64px;
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+    color:              rgb(66,66,66);
+    float:              left;
+    margin-left:        30px;
+}*/
+
+.test-message {
+    font-size:          18px;
+    position:           absolute;
+    right:              180px;
+    height:             64px;
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+    color:              rgb(66,66,66);
+    top:                0px;
+}
+	
+#test-dialog-link {
+	color:              #3e92d7;
+	text-decoration:    underline;
+	cursor:             pointer;
+    padding:            0px 3px;
+}
+
+/** css for admin search field **/
+/*
+.search-box {
+    float: left;
+}
+.search-icon {
+    position:           absolute;
+    top:                7px;
+    left:               5px;
+    z-index:            1;
+    color:              #757575;
+}*/
+/*
+.search-box {
+    position:           absolute;
+    top:                12px;
+    right:              80px;
+    background:         #edf0f2;
+    border-radius:      2px;
+    padding:            5px;
+    box-sizing:         border-box;
+    height:             38px;
+    width:              435px;
+    border-radius:      10px;
+  
+}
+
+
+:host /deep/ .search-box .search-txt.mdl-textfield {
+    padding:            0px 0px;
+}
+
+.search-txt {
+    width:              100%;
+}
+
+:host /deep/ .search-txt .mdl-textfield__input {
+    border-bottom:      none;
+    padding-left:       30px;
+    position:           relative;
+    padding-right:      10px;
+    box-sizing:         border-box;
+    color:              #212121;
+    padding-bottom:     8px;
+    width:              100%;
+    padding-top:        5px;
+}
+
+:host /deep/ .search-box .search-txt .mdl-textfield__label {
+    top:                3px;
+    color:              #757575;
+    font-size:          14px;
+    left:               30px;
+    font-family:        'Roboto','Helvetica','Arial', sans-serif !important;
+}
+
+
+*/
+
+.container--searchField{
+    position:           relative;
+    width:              420px;
+    margin-left:        8px;
+}
+
+:host /deep/ #expandable-textfield .material-icons {
+    position:           absolute;
+    z-index:            1;
+    color:              #757575;
+    font-size:          28px;
+}
+
+
+:host /deep/ .mdl-textfield__label:after {
+	background:         transparent;
+}
+
+.usersClearSearchBtn {
+    position:           absolute;
+    right:              16px;
+    top:                8px;
+    cursor:             pointer;
+    color:              #757575;
+}
+/** end line of css for admin search field **/
+
+#admin-logo-wrapper{
+	width:              170px;
+	float:              left; 
+}
+
+.logo-row {
+    width:              100%;
+    float:              left;
+    height:             25px;
+}
+
+.logo-row2 {
+    float:              left;
+    height:             40px;
+}
+
+/* .logo-row img{
+
+    width:              170px;
+} */
+	 
+.school {
+    overflow:           hidden;
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    margin-top:         4px;
+}
+
+#schoolName {
+	font-size:          11px;
+	color:              #757575;
+	display:            block;
+	text-align:         center;
+    line-height:        11px;
+}
+
+/* universal help button*/
+#button--admin-help {
+    color:              rgba(0,0,0,.7);
+    margin-left:        10px;
+    padding:            0px 4px 0px 10px;
+    border-radius:      20px;
+    border:             1px solid #ccc;
+    border-radius:      20px;
+    text-transform:     none;
+}
+
+/* new course runner and game header elements*/
+		
+#container--status-info {
+    width: 130px;
+}
+
+#container--status-info .row {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+#container--status-info .row1 {
+    float: left;
+    width: 90%;
+    text-align: right;
+    position: relative;
+    /*background: #acc7d9;*/
+    background: transparent;
+    border-radius: 10px;
+    padding: 2px 5px;
+    box-sizing: border-box;
+    border: 1px solid #3e92d7;
+}
+
+#odometer-mini.odometer {
+    font-weight: 400;
+    margin: 0px;
+    color: rgba(66,66,66,.8);
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif !important;
+    color: #3e92d7;
+    
+}
+
+#inner-row1 {
+    float: left;
+    width: 60%;
+    text-align: center;
+    margin-top: 3px;
+}
+
+#inner-row2 {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+/* end of line for new course runner and game header elements*/
+
+/* status level bubble css */
+#bubble--status-level {
+	display: none;
+}
+		
+#container--status-info:hover #bubble--status-level {
+	position: absolute;
+	display: block;	 
+}
+				
+#bubble--status-level {
+    /*width:                  500px;
+    height:                 250px;
+    padding:                0px;
+    background:             #fff;
+    -webkit-border-radius:  5px;
+    -moz-border-radius:     5px;
+    border-radius:          5px;
+    color:                  #fff;
+    font-size:              17px;
+	-webkit-box-shadow:     10px 10px 37px -10px rgba(0,0,0,0.5);
+	-moz-box-shadow:        10px 10px 37px -10px rgba(0,0,0,0.5);
+	box-shadow:             10px 10px 37px -10px rgba(0,0,0,0.5);
+	top: 					64px;
+    right: 					20px;
+	z-index:                9999;
+    opacity:                0.93;*/
+    background:            #ffffff;
+    filter:                 drop-shadow(0px 0px 8px rgba(163, 163, 163, 0.6));
+    width:                  500px;
+    height:                 250px;
+    border-radius:          5px;
+    padding:                0px;
+    top: 					64px;
+    right: 					20px;
+    z-index:                9999;
+}
+
+
+#bubble--status-level:after {
+    /*content: '';
+	position: absolute;
+	top: 0;
+	right: 60px;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: #ffffff;
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+    opacity: 0.70;*/
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    border-width: 0 20px 20px;
+    top: -20px;
+    right: 60px;
+    margin-left: -20px;
+}
+
+
+/* end of line for status level bubble css */
+
+@media (max-width: 1655px) {
+	.test-message {
+		font-size:          16px !important;
+		/*left:               200px !important;*/
+
+	}
+}
+
+@media (max-width: 1450px) {
+
+	.test-message {
+		font-size:          15px !important;
+	}
+}
+
+ /*
+@media (max-width: 1350px) {
+
+    .test-message {
+       left:               inherit !important;
+        right:              80px;
+        position:           absolute;
+    }
+}*/
+
+@media (max-width: 1400px) {
+
+    .test-message {
+        flex-direction:     column;
+    }
+}
+
+@media (max-width: 1040px) {
+
+    .nav-tabs {
+        width: 				70px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .test-message {
+        right:              80px;
+        height:             56px;
+    }
+
+
+    .header-title-main{
+        font-size:          15px !important;
+    }
+
+
+    .school-logo{
+
+        margin-left:        10px;
+    }
+
+   
+}
+
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+/* IE fix */
+
+/*admin*/
+.one.typesyNavLinkActive ~ hr {
+  
+  margin-left:              -670px;
+}
+
+.two.typesyNavLinkActive ~ hr {
+  
+  margin-left:              -560px;
+}
+
+.three.typesyNavLinkActive ~ hr {
+  
+   margin-left:             -450px;
+}
+/*
+.four.typesyNavLinkActive ~ hr{
+
+    margin-left: -460px;
+}
+
+.five.typesyNavLinkActive ~ hr{
+
+    margin-left: -318px;
+}
+*/
+
+.six.typesyNavLinkActive ~ hr{
+
+    margin-left:            -235px;
+}
+
+.seven.typesyNavLinkActive ~ hr{
+
+    margin-left:            -120px;
+    width:                  110px;
+}
+
+/*user*/
+
+.oneUser.typesyNavLinkActive ~ hr {
+  
+  margin-left:              -560px;
+}
+
+.twoUser.typesyNavLinkActive ~ hr {
+  
+   margin-left:             -455px;
+}
+
+.threeUser.typesyNavLinkActive ~ hr {
+  
+    margin-left:            -345px;
+}
+
+.sixUser.typesyNavLinkActive ~ hr{
+
+    margin-left:            -235px;
+}
+
+.sevenUser.typesyNavLinkActive ~ hr{
+
+    margin-left:            -117px;
+    width:                  110px;
+}
+
+}
+/*
+
+.one .typesyNavLinkActive ~ hr {
+  
+  visibility: visible;
+}
+
+.two .typesyNavLinkActive ~ hr {
+    margin-left: 0px;
+    visibility: visible;
+    transition: .2s ease-in-out;
+}
+
+.three .typesyNavLinkActive ~ hr {
+    margin-left: 0px;
+    visibility: visible;
+    transition: .2s ease-in-out;
+}
+
+.four .typesyNavLinkActive ~ hr {
+    margin-left: 0px;
+    visibility: visible;
+    transition: .2s ease-in-out;
+}
+
+.five .typesyNavLinkActive ~ hr {
+    margin-left: 0px;
+    visibility: visible;
+    transition: .2s ease-in-out;
+}
+
+
+*/
+ 
+.typesyNavLinkActive span{
+
+    margin-top:             5px;
+}
+
+.mdl-layout__header{
+
+    box-shadow:             none;
+    display:                block !important;
+}
+
+.mdl-layout__header-row {
+
+    padding:                0 30px;
+    /*TYPESY: #3e92d7 ; PREPED: #09539d*/
+    /*background:             #09539d;
+    background:             #3e92d7; */
+
+}
+
+.preped-header-row{
+    background: 			#09539d;        
+}
+
+.typesy-header-row{
+    background: 			#3e92d7;        
+}
+
+.typesy-admin-header .typesy-desktop-header-row{
+    background: 			#fafafa;  
+    border-bottom:          1px solid #ccc;      
+}
+
+
+.typesy-desktop-header-row{
+    background: 			#e0e0e0;        
+}
+
+.typesy-public-profile-header-row{
+    background: 			#fff;        
+}
+
+.mdl-popover:hover,
+.mdl-list:hover{
+
+    cursor:                 pointer;
+}
+
+.mdl-list__item:hover{
+
+    background:             #eeeeee;
+     cursor:                pointer;
+}
+
+.navLinkDiv .mdl-popover{
+
+    text-transform:         uppercase;
+}
+
+
+.back-button{
+
+    margin:                 0px 0px 0px 10px;
+    font-weight:            400;
+    font-size:              16px;
+}
+
+.header-title-main{
+
+    margin:                 0px !important;
+    font-weight:            400;          
+    text-align:             center;
+}
+
+.typesy-admin-header .header-title-main{
+    margin:                 0px !important;
+    font-weight:            400;          
+    text-align:             center;
+    font-family:            'googleFont';
+    font-size:              19px;
+}
+
+.steps-text{
+    margin:                 0 0 0 20px;
+    display:                inline-block;
+    line-height:            62px;
+    vertical-align:         top;	
+    font-weight:            400;
+}
+
+
+.navLinkDiv.mobileProfile .mdl-badge[data-badge]:after{
+    
+
+    background:             #ea0606;
+    margin-top:             3px !important;
+    
+}
+
+.navLinkDiv.mobileProfile .mdl-badge.mdl-badge--overlap:after {
+   right:                  -20px !important;
+}
+
+.mdl-badge[data-badge]:after{
+
+    background:             #ea0606;
+    margin-top:             18px;
+}
+
+.mdl-list__item-avatar, .mdl-list__item-avatar.material-icons{
+
+    height:                 35px;
+    width:                  35px;
+    background-color:       #fff;
+    font-size:              35px;
+    color:                  #09539d;
+}
+
+.typesyPublicProfileNavDiv {
+    margin: 0px 20px;
+    color: #444;
+    font-size: 14px;
+    font-family: 'Roboto', arial, sans-serif;
+    background: transparent !important;
+}
+
+.navLinkDiv {
+    /*width:                  80px;*/
+    height:                 100%;
+    margin:                 auto;
+    cursor:                 pointer;
+    /*margin-left:            24px;*/
+    font-family:           "Roboto","Helvetica","Arial",sans-serif;
+    margin-left:            15px;
+}
+
+.navLinkDiv.find-prep{
+
+    margin-right:           20px;
+}
+
+.navLink {
+
+  /*  width:                  110px;100%;*/
+    height:                 100%;
+    display:                flex;
+    align-items:            center;
+    justify-content:        center;
+    font-size:              16px;
+    text-align:             center;
+}
+
+.typesyNavLink {
+    height:                 100%;
+    display:                flex;
+    align-items:            center;
+    justify-content:        center;
+    font-size:              14px;
+    text-align:             center;
+    font-weight:            500;
+    padding:                0 15px;
+    background:             transparent;
+    box-shadow:             none;
+    text-transform:         none;
+    line-height:            25px;
+	position:               relative;
+    border-radius:          0px;
+}
+
+.dropDownList .mdl-list{
+    padding:                0px 0px;
+}
+
+#menuItemBadge {
+    margin-right:           0px;
+    right:                  24px;
+}
+
+#backButton {
+  
+    /*background:              url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/back.svg') no-repeat;
+    background-size:         32px;
+    background-position-y:   3px;
+    padding-left:            35px;
+    font-size:               20px;
+    font-family:             'thinfont';  */  
+    border:                  none;
+    outline:                 none;
+    margin-left:             20px;
+    color:                   #fff;
+    background:              transparent;
+    display:                flex;
+    align-items:            center;
+    z-index:                1;
+}
+
+#backButton:hover{
+
+   /* background:              #c5c5c5 url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/back-active.svg') no-repeat;
+    color:                   #09539d;
+  
+    background-position-y:   3px;
+    background-size:         32px;*/
+      cursor:                  pointer;
+}
+
+#headerTitleDiv {
+    position:                   absolute;
+    right:                      50%;
+    margin-right:               -525px;
+    width:                      1050px;
+    height:                     60px;
+    box-sizing:                 border-box;
+    /*align-items:                center;
+    display:                    inline-grid;
+    text-align:                 center;*/
+    display:                    flex;
+    align-items:                center;
+    justify-content:            center;
+
+    /** COMMENT OUT THE FF IF PREPED **/
+    top:                        50%;
+    margin-top:                 -30px;
+}
+
+.button--icon-next-game{
+    color:                      #616161;
+}
+
+/*
+.header-title-main{
+
+    font-weight:                400;
+    text-align:                 center;
+}*/
+
+#headerTitleDiv h1 {
+    
+    font-size:                  20px;
+   /* font-family:              'thinfont';    */
+    font-weight:                normal !important;
+    -webkit-margin-before:      0 !important;
+    -webkit-margin-after:       0 !important;
+    -webkit-margin-start:       0 !important;
+    -webkit-margin-end:         0 !important;
+    margin:                     0;
+    overflow:                    hidden;
+    text-overflow:               ellipsis;
+    white-space:                 nowrap;
+}
+
+#headerActionContentDiv {
+    font-size:                  20px;
+    font-family:                'thinfont';    
+}
+
+#homeMenuBtn {
+    cursor:                     pointer;
+    /*padding-left:               8px;*/
+}
+
+.typesy-logo {	
+	width:              150px;
+    margin-left:        -3px;
+}
+
+.nav-arrows {
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+.headerActionContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerActionButtons {
+    margin-right: 20px;
+}
+
+.options-icon {
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+    line-height: 62px;
+    margin-right: 15px;
+}
+
+.main-btns {
+    padding: 0px 0px;
+    font-size: 28px;
+    background: transparent;
+    color: #616161;
+    box-shadow: none;
+}
+
+
+		
+.mdl-button--fab[disabled][disabled] {
+    background-color: transparent !important;
+}
+		
+#ttHeadline {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3e92d7;
+    line-height: 35px;
+}
+
+#container--header-functions #ttHeadline{
+
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3e92d7;
+    line-height: 35px;
+    max-width: 			200px;
+    text-overflow: 		ellipsis;
+    overflow: 			hidden;
+    white-space: 		nowrap;
+    display: 			block;
+}
+		
+#container--header-functions {
+    display:inline-flex;
+    border: 1px solid #616161; 
+    margin-right: 10px;
+    border-radius: 10px; 
+    padding-left: 8px;
+    height: 38.2px;
+    box-sizing: border-box;
+    position: relative;
+}
+		
+.mdl-button--fab.mdl-button--mini-fab {
+    height: 35px;
+    min-width: 35px;
+    width: 38px;
+}
+
+#button--next-game{
+    color: #616161;
+}
+
+.main-btns span{
+    font-size: 			19px;
+    display:            block;
+}
+
+.main-btns .material-icons{
+    font-size:          28px;
+}
+
+@media only screen and (max-width: 1570px){
+
+    /* .typesy-admin-header #headerTitleDiv{
+             justify-content: inherit;
+             left: 270px !important;
+     }*/
+ 
+     .container--searchField {
+         display: none;
+     }
+ 
+      #button--admin-help{
+         position:           absolute;
+         top:                12px;
+         right:              70px;
+     }
+ 
+     :host /deep/ .mdl-textfield--expandable {
+         display: block;
+         position: absolute;
+         top: 13px;
+         right: 110px;
+         border-radius: 2px;
+         padding: 0px;
+         box-sizing: border-box;
+         height: 38px;
+         width: 70%;
+         display: inline-block;
+         border-radius: 10px;
+     }
+ 
+     :host /deep/ .mdl-textfield--expandable .mdl-button--icon {
+         top: 3px;
+         right: 50px;
+     }
+ 
+     :host /deep/ .mdl-textfield__expandable-holder {
+ 
+         width: 100%;
+         margin-left: 0px;
+     }
+ 
+     :host /deep/ .mdl-textfield.is-focused .mdl-textfield__expandable-holder,
+     :host /deep/ .mdl-textfield.is-dirty .mdl-textfield__expandable-holder {
+         max-width: 80%;
+         background: #edf0f2;
+         height: 30px;
+         border-radius: 8px;
+         padding: 4px;
+         position: absolute;
+         right: 40px;
+     }
+ 
+     :host /deep/ .mdl-textfield__label {
+ 
+         top: 8px;
+         left: 8px;
+         font-size: 13px;
+         color: #757575;
+         border-bottom: 0px;
+     }
+ 
+     :host /deep/ .mdl-textfield__expandable-holder .mdl-textfield__input {
+         height: 20px;
+         border-bottom: 0px;
+         padding-left: 4px;
+         padding-right: 40px;
+         color: #000;
+     }
+ }
+
+@media only screen and (max-width: 1540px){
+
+    #headerTitleDiv{
+        margin-right:           -425px;
+        width:                  850px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1470px){
+
+    .breadcrumbmainLabel{
+        max-width:              250px !important;
+    }
+
+    .reverse-ellipsis:after{
+        width:                  .7em;
+    }
+
+    .header-title-main a{
+        font-size:              16px;
+    }
+}
+
+@media only screen and (max-width: 1450px){
+
+    #headerTitleDiv{
+        margin-right:           -375px !important;
+        width:                  650px !important;
+    }
+
+ 
+
+ 
+
+}
+/*
+@media only screen and (max-width: 1570px){
+    .typesy-admin-header #headerTitleDiv{
+        position:               absolute;
+        width:                  400px;
+        height:                 60px;
+        box-sizing:             border-box;
+        display:                flex;
+        align-items:            center;
+        top:                    50%;
+        margin-top:             -30px;
+        margin-right:          -200px;
+    }
+}*/
+
+
+ /*
+@media only screen and (max-width: 1510px){
+
+    .header-title-main{
+        font-size:              18px;
+    }
+
+
+   .typesy-admin-header #headerTitleDiv{
+        position:               absolute;
+        right:                  initial;
+        width:                  500px;
+        height:                 60px;
+        box-sizing:             border-box;
+        display:                flex;
+        align-items:            center;
+        justify-content:        inherit;
+        top:                    50%;
+        margin-top:             -30px;
+        left:                   270px;
+    }
+
+    .typesy-admin-header #headerTitleDiv{
+      
+        width:                  350px;
+        margin-right:          -175px;
+    }
+
+}*/
+
+
+/*
+@media only screen and (max-width: 1330px){
+    .typesy-admin-header #headerTitleDiv{
+        width: 300px;
+        margin-right: -150px;
+    }
+}
+
+*/
+
+
+@media only screen and (max-width: 1270px){
+
+    /*.typesy-admin-header #headerTitleDiv{
+        position:               absolute;
+        right:                  initial;
+        width:                  400px;
+        height:                 60px;
+        box-sizing:             border-box;
+        display:                flex;
+        align-items:            center;
+       /* justify-content:        inherit;
+        top:                    50%;
+        margin-top:             -30px;
+        left:                   270px;
+    }
+
+     /*.typesy-admin-header #headerTitleDiv {
+      
+        width:                  300px;
+        text-align:             left;
+        justify-content:        inherit;
+    }
+
+    .header-title-main{
+
+        text-align:             left;
+    }
+
+    #headerTitleDiv {
+        left:                   300px;
+    }*/
+
+    #headerTitleDiv{
+        margin-right: -200px !important;
+        width: 400px !important;
+    }
+
+    /* adjustments*/
+    #container--header-functions #ttHeadline{
+
+        max-width: 			100px;
+    }     
+}
+
+/*
+@media only screen and (max-width: 1160px){
+
+ 
+
+    .typesy-admin-header #headerTitleDiv {
+      
+        width:                  300px;
+    }
+
+}
+*/
+@media only screen and (max-width: 1130px){
+
+    .header-title-main,
+    .back-button,
+    .steps-text{
+
+        font-size:              15px;
+        line-height:            18px;
+    }
+
+    .test-message{
+
+        right:                  150px;
+    }
+
+}
+
+/*
+@media only screen and (max-width: 1050px){
+
+    #headerTitleDiv {
+ 
+    
+        width:                  350px;
+        margin-right:           -175px;
+        left:                   270px;
+
+    }
+
+}
+*/
+
+@media only screen and (max-width: 1100px){
+
+    .breadcrumbmainLabel{
+
+        max-width:              220px !important;
+    }
+
+    .logo-row.desktop,
+    .typesy-logo.desktop {
+        display:                none;
+    }
+
+    .logo-row.mobile,
+    .logo-row2.mobile,
+    .typesy-logo.mobile {
+        display:                block;
+    }
+
+    #admin-logo-wrapper {
+        width:                  40px;
+        height:                 40px;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .typesyPublicProfileLink,
+    .typesyPublicProfileNavDiv {
+
+        display:                none !important;
+    }
+
+}
+@media only screen and (max-width: 1024px){
+
+   
+  
+    
+    .typesyPublicProfileNavDiv {
+
+        display:                none !important;
+    }
+
+    :host /deep/ .mdl-textfield--expandable{
+        top:                    8px;
+    }
+
+    hr{
+
+        visibility:             hidden;
+    }
+
+    .navLink {
+
+        display:                inherit;
+   
+
+    }
+
+    :host /deep/ .mdl-badge.mdl-badge--overlap{
+
+        margin-right:           15px; 
+    }
+
+    .back-button,
+    .steps-text{
+
+        font-size:              16px;
+    }
+
+    .steps-text{
+
+        display:                none;
+    }
+
+    .desktop-navigation{
+
+        display:                 none;
+    }
+
+    .typesy-logo{
+
+        width:                   120px;/*70px;*/
+    }
+
+    .mdl-badge[data-badge]:after{
+
+   
+        margin-top:             0px;
+    }
+
+    
+  
+
+    #searchInputDiv {
+
+        width:                  initial;
+        margin-left:            10px;
+
+    }
+
+   /* .typesy-admin-header #headerTitleDiv{
+        width:                  350px;
+        margin-right:           inherit;
+        right:                  80px;   
+        justify-content:        flex-end; 
+    }      
+
+    .typesy-admin-header #headerTitleDiv .header-title-main{
+
+       font-size:               16px;
+       text-overflow:           ellipsis;
+        overflow:               hidden;
+        white-space:            nowrap;
+    }
+
+    */
+
+    #backButton{
+
+        margin:                 0px 10px;
+    }
+
+    .navigation{
+
+        display:                block !important;
+    }
+
+    .navLinkDiv.mobileProfile{
+
+        margin-left:            15px;
+        position:               absolute;
+        top:                    9px;
+        right:                  10px;
+        height:                 initial !important;
+    }
+
+    .navLinkDiv.mobilelogin{
+
+        float:                  left;
+    }
+
+   /* #headerTitleDiv{
+        margin-right:           -50px !important;
+        width:                  400px !important;
+        left:                  330px !important;
+    }
+*/
+    .header-title-main{
+        line-height:            18px;
+    }
+
+    .typesy-admin-header #headerTitleDiv{
+        margin-right:          -325px !important;
+        width:                 650px !important;
+        left:                  inherit !important;
+      
+    }
+
+  
+    
+    
+    :host /deep/ .mdl-layout__drawer-button{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 980px){
+
+   
+    #headerTitleDiv{
+        width:                  280px !important;
+        left:                   260px !important;
+    }
+
+    .typesy-desktop-navigation #typesy-desktop-menu-container{
+
+        display:                none !important;
+    }
+
+    #homeMenuBtn{
+        margin-left: 40px;
+    }
+    
+   
+    
+}
+/*
+
+@media only screen and (max-width: 910px){
+
+    .back-button{
+
+        display:                none;
+    }
+
+    .typesy-admin-header #headerTitleDiv{
+        width:                  300px;
+        left:                   300px;
+    }
+    
+}
+*/
+@media only screen and (max-width: 870px){
+    .breadcrumbmainLabel{
+        max-width: 150px !important;
+    }
+
+}
+
+@media only screen and (max-width: 850px){
+
+    .instruction-label{
+        width:                  500px;
+        margin-right:           -250px;
+    }
+}
+
+@media only screen and (max-width: 830px){
+
+    :host /deep/ .mdl-textfield--expandable {
+        width:                  50%;
+    }   
+
+}       
+
+@media only screen and (max-width: 768px){
+
+  
+
+     .steps-text{
+
+         margin:                0px;
+     }
+    
+    .header-title,
+    .header-title-main{
+
+       font-size:               14px;
+    }
+
+    /*.typesy-admin-header #headerTitleDiv{
+        width:                  250px;
+    }*/
+
+}
+
+
+/*    
+@media only screen and (max-width: 680px){
+    .typesy-admin-header #headerTitleDiv {
+       display:             none;
+    }
+
+}
+
+
+@media only screen and (max-width: 740px){
+
+   
+    .header-title-main{
+        display:            none;
+    }
+    
+}*/
+
+/* adjustments */
+@media only screen and (max-width: 890px){
+
+   
+    .header-title-main{
+        display:            none;
+    }
+    
+    .button--icon-next-game{
+        margin-left: -200px;
+    }
+}
+
+@media only screen and (max-width: 730px){
+
+    .typesy-admin-header #headerTitleDiv{
+    	margin-right:       -325px !important;
+    	width:              400px !important;
+    	left:               170px !important;
+    	margin-right:       0px !important;
+        justify-content:    inherit;
+    }
+
+    .header-title-main a{
+        font-size:          14px;
+    }
+
+}
+
+@media only screen and (max-width: 720px){
+    .button--icon-next-game{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+    .typesy-logo{
+
+        width:                  45px;
+
+    }
+
+    .navLink{
+
+        font-size:               12px;
+        padding:                 0 5px;
+    }
+
+    .navLinkDiv{
+
+        margin-left:             10px;
+    }
+
+}
+
+@media only screen and (max-height: 850px){
+
+    .instruction-label{
+        font-size:               14px !important;
+        line-height:             20px !important;
+    }
+}

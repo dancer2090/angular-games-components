@@ -1,0 +1,93 @@
+/* public user info view */
+
+.btnsDiv{
+
+    float:                 right;
+    position:              relative;
+    border-left:           1px solid #bab8b8;
+    padding-right:         5px;
+}
+
+.publicUserContainer{
+
+   position:                absolute;
+   width:                   100%;
+   bottom:                  0px;
+   top:                     85px;/*140px;*/
+   overflow-y:              auto !important;
+   -webkit-overflow-scrolling: touch;
+   overflow-x:              hidden;
+}
+
+.publicUserInner{
+
+    max-width:              1200px;
+    height:                 100%;
+    margin:                 0px auto;
+    box-sizing:             border-box;
+    padding:                20px 0px;
+    border-right:           1px solid #ccc;
+    border-left:            1px solid #ccc;
+
+    
+}
+
+.userImgContainer{
+
+    width:                   225px;
+    height:                  225px;
+    margin:                  0px auto;
+    margin-bottom:           20px;
+
+}
+
+.userImgContainer img{
+
+    width:                   225px;
+    height:                  225px;
+    border-radius:           10px;
+    border:                  1px solid #ccc;
+ 
+}
+
+.wordListHeader{
+
+    background:             #e0e0e0;
+    padding:                10px;
+    line-height:            35px;
+    color:                  #444;
+    font-size:              30px;
+    font-family:            'thinfont';
+    line-height:            32px;
+
+}
+
+.wordListUl{
+
+    list-style-type:         none;
+}
+
+
+.wordListUl li span{
+
+    font-size:               22px;
+    color:                   #09539d;
+    text-decoration:         none;
+    line-height:             35px;
+    cursor:                  pointer;
+
+}
+
+
+
+.wordListUl li:before{
+    content:                "•";
+    font-size:              40px;
+    vertical-align:         middle;
+    line-height:            20px;
+    padding-right:          20px;
+    color:                  #444;
+
+}
+
+

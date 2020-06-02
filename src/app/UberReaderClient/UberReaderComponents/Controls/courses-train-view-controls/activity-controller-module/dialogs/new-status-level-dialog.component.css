@@ -1,0 +1,371 @@
+
+.mdl-dialog__content{
+    padding: 20px 24px 0px 24px !important;
+    color: rgba(168, 79, 79, 0.54) !important; 
+}
+
+.mdl-dialog__actions {
+    padding: 8px 0px;
+}
+
+.level-increase-dialog {
+    width: 1100px;
+    height: 650px;
+    min-height: initial;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin-top: -325px;
+    margin-right: -550px;
+    background-color: white;
+    box-shadow: 0 9px 46px 8px rgba(0,0,0,.14), 0 11px 15px -7px rgba(0,0,0,.12), 0 24px 38px 3px rgba(0,0,0,.2);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.button--primary-continueGoals {
+    min-width: 200px;
+    height: 60px;
+    font-size: 18px;
+    margin: 20px auto 0px;
+    display: block;
+}
+
+.button--primary {
+    background-color: #34ad07 !important;
+    color: #fff;
+}
+
+#container-main-grid {
+    background: url('https://resources.ereflect.com/Typesy/webApp/assets/icon/new-status-level/dialog-bg-01.svg') no-repeat;
+    /* background: url('https://resources2.ereflect.com/appfiles/assets/icon/new-status-level/dialog-bg-01.svg') no-repeat; */
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    padding: 0px 8px;
+    box-sizing: border-box;
+    background-size: cover;
+    margin-bottom: 5px;
+}
+
+.list--features {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list--features .mdl-list__item {
+    padding: 16px 6px;
+    min-height: 35px;
+    color: #fff !important;
+    font-size: 15px !important;
+    line-height: 18px;
+}
+
+.mdl-list__item .mdl-list__item-primary-content .mdl-list__item-icon,
+img.mdl-list__item-icon {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+
+#user{
+    max-width: 600px;
+    margin-left: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+label,
+li {
+      text-shadow: 1px 1px #444;
+      cursor: default !important;
+}
+
+.mdl-list__item .mdl-list__item-primary-content .mdl-list__item-icon {
+    margin-right: 15px;
+}
+
+#container--level-up-animation {
+    width: 80%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+#container--level-up-animation iframe {
+    width: 400px;
+    height: 250px;
+    margin: 0px auto;
+    animation: fadeIn 1s linear;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+.section--card-overview {
+    border-radius: 10px;
+    margin: 8px !important;
+}
+
+#container--features {
+    margin: 0px 0px 0px !important;
+    height: 360px;
+}
+
+#container--stats {
+    margin: 0px !important;
+    height: 260px;
+}
+
+#container--next-level {
+    margin: 0px !important;
+    height: 260px;
+}
+ 
+.section--header {
+     padding:  8px;
+     border-top-right-radius: 10px;
+     border-top-left-radius: 10px;
+}
+ 
+.section--content {
+    padding: 0px;
+    position: relative;
+}
+
+.label--headlines {
+    text-align: center;
+    display: block;
+    margin: 10px 0px;
+    width: 100%;
+    color: #fff;
+    background: rgba(0,0,0,.3);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 50px;    
+}
+
+.header-title-main {
+    font-weight: 400;
+    margin: 0px;
+    font-family: 'googleFont';
+    font-size: 18px;
+    color: #5f6368;
+}
+
+p {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    color: #757575;
+}
+
+#container--points {
+    text-align: center;
+    font-size: 25px;
+    color: #3e92d7;
+    font-weight: bold;    
+    animation: fadeIn 1s linear;
+    animation-fill-mode: both;  
+    animation-delay: 1s;
+}
+
+#label--subheadline{
+    font-size: 20px;
+}
+
+.odometer {
+    font-size: 45px !important;
+    background: transparent;
+    padding: 10px 20px;
+    color: #3e92d7;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.mdl-cell--7-col{
+    width: calc(58.3333333333% - 16px) !important;
+}
+
+.mdl-cell--5-col{
+    width: calc(41.6666666667% - 16px) !important;
+}
+
+/* slide animation */
+.container--labels {
+    width:100%;
+    overflow:hidden;
+    height: 70px;
+    margin-top: 10px;    
+}
+
+.container--labels #label--congrats {
+    animation: slide-down 1s;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+      
+.container--labels #label--level,
+.container--labels #label--subheadline {
+    animation: slide-left 1s;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}	
+      
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        margin-top: -100%;
+        height: 300%; 
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0%;
+        height: 100%;
+    }
+}
+      
+  
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        margin-left: 100%;
+        width: 300%; 
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+      
+  
+li {
+    animation: fadeIn 1s linear;
+    animation-fill-mode: both;
+}
+
+li:nth-child(1) {
+    animation-delay: 1.50s;
+}
+
+li:nth-child(2) {
+    animation-delay: 1.75s;
+}
+
+li:nth-child(3) {
+    animation-delay: 2s;
+}
+
+li:nth-child(4) {
+    animation-delay: 2.25s;
+}
+
+li:nth-child(5) {
+ animation-delay: 2.50s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+    75% {
+        opacity: 0.5;
+        top: 0px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-height: 680px){
+
+#container-main-grid{
+    height: 450px;
+}
+
+.container--labels{
+    height: 50px;
+}
+
+.container--labels #label--congrats{
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.container--labels #label--level{
+   font-size: 16px;
+   line-height: 16px;
+}
+
+.container--labels #label--subheadline{
+   font-size: 12px;
+   line-height: 16px;
+}
+
+.odometer{
+   font-size: 25px !important;
+   margin-left: 70px;
+   padding: 10px 0px;
+
+}
+
+#container--level-up-animation{
+    height: 220px;
+}
+
+.list--features .mdl-list__item{
+    font-size: 13px;
+}
+
+
+
+}
+
+
+@media (max-width: 900px){
+    
+    #container-main-grid{
+        height: 450px;
+    }
+    
+    .container--labels{
+        height: 50px;
+    }
+    
+    .container--labels #label--congrats{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .container--labels #label--level{
+       font-size: 16px;
+       line-height: 16px;
+    }
+    
+    .container--labels #label--subheadline{
+       font-size: 12px;
+       line-height: 16px;
+    }
+    
+    .odometer{
+       font-size: 25px !important;
+       margin-left: 70px;
+       padding: 10px 0px;
+    
+    }
+    
+    #container--level-up-animation{
+        height: 220px;
+    }
+    
+    .list--features .mdl-list__item{
+        font-size: 13px;
+    }
+    
+}

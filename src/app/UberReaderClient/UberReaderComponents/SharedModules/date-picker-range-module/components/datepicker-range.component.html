@@ -1,0 +1,19 @@
+<div class="mainContainer mdl-shadow--2dp">
+    <label class="mdl-typography--subhead mdl-color-text--grey-800 date-labels">{{fromDate | date}} - {{toDate | date}}</label>
+    <ngb-datepicker #dp (select)="onDateSelection($event)" [displayMonths]="2" [dayTemplate]="t" class="datePickerContainer">
+    </ngb-datepicker>
+    
+    <ng-template #t let-date="date" let-focused="focused">
+      <span class="custom-day"
+            [class.focused]="focused"
+            [class.range]="isFrom(date) || isTo(date) || isInside(date) || isHovered(date)"
+            [class.faded]="isHovered(date) || isInside(date)"
+            (mouseenter)="hoveredDate = date"
+            (mouseleave)="hoveredDate = null">
+        {{ date.day }}
+      </span>
+    </ng-template>
+ 
+    <button mdl-button class="button--primary button--primary-apply" mdl-button-type="raised" mdl-ripple mdl-colored="accent" (click)="datesSelected.emit({from: fromDate, to: toDate, diff: diffBtwnDates})">Apply</button>
+</div>
+

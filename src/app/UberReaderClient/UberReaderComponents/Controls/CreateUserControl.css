@@ -1,0 +1,211 @@
+/* create user */
+
+
+/*mdl*/
+.mdl-textfield{
+
+    width:                  100%;
+}
+
+/*mdl*/
+.createUserContainer{
+
+    margin:                 10px auto;
+    border-radius:          5px;
+    height:                 203px;
+    width:                  100%;
+    background:             #fff;
+    margin-bottom:          10px;
+    border:                 1px solid #ccc;
+  
+}
+
+/*
+.createUserContainer .row{
+
+    height:                 45px;
+    padding:                5px;
+    border-bottom:          1px solid #d1d1d1;
+
+}
+
+.createUserContainer .rowLast{
+
+    height:                 45px;
+    padding:                5px;
+    border-bottom:          none;
+
+}*/
+
+.createUserContainer input{
+
+    /*border:                 none; 
+    font-size:              20px;  
+    padding-top:            5px; 
+    padding-left:           50px;
+    text-align:             left !important;
+    display:                block;      
+    outline:                none;     
+    font-family:            arial;
+    width:                  350px;
+    height:                 50px; 
+    box-sizing:             border-box; */ 
+    padding-left:            5px;
+    -webkit-box-sizing:      border-box;
+    -moz-box-sizing:         border-box;
+    box-sizing:              border-box;
+    width:                   100%;
+    border-top:              none;
+    border-bottom:           1px solid #ccc;
+    border-right:            none;
+    border-left:             none;
+    width:                   100%;
+    height:                  50px;
+    font-size:               20px;
+    color:                   #000;
+    padding-left:            50px;
+    margin-bottom:           1px;
+        
+ 
+}
+
+#fullNameInput{
+
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/user-25.svg') no-repeat 10px 11px;
+    background-size:         25px;
+    -moz-border-radius:      5px 5px 0px 0px;
+    -webkit-border-radius:   5px 5px 0px 0px;
+    border-radius:           5px 5px 0px 0px;
+    border-bottom:           1px solid #ccc;
+
+}
+
+#userEmailInput{
+
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/email.svg') no-repeat 10px 11px;
+    background-size:         25px;
+    border-radius:           0px;
+
+    
+}
+
+#passwordInput{
+
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/password-13.svg') no-repeat 10px 11px;
+    background-size:         25px;
+    border-radius:           0px;
+
+}
+
+#passwordInput2{
+
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/password-13.svg') no-repeat 10px 11px;
+    background-size:         25px;
+    -moz-border-radius:      0px 0px 5px 5px;
+    -webkit-border-radius:   0px 0px 5px 5px;
+    border-radius:           0px 0px 5px 5px;
+    border-bottom:           0px;
+
+
+}
+
+
+
+#lbltermsAndCond{
+
+   text-align:              center;
+   margin-top:              5px;
+
+}
+
+/*responsive*/
+
+@media only screen and (max-height: 650px){
+
+    .fields-container .row{
+
+       width:               48%;
+       float:               left;
+
+    }
+
+}
+/*
+@media only screen and (max-height: 560px){
+
+    .fields-container{
+
+        height: 100px;
+
+    }
+
+}*/
+
+@media only screen and (max-height: 500px){
+
+    .createUserContainer{
+
+        height:               160px;
+        width:                58%;
+        margin:               0px;
+
+    }
+
+    .createUserContainer .row{
+
+        height:               40px;
+    }
+
+    .createUserContainer input{
+
+        width:                100%;
+        height:               40px;
+        font-size:            17px;
+
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .createUserContainer{
+
+        width:                  260px;
+        height:                 160px;
+
+    }
+
+    .createUserContainer input{
+
+        width:                  100%;
+        height:                 40px;
+
+    }
+
+    .createUserContainer .row{
+
+         height:                40px;
+        
+    }
+
+    #firstNameInput{
+
+        font-size:               14px;
+        background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/user-25.svg') no-repeat 10px 5px;
+        background-size:         25px;
+    }
+
+    #userEmailInput{
+        font-size:               14px;
+        background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/email.svg') no-repeat 10px 5px;
+        background-size:         25px;
+    }
+
+    #passwordInput,
+    #passwordInput2{
+        font-size:               14px !important;
+        background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/password-13.svg') no-repeat 10px 5px;
+        background-size:         25px;
+    }
+
+
+}

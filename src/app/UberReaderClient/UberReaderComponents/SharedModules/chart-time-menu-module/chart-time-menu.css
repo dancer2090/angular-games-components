@@ -1,0 +1,30 @@
+.button--dropdown {
+padding: 0px 8px;
+}
+
+.dropdown--grading{
+width: 250px;
+font-weight: 400;
+text-align: left;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+
+.dropdown--label-med {
+font-size: 18px;
+text-transform: none;
+margin: 0px;
+}
+
+.dropdown--item-icon{
+vertical-align: middle;
+}
+
+.container--top{
+text-align: right;
+}
+
+.mdl-menu__container.is-upgraded.is-visible {
+margin-right: 45px !important;
+}

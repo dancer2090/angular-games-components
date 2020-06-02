@@ -1,0 +1,45 @@
+<div class="mdl-cell mdl-cell-2-col course-col curriculum">
+    <mat-card class="course-tile curriculum mat-card-shadow">
+        <mat-card-title class="course-image curriculum ">
+            <div class="card--button-wrap">
+                <div class="card--info-container"></div>
+                <div class="card--button-container">
+                    <button mat-raised-button class="button--primary tile-button" (click)="startCurriculum()">
+                        {{ startBtnLbl }}
+                    </button>
+                    <button mat-raised-button class="flat-tile-button" (click)="moreInfo()">
+                        More Info
+                    </button>
+                    <!-- <button #clearButton *ngIf="displayClearBtn" (click)="clearCurriculum()" mat-button class="button--mat-secondary flat-tile-button">
+                        Clear
+                    </button> -->
+                </div>
+            </div>
+            <img src="{{ 'assets/icon/curriculum-icons/' + data?.Name + '.svg' | resourceLoc}}"
+                class="course-tile-img" />
+            <div class="course-description">
+                {{ data.Description }}
+            </div>
+            <div class="course-description-bullets">
+                <div class="bullets-info"><i class="material-icons">group</i>Age group {{ data.AgeGroup }}</div>
+                <div class="bullets-info"><i class="material-icons">list</i>{{ data.NumCourseCategories }} Sections
+                </div>
+                <div class="bullets-info"><i class="material-icons">library_books</i>{{ data.NumCourses }} Courses</div>
+                <div class="bullets-info"><i class="material-icons">keyboard</i>{{ data.NumCourseActivities }} Lessons
+                </div>
+                <div class="bullets-info"><i class="material-icons">watch_later</i>{{ data.EstimatedTime }} hours
+                    Learning Time
+                </div>
+            </div>
+        </mat-card-title>
+        <mat-card-subtitle class="supporting-text-2">
+            <p class="mdl-typography--subhead mdl-typography--font-bold course-title curriculum">
+                {{ data.Name }}
+            </p>
+            <div id="progress-bar-container">
+                <mat-progress-bar *ngIf="percentFinished > 0" [value]="percentFinished"></mat-progress-bar>
+                <p *ngIf="percentFinished > 0" class="mdl-typography--subhead progress-description">{{ progressDescription }}</p>
+            </div>
+        </mat-card-subtitle>        
+    </mat-card>
+</div>

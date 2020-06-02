@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Typesy Website",
+        "link1": "https://www.g2crowd.com/products/typesy/take_survey",
+        "link2": "https://download.cnet.com/Typesy/3000-2051_4-76472352.html#rateit"
+    },
+    {
+        "name": "Amazon CD",
+        "link1": "https://www.amazon.com/Typesy-Typing-Software-Version-Exclusive/dp/B07BZDW5XJ/ref=sr_1_5?keywords=typesy&qid=1551253845&s=gateway&sr=8-5",
+        "link2": "https://www.amazon.com/review/create-review/ref=cm_cr_dp_d_wr_but_btm?ie=UTF8&channel=glance-detail&asin=B07HM1PMFL"
+    },
+    {
+        "name": "Amazon Download (PC)",
+        "link1": "https://www.amazon.com/Typesy-Typing-Tutor-Software-Download/dp/B019DD08CE?th=1",
+        "link2": "https://www.amazon.com/review/create-review/ref=cm_cr_dp_d_wr_but_top/error?ie=UTF8&channel=glance-detail&asin=B019DD08CE"
+    },
+    {
+        "name": "Amazon Download (Mac)",
+        "link1": "https://www.amazon.com/Typesy-Typing-Tutor-Software-Download/dp/B01BM4221M?th=1",
+        "link2": "https://www.amazon.com/review/create-review/ref=cm_cr_dp_d_wr_but_top?ie=UTF8&channel=glance-detail&asin=B01BM4221M "
+    },
+    {
+        "name": "Chrome Web Store",
+        "link1": "https://chrome.google.com/webstore/detail/dlpbikcgcolllldhhfbfnhpcfnidllpc"
+    },
+    {
+        "name": "iOS Store",
+        "link1": "https://itunes.apple.com/us/app/typesy/id1055541079"
+    },
+    {
+        "name": "Mac App Store (desktop)",
+        "link1": "https://itunes.apple.com/us/app/typesy/id1055541079"
+    },
+    {
+        "name": "Others",
+        "link1": "https://www.g2crowd.com/products/typesy/take_survey",
+        "link2": "https://download.cnet.com/Typesy/3000-2051_4-76472352.html#rateit"
+    }
+]

@@ -1,0 +1,52 @@
+
+        <h3 *ngIf="classData == null && !bulkSetting" class="mdl-typography--headline mdl-color-text--grey-800 dialog-headline">Goals</h3>
+        <h3 *ngIf="classData != null" class="mdl-typography--headline mdl-color-text--grey-800 dialog-headline">Set goals for {{ classData.Group_name }}</h3>
+        <h3 *ngIf="bulkSetting" class="mdl-typography--headline mdl-color-text--grey-800 dialog-headline">Set goals</h3>
+        <button class="x-button close" (click)="closeDialog()" mdl-button mdl-button-type="raised" mdl-ripple mdl-colored>
+            <mdl-icon>close</mdl-icon>   
+        </button>     
+
+        <div class="mdl-dialog__content">
+            <label class="mdl-color-text--grey-800">{{ instructionText }}</label>							<br/><br/>
+            <div class="whiteBgCover1"></div>
+            <mdl-slider [min]="goal1MinValue" [max]="goal1MaxValue" [step]="5" [(ngModel)]="goal1Value"></mdl-slider>
+            <div class="whiteBgCover2"></div>
+            
+            <div class="mdl-grid">
+                <div class="goals mdl-cell mdl-cell--9-col ">
+                    <label class="mdl-typography--subhead mdl-typography--font-bold mdl-color-text--grey-800">{{ goal1Name }}</label>							<br/>
+                    <label class="mdl-color-text--grey-800 goal-description">{{ goal1Description }}</label>
+                </div>
+                <div class="goals mdl-cell mdl-cell--3-col mdl-typography--text-right">
+                    <label class="mdl-typography--subhead mdl-typography--font-bold mdl-color-text--grey-800">{{ goal1Value }}</label>
+                </div>
+            </div>
+            <br/>
+            
+            <div class="whiteBgCover1"></div>
+            <mdl-slider [min]="goal2MinValue" [max]="goal2MaxValue" [step]="5" [(ngModel)]="goal2Value"></mdl-slider>
+            <div class="whiteBgCover2"></div>
+            <div class="mdl-grid">
+                <div class="goals mdl-cell mdl-cell--9-col ">
+                    <label class="mdl-typography--subhead mdl-typography--font-bold mdl-color-text--grey-800">{{ goal2Name }}</label>							<br/>
+                    <label class="mdl-color-text--grey-800 goal-description">{{ goal2Description }}</label>
+                </div>
+                <div class="goals mdl-cell mdl-cell--3-col mdl-typography--text-right">
+                    <label class="mdl-typography--subhead mdl-typography--font-bold mdl-color-text--grey-800">{{ goal2Value }}</label>
+                </div>
+            </div>
+        </div>
+
+
+
+<div class="mdl-dialog__actions">
+    <!--button *ngIf="classData != null || bulkSetting" mdl-button mdl-button-type="raised" mdl-colored="accent" class="green-button" (click)="setGoals()"><mdl-icon class="iconButton">save</mdl-icon> Set</button>
+    <button *ngIf="classData == null && !bulkSetting" mdl-button mdl-button-type="raised" mdl-ripple class="button--primary set" (click)="setGoals()">Set</button>
+    <button *ngIf="classData == null && !bulkSetting" mdl-button mdl-button-type="raised" mdl-ripple (click)="recommend()">Recommend</button>
+    <button *ngIf="classData == null && !bulkSetting" mdl-button mdl-button-type="raised" mdl-ripple class="close" (click)="closeDialog()" >Cancel</button-->
+
+    <button *ngIf="classData != null || bulkSetting"  mat-raised-button class="button--primary" (click)="setGoals()" style="margin-left: 5px;"><mdl-icon class="iconButton">save</mdl-icon> Set</button>
+    <button *ngIf="classData == null && !bulkSetting" mat-raised-button class="button--primary set" (click)="setGoals()" style="margin-left: 5px;">Set</button>
+    <button *ngIf="classData == null && !bulkSetting" mat-raised-button class="button--mat-secondary" (click)="recommend()" style="margin-left: 5px;">Recommend</button>
+    <button *ngIf="classData == null && !bulkSetting" mat-raised-button class="button--mat-secondary close" (click)="closeDialog()" >Cancel</button>
+</div>

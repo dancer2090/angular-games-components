@@ -1,0 +1,475 @@
+.supporting-text-2 {
+
+    padding: 10px;
+    height: 130px;
+    margin-top: 5px;
+
+
+}
+
+.progress-description {
+    line-height: 15px;
+    overflow: hidden;
+    font-size: 13px;
+    margin-top: 5px;
+    z-index: 99;
+    margin-bottom: 0px;
+    height: 15px;
+    color: rgba(0, 0, 0, .54);
+}
+
+
+:host /deep/ .mdl-progress>.progressbar {
+    background-color: #34ad07;
+}
+
+:host /deep/ .mdl-progress>.bufferbar {
+    background: #CCCCCC;
+}
+
+:host /deep/ .mdl-progress {
+    height: 2px;
+    margin-top: 13px;
+}
+
+:host /deep/ .mdl-card__actions {
+
+    padding: 0px 0px 10px 0px;
+
+}
+
+/*
+
+.start-margin {
+
+    margin-top: 33px;
+}*/
+
+#donutChart{
+    width:          150px;
+    height:         100px;
+}
+
+.course-col {	
+	width:          252px;
+    position:       relative;
+}
+
+.course-tile {
+    width:          100%;
+    overflow:       visible;
+    border-radius:  5px;
+}
+
+.course-tile.active {
+    border:         2px solid #34ad07;
+}
+
+.course-tile-img {
+    position:       absolute;
+    right:          0px;
+    top:            0px;
+    width:          100%;
+    height:         auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.course-image {
+	background:     #cbcaca;
+    width:          100%;
+	height:         150px;
+	position:       relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding:        0px;
+}
+
+:host /deep/ .mdl-card__supporting-text{
+    padding:        10px;
+    height:         95px;
+    box-sizing:     border-box;
+    width:          100%;
+    z-index:        2;
+    margin-top:     5px;
+}
+
+.course-title {
+	margin:         0px;
+    font-weight:    400;
+    color:          #212121;
+    height:         40px;
+    line-height:    18px;
+    overflow:       hidden;
+}
+
+.disabled .course-title{
+    color:          #ccc;
+}
+
+.card-buttons {
+	visibility:     hidden;
+}
+
+
+/*
+.button--primary-tile {
+    width:          90px;
+	font-size:      12px;
+    /*background-color: #34ad07 !important;
+}
+*/
+/*
+.tile-button:hover {
+    color:   #fff;
+	background: #2d9506;
+}*/
+
+.flat-tile-button {
+	width:          90px;
+	color:          #fff !important;
+    width:          initial;
+    background:     transparent !important;
+	padding:        0px;
+	font-size:      12px;
+    z-index:        2;
+    border:         none !important;
+    margin-left:    3px;
+}
+
+.progress-container-2 {
+    position:       absolute;
+    bottom:         2px;
+    right:          5px;
+	width:          70px;
+	height:         70px;
+    /*display:        none;*/
+}
+
+.check-mark {
+	color:          #34ad07;
+	font-size:      70px;
+}
+
+.courseProgress {
+    bottom:         -12px;/*5px;*/
+    right:          -30px;/*5px;*/
+    position:       absolute;
+    z-index:        9;
+}
+
+.percentage-label {
+	top:            50%;
+    position:       absolute;
+    right:          50%;
+    margin-top:     -10px;
+    margin-right:   -20px;
+    width:          40px;
+    height:         40px;
+    font-size:      18px;
+    text-align:     center;
+    color:          #757575;
+}
+
+.lock-img {
+    position:       absolute;
+    right:          0px;
+    top:            0px;
+    width:          100%;
+    height:         auto;
+    z-index:        1;
+    -ms-filter:     "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+    filter:         alpha(opacity=85);
+    -moz-opacity:   0.85;
+    -khtml-opacity: 0.85;
+    opacity:        0.85;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.course-description {
+    line-height:    15px;
+    overflow:       hidden;
+    font-size:      13px;
+    margin-top:     5px;
+    z-index:        99;
+    display:        none;
+}
+
+:host /deep/ .mdl-tooltip {
+    line-height: 18px;
+}
+
+
+
+.card--button-wrap{
+	background:         rgba(0,0,0,.8);	
+	display:            none;
+	width:              100%;
+    height:             101%;
+    z-index:            2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top:         1px;
+}
+
+.disabled .card--button-wrap{
+   display:             none !important;
+}
+
+.card--button-wrap .card--info-container {
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 10px;
+	height: 80px;
+}
+	
+.card--button-wrap .card--info-container .material-icons{
+	font-size: 13px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+	    
+.card--button-wrap .card--button-container{
+
+    margin: 0px 10px;
+}
+    
+.card--button-wrap .card--button-container.play-screen{
+    margin-top: 100px;
+}
+
+.course-col:hover .card--button-wrap{
+	display: block;
+	animation: fadeIn ease .5s;
+  -webkit-animation: fadeIn ease .5s;
+  -moz-animation: fadeIn ease .5s;
+  -o-animation: fadeIn ease .5s;
+  -ms-animation: fadeIn ease .5s;
+}
+	
+.button--primary-tile:hover {
+    background-color: #286e02 !important;
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@media (max-width: 1230px) {
+	.course-col {
+	    width:          230px;
+	}
+	
+	.course-image {		
+		height:         137px;
+	}
+	
+	.progress-container-2 {
+    
+        bottom:         5px;
+        right:          5px;
+        position:       absolute;
+	}
+	
+    .percentage-label {
+		font-size:      16px;
+	}
+}
+
+@media (max-width: 1180px) {
+    
+    .course-title {
+        font-size:      14px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    
+    .card--button-wrap{
+        background:         rgba(0,0,0,.3);	
+        display:            block !important;
+        animation:          none;
+    }
+
+    .card--info-container{
+        display:            none;
+    }
+    .card--button-wrap .card--button-container{
+
+        margin:             100px 0px 0px 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .course-image {		
+        height:         147px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+	.course-col {
+		width:          245px; /*calc(33.3333333333% - 16px);*/
+	}
+}
+
+@media (max-width: 500px) {	
+	.course-col {
+		width:          318px; /*calc(100% - 16px);*/
+	}
+	
+	.tile-button {		
+		font-size:      12px;
+		min-width:      50px;
+	}
+
+	.course-title {		
+		font-size:      16px;
+	}
+	
+	.course-image {
+        height:         140px;
+    }
+}
+
+@media (max-width: 550px) {
+	.course-col {
+		width:          280px; /*calc(100% - 16px);*/
+	}
+	
+    .course-tile-img {
+        bottom:         initial;
+        height:         100%;
+        top:            0px;
+	}
+
+    .course-image {		
+		height:         167px;
+	}
+}
+
+
+
+/** {
+    box-sizing: border-box;
+}
+
+#mainContainer {
+    width: 220px;
+    display: inline-block;
+    margin: 0 30px 30px 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#mainContainer:hover:enabled {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+#upperContainer {
+    height: 124px;
+    position: relative;
+    background-color: #1E73BE;
+}
+
+#lowerContainer {
+    height: 95px;
+    position: relative;
+    padding: 10px 5px 5px 5px;
+    text-align: center;
+    background-color: white;
+}
+
+#tileLabel {
+    color: #878888;
+    font-size: 18px;
+    font-family: 'arial';
+}
+
+#hoverGroup {
+    width: 220px;
+    height: 124px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;          
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background: rgba(0,0,0,.6);
+}
+
+#hoverGroup button {
+    width: 110px;
+    height: 35px;
+    color: white;
+    font-size: 14px;
+    font-family: arial;
+    margin: 5px 0;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#hoverGroup button:hover:enabled {
+    background: rgba(0,0,0,.8);
+}
+
+.courseProgress {
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+}
+
+.courseProgress label{
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    font-size: 10px;
+}
+*/

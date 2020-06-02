@@ -1,0 +1,287 @@
+#mainContainer {
+    margin-bottom:      20px;
+    position: relative;
+}
+
+.keyboard-keys-container {
+  position:         relative;
+  margin-bottom:    5vw;
+  /* margin-bottom:    1.5%; */
+}
+
+.courses-flex-container-ltr {
+  width:              100%;
+  display:            flex;
+  flex-direction:     row;
+  flex-wrap:          nowrap;
+  margin-top:         9.3vw;
+  /* margin-top:         8%; */
+  margin-left:        19vw;
+  /* margin-left:        21%; */
+}
+
+.courses-flex-container-rtl {
+  width:              100%;
+  display:            flex;
+  flex-direction:     row-reverse;
+  flex-wrap:          nowrap;
+  justify-content:    right;
+  margin-top:         9.3vw;
+  margin-right:       18.6vw;
+  /* margin-right:       11%; */
+}
+
+.break-flex-column {
+  flex-basis:     100%;
+  width:          0;
+}
+
+.course-items-flex-1 {
+  position:         relative;
+  padding:          0 3vw 0;
+  /* padding:          0 1% 0 1%; */
+  margin:           0;
+  display:          -webkit-box;
+  display:          -moz-box;
+  display:          -ms-flexbox;
+  display:          -webkit-flex;
+  display:         flex;
+  /* flex-wrap:        nowrap; */
+  flex-wrap:          wrap;
+  flex-direction:   column;
+  justify-content:  flex-start;
+}
+
+.course-items-flex-2 {
+  position:           relative;
+  /* padding:            3vw 0 0; */
+  /* padding:            0 1% 0 1%; */
+  margin:             0;
+  display:            -webkit-box;
+  display:            -moz-box;
+  display:            -ms-flexbox;
+  display:            -webkit-flex;
+  display:          flex;
+  /* flex-wrap:          nowrap; */
+  flex-direction:     column-reverse;
+  justify-content:    flex-end;
+}
+
+.course-items-flex-last {
+  position:           relative;
+  margin:             0;
+  display:            -webkit-box;
+  display:            -moz-box;
+  display:            -ms-flexbox;
+  display:            -webkit-flex;
+  display:            flex;
+  flex-direction:     column-reverse;
+  justify-content:    flex-end;
+}
+
+.course-items-flex-end {
+  position:         relative;
+  margin:           0;
+  display:          -webkit-box;
+  display:          -moz-box;
+  display:          -ms-flexbox;
+  display:          -webkit-flex;
+  display:          flex;
+  flex-direction:     column-reverse;
+  justify-content:    flex-start;
+}
+
+.islands {
+  position:             absolute;
+  /* width:        95%; */
+  width:                96vw;
+  top:                  0;
+  left:                 2vw;
+  /* left:         4%; */
+  /* margin-bottom: 20px; */
+  -khtml-user-select:     none;
+  -o-user-select:         none;
+  -moz-user-select:       none;
+  -webkit-user-select:    none;
+  user-select:            none;
+}
+
+:host /deep/ tile-item-theme-island {
+  /* flex: 0 0 33.333333%; */
+  /* flex-basis: 30%; */
+}
+
+.bridge-left {
+  position:               absolute;
+  width:                  7vw;
+  /* width:          5%; */
+  margin-top:             -0.7vw;
+  /* margin-top:             -0.8vw; */
+  margin-left:            21.3vw;
+  /* margin-left:    25%; */
+  z-index:                1;
+  -khtml-user-select:     none;
+  -o-user-select:         none;
+  -moz-user-select:       none;
+  -webkit-user-select:    none;
+  user-select:            none;
+}
+
+.bridge-right {
+  position:               absolute;
+  width:                  7vw;
+  /* width:          5%; */
+  right:                  0;
+  margin-top:             0.1vw;
+  /* margin-top:             -1vw; */
+  margin-right:           20vw;
+  /* margin-right:   21%; */
+  z-index:                1;
+  -khtml-user-select:     none;
+  -o-user-select:         none;
+  -moz-user-select:       none;
+  -webkit-user-select:    none;
+  user-select:            none;
+}
+
+.gKbd-key {
+  width:                  4.1vw;
+  height:                 auto;
+  display:                block;
+  z-index:                2;
+  -khtml-user-select:     none;
+  -o-user-select:         none;
+  -moz-user-select:       none;
+  -webkit-user-select:    none;
+  user-select:            none;
+}
+
+.gold-keyboard-key {
+  position:               relative;
+  left:                   0.4vw;
+  bottom:                 0.5vw;
+}
+
+.gold-keyboard-key-2 {
+  position:               absolute;
+  bottom:                 4vw;
+}
+
+.gold-keyboard-key-3 {
+  position:               absolute;
+  bottom:                 9.3vw;
+}
+
+.gold-keyboard-key-4 {
+  position:               absolute;
+  bottom:                 -0.9vw;
+}
+
+.gold-keyboard-key-4-edge {
+  position:               relative;
+  bottom:                 -0.9vw;
+}
+
+.gold-keyboard-key-5 {
+  position:                absolute;
+  right:                   -0.8vw;
+  bottom:                  -1vw;
+}
+
+.gold-keyboard-key-5-edge {
+  position:               relative;
+  right:                  -0.8vw;
+  bottom:                 -1vw;
+}
+
+.gKbd-key-flag {
+  width:                  5vw;
+  height:                 auto;
+  display:                block;
+  z-index:                2;
+  -khtml-user-select:     none;
+  -o-user-select:         none;
+  -moz-user-select:       none;
+  -webkit-user-select:    none;
+  user-select:            none;
+}
+
+.gold-keyboard-key-flag {
+  position:               relative;
+  left:                   0.8vw;
+  bottom:                 2vw;
+}
+
+.gold-keyboard-key-flag-2 {
+  position:               absolute;
+  bottom:                 4.1vw;
+}
+
+.gold-keyboard-key-flag-3 {
+  position:               absolute;
+  bottom:                 9vw;
+}
+
+.gold-keyboard-key-flag-4 {
+  position:               absolute;
+  bottom:                 -1.1vw;
+}
+
+.gold-keyboard-key-flag-4-edge {
+  position:               relative;
+  bottom:                 -1.1vw;
+}
+
+.gold-keyboard-key-flag-5 {
+  position:               absolute;
+  right:                  -1.8vw;
+  bottom:                 -1vw;
+}
+
+.gold-keyboard-key-flag-5-edge {
+  position:               relative;
+  right:                  -1.8vw;
+  bottom:                 -1vw;
+}
+
+.gold-keyboard-key-flag-6 {
+  position:               absolute;
+
+}
+
+#tilesContainer {
+    padding-top:        20px;
+}
+
+#categoryLabel{
+    color:              #444444;
+    font-size:          24px;
+    font-family:        'thinfont';
+}
+
+.course-header-title {
+  margin:             50px 0px 10px;
+  display:            block;
+  padding:            7px;
+  background-color:   white !important;
+}
+
+.column-wrap{
+    float:             left;
+    width:             100%;
+}
+
+.column1{
+    width:              auto;
+    float:              left;
+}
+
+#print-icon{
+
+    margin:             60px 0px 20px 20px;
+    color:              #616161;
+    cursor:             pointer;
+    display:            block;
+    font-size:          26px;
+}
+

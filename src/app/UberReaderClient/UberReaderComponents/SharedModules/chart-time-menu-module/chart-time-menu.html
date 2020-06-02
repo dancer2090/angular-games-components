@@ -1,0 +1,9 @@
+<button mat-button [matMenuTriggerFor]="timeFilterMenu" class="button--dropdown">
+    <h4 class="mdl-color-text--grey-700  dropdown--label-large dropdown--header">{{ selectedGrouping?.label }}
+    <mdl-icon class="dropdown--item-icon">arrow_drop_down</mdl-icon></h4>
+</button>
+<mat-menu #timeFilterMenu="matMenu" class="matMenu" yPosition="below">
+    <button mat-menu-item *ngFor="let groupData of groupings" (click)="selectedGrouping = groupData; valueChanged.emit(groupData);">
+        <h4 class="mdl-color-text--grey-700  dropdown--label-menu">{{ groupData.label }}</h4>
+    </button>                            
+</mat-menu> 

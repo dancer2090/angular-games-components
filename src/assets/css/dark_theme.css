@@ -1,0 +1,1611 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* dark theme colors 
+
+grey - rgb(56, 68, 77) !important
+dark - rgb(21, 32, 43) !important
+blue - rgb(29,161,242) !important
+white - #fff !important
+
+light grey text - rgba(255,255,255,.6) !important
+.mdl-menu__outline - background: #1e2c39 !important;
+.mdl-menu__item:hover, .mat-menu-item:hover - background: rgb(21, 32, 43, .7) !important;
+floating header - #22303e !important
+*/
+
+
+
+/* scroll bars*/
+
+::-webkit-scrollbar-track
+{
+	/*-webkit-box-shadow:     inset 0 0 6px rgba(0,0,0,0.1);*/
+	background-color:       #ccc;
+    
+}
+
+/* Header */
+
+.typesy-desktop-header-row,
+.typesy-public-profile-header-row{
+    background:             rgb(21, 32, 43) !important;
+ }
+ 
+ .nav-icons .material-icons, 
+ .nav-icons span,
+ .nav-tabs .nav-text{
+    color:                  #fff !important;
+ }
+
+ #typesy-desktop-menu-container .nav-tabs:hover .nav-icons .material-icons, 
+ #typesy-desktop-menu-container .nav-tabs:hover .nav-icons span, 
+ #typesy-desktop-menu-container .nav-tabs:hover .nav-text {
+    color:                  rgb(29,161,242) !important;
+ }
+ 
+ #typesy-desktop-menu-container .nav-tabs.active .nav-icons .material-icons, 
+ #typesy-desktop-menu-container .nav-tabs.active .nav-icons span, 
+ #typesy-desktop-menu-container .nav-tabs.active .nav-text{
+    color:                  rgb(29,161,242) !important;
+ }
+ 
+ .typesy-text-grey,
+ .back-button-grey.material-icons,
+ .button--icon-next-game{
+    color:                  #fff !important;
+}
+
+#odometer-mini.odometer{
+    color:                  rgb(29,161,242) !important;
+}
+
+#container--status-info .row1{
+    border:                 1px solid rgb(29,161,242) !important;
+}
+
+#container--header-functions{
+    border:                 1px solid #fff !important;
+}
+
+#bubble--status-level {
+    filter:                 drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.6));
+}
+
+#bubble--status-level:after {
+    border-bottom-color:    rgb(21, 32, 43) !important;
+    border-color:           rgb(21, 32, 43) transparent;
+    /*box-shadow: -webkit-box-shadow: -1px 4px 29px 0px rgba(255,255,255,0.30);
+    -moz-box-shadow: -1px 4px 29px 0px rgba(255,255,255,0.30);
+    box-shadow: -1px 4px 29px 0px rgba(255,255,255,0.30);*/
+}
+
+
+
+/*
+
+#bubble--status-level .mdl-card.mdl-shadow--2dp.card--sectionsHome {
+    box-shadow: -webkit-box-shadow: -1px 4px 29px 0px rgba(255,255,255,0.30);
+                -moz-box-shadow: -1px 4px 29px 0px rgba(255,255,255,0.30);
+                box-shadow: -1px 4px 29px 0px rgba(255,255,255,0.30);
+}
+*/
+
+
+/* odometer */
+
+.odometer {
+    color:                  rgb(29,161,242) !important;
+}
+
+/* Right drawer */
+.mdl-list,
+.mdl-list__item,
+.icons {
+   color:                   #fff !important;
+}
+
+.mdl-layout__drawer-right.active{
+   Background:              rgb(21, 32, 43) !important;
+   border-right:            1px solid rgb(21, 32, 43) !important;;
+}
+
+.mdl-list__item.item--theme{
+    border-bottom:          1px solid #fff !important;
+}
+
+ /* charts */
+
+.chartBlock1.mdl-card.mdl-shadow--2dp,
+.chartBlock1Full.mdl-card.mdl-shadow--2dp,
+#dashboardHeatMap, 
+#singleHeatMap{
+    Background:             rgb(21, 32, 43) !important;
+}
+
+.lblChartTitle{
+    color:                  #fff !important;
+}
+
+ .miniChart svg text,
+ .miniChart svg g rect,
+ visual-chart svg text,
+ #curve_chart1 svg text,
+ #curve_chart1 svg g rect,
+ #piechart svg g g g text,
+ .label--heatmap-legend{
+    fill:                   #fff !important;
+ }
+
+ #piechart svg > g > g:last-child path + g text,
+ #piechart svg > g > g:last-child path + g + g text,
+ #curve_chart1 svg > g > g:last-child path + g text,
+ #curve_chart1 svg > g > g:last-child path + g + g text,
+ #chartDiv svg > g > g:last-child path + g text,
+ #chartDiv svg > g > g:last-child path + g + g text {
+    fill:                   #000 !important;
+ }
+
+ 
+
+ /* icons */
+
+ [class^="icon-"], 
+ [class*=" icon-"]{
+    color:                  #fff !important;
+    opacity:                1 !important;
+ }
+
+ .button--icon-sort, 
+ .sortIcon,
+ .material-icons.admin-icon,
+ .mat-menu-item .icon--buttonMenu--dropdown, 
+ .mat-menu-item .iconmdl--buttonMenu--dropdown{
+    color:                  #fff !important;
+ }
+
+
+
+
+/* labels */
+
+label{
+    color:                  #fff !important;
+}
+
+
+ /* cards */
+
+ .mdl-card{
+    background:             rgb(21, 32, 43) !important;
+ }
+
+
+ /* home screen */
+
+ .mdl-card{
+    color:                  #fff !important;
+ }
+
+ .mdl-card.mdl-shadow--2dp.card--sectionsHome{
+    background:             rgb(21, 32, 43) !important;
+ }
+ 
+ .card-header {
+    background:             rgb(56, 68, 77) !important;
+ }
+
+ .card--sectionsHome .header-title, .card--sectionsHome .header-title-2, 
+ #message--container,
+ .card--sectionsHome .text-description,
+ .wtdn-icons,
+ .card--sectionsHome .text-description,
+ .toolTip,
+ .toolTip1,
+ .ttTypingCompetency,
+ .refresh-icon,
+ #label--points {
+    color:                  #fff !important;
+ }
+
+ .mdl-layout__drawer-button .material-icons{
+    color:                  #fff !important;
+ }
+
+ /* hall of fame */
+
+ .card--client {
+    background:             rgb(21, 32, 43) !important;
+}
+
+.leaderboard-headline{
+    color:                  #fff !important;
+}
+
+.category-div .column,
+.nav-div .column{
+    color:                  #fff !important;
+    border-bottom:          2px solid #fff !important;
+}
+
+.category-div .column.active,
+.nav-div .column.active{
+    border-bottom:          2px solid rgb(29,161,242) !important;
+    color:                  rgb(29,161,242) !important;
+}
+
+.mdl-data-table__cell--non-numeric.header-th, 
+.header-th {
+    background:             rgb(29,161,242) !important;
+}
+
+.leaderboard-table{
+    border:                 none !important;
+    margin-left:            1px;
+}
+.leaderboard-table td{
+    color:                  #fff !important;
+}
+
+.num-position{
+    color:                  #000 !important;
+}
+
+leaderboard-report-main-view tr:nth-child(even){
+    background:             rgb(56, 68, 77, .8) !important;
+}
+
+leaderboard-report-main-view tr:nth-child(odd) {
+    background:             rgb(56, 68, 77) !important;
+}
+
+#table--container .leaderboard-table tr:nth-child(even):hover{
+    background:             rgb(56, 68, 77, .8) !important;
+}
+
+#table--container .leaderboard-table tr:nth-child(odd):hover {
+    background:             rgb(56, 68, 77) !important;
+}
+
+ /* course tiles */
+
+.course-tile.mdl-shadow--2dp.mdl-card {
+    background:             rgb(21, 32, 43) !important;
+}
+
+.course-title,
+.progress-description{
+    color:                  #fff !important;
+}
+
+.course-header-title,
+#print-icon{
+    color:                  rgba(21, 32, 43, .85) !important;
+}
+
+.disabled .course-title{
+    color:                  rgba(255,255,255,.2) !important;
+}
+
+/* curriculum tiles */
+
+.mat-drawer-container .courses-side-menu{
+    background:             rgba(21, 32, 43, .85) !important;
+}
+    
+    
+.topic-menu-label,
+.course-description,
+.course-description-bullets{
+    color:                  #fff !important;
+}
+    
+    
+.topic-menu-item.active{
+    background:             rgba(52,173,7,.80) !important;
+}
+    
+.course-tile.curriculum{
+    background:             rgb(21, 32, 43) !important;
+}
+    
+.course-image.curriculum{
+    background:             rgb(56, 68, 77) !important;
+}
+
+.courses-side-menu .mat-nav-list .mat-list-item:hover{
+    background:             rgba(21, 32, 43,.5) !important;
+}
+
+/* subheadline */
+
+.subheadline {
+    background:             rgba(21, 32, 43, .85) !important;
+    border-bottom:          1px solid rgb(21, 32, 43) !important;
+}
+
+.dropdown--header,
+.subheadline--label,
+
+.main-btns{
+    color:                  #fff !important;
+}
+
+#ttHeadline{
+    color:                  rgb(29,161,242) !important;
+}
+
+button.main-btns.mdl-button.mdl-button--fab[disabled][disabled] {
+    color:                  rgba(255, 255, 255, .50) !important;
+}
+
+
+/* tables */
+
+.table--header{
+    background:             transparent !important;
+    border-bottom:          1px solid #fff !important;
+}
+
+.th-content{
+    color:                  #fff !important;
+}
+
+.table--container-inner td,
+.menutabs--links{
+    color:                  #fff !important;
+}
+
+
+.table--content {
+    border-left:            1px solid #fff !important;
+    border-right:           1px solid #fff !important;
+}
+
+.table--container-inner td{
+    border-bottom:          1px solid #fff !important;
+}
+
+.col-content,
+.mat-sort-header-arrow{
+    color:                  #fff !important;
+}
+
+table tr td a{
+    color:                  rgb(29,161,242);
+   } 
+
+.top-border{
+    border:                 1px solid #fff;
+}
+
+users-view-component .table--container .table--content tbody tr:hover,
+classes-view-component .table--container .table--content tbody tr:hover,
+class-students-view .table--container .table--content tbody tr:hover,
+class-tests-view .table--container .table--content tbody tr:hover,
+.table--container .table--content tbody .adminRowActive {
+    background:             rgb(56, 68, 77) !important;
+}
+
+
+.table--header.floating-with-actions,
+.table--header.floating {
+    background:             #22303e !important;
+}
+
+.container--top-bar.floating-actions-container {
+    border-left:            1px solid rgba(255,255,255,.8) !important;
+    border-right:           1px solid rgba(255,255,255,.8) !important;
+    background:             #22303e !important;
+}
+
+.container--top-bar.floating--actions{
+    border-bottom:          2px solid #fff !important;
+    background:             #22303e !important;
+}
+
+/*
+.floating--header-2 {
+    border-bottom:              1px solid #fff !important;
+    background:                 rgb(56, 68, 77) !important;
+}*/
+
+.border--th{
+    background-color:       #fff;
+    
+}
+
+
+
+.mat-table,
+.mat-paginator{
+    background:             transparent !important;
+}
+
+.mat-paginator, 
+.mat-paginator-page-size .mat-select-trigger,
+.mat-select-value,
+.mat-select-arrow,
+.mat-option-text {
+    color:                  #fff !important;
+}
+
+.mat-paginator-icon {
+    fill:                   white !important;
+}
+
+.mat-select-panel,
+.mat-select-panel-wrap {
+    background:             #1e2c39 !important
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled),
+.mat-option:focus:not(.mat-option-disabled), 
+.mat-option:hover:not(.mat-option-disabled) {
+    background:             rgba(21, 32, 43, .7) !important;
+}
+
+table.mat-table tbody {
+    border:                 1px solid #fff !important;
+} 
+
+mat-footer-row, mat-header-row, mat-row, td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    border-bottom-color:    #fff !important;
+}
+
+button.mat-sort-header-button {
+    color:                  #fff !important;
+}
+
+.mat-checkbox-frame {
+    border-color:           #fff !important;
+}
+
+table.mat-table td {
+    color:                  #fff!important;
+}
+
+table.mat-table tbody tr:hover,
+.adminRowActive {
+    background:             rgb(56, 68, 77) !important;
+}
+
+/* buttons */
+
+
+table .mdl-button.mdl-button--raised{
+    color:                  #fff !important;
+    background:             rgba(56, 68, 77, .8) !important;
+}
+
+.mdl-dialog__actions .mdl-button{
+    color:                  #fff !important;
+    background:             rgba(56, 68, 77, .8) !important;
+}
+
+.button--primary {
+    background-color:       #34ad07 !important;
+    border:                 1px solid #34ad07 !important;
+}
+
+.mdl-dialog__actions .mdl-button.button--primary {
+    background-color:       #34ad07 !important;
+}
+
+.button--mat-secondary{
+    color:                  #fff !important;
+}
+.mat-raised-button[disabled][disabled]{
+
+    border:                 1px solid rgba(0,0,0,.02) !important;
+    background-color:       rgba(0,0,0,.12) !important;
+    color:                  #444 !important;
+}
+
+.mat-raised-button[disabled][disabled] [class^="icon-"], 
+.mat-raised-button[disabled][disabled] [class*=" icon-"]{
+    color:                  #444 !important;
+}
+
+.mat-raised-button[disabled][disabled]:hover{
+
+    border:                 1px solid rgba(0,0,0,.02) !important;
+    background:             rgba(0,0,0,.12) !important;
+}
+.mat-button,
+.mdl-button{
+    color:                  #fff !important;
+}
+
+
+.mat-flat-button:hover, 
+.mat-icon-button:hover, 
+.mat-stroked-button:hover{
+    background-color:       rgb(56, 68, 77) !important;
+}
+
+.button--primary.mdl-button--raised[disabled][disabled], 
+.button--primary.mdl-button--raised.mdl-button--disabled.mdl-button--disabled,
+.mdl-dialog__actions .button--primary.mdl-button--raised.mdl-button--disabled.mdl-button--disabled span[class^="icon-"], 
+.button--primary.mdl-button--raised[disabled][disabled] [class^="icon-"]{
+    color:                  rgba(255,255,255,.3) !important;
+}
+
+.mat-button[disabled][disabled]{
+    color:                  rgba(255,255,255,.20) !important;
+    background-color:       rgba(56, 68, 77, .2) !important;
+ }
+
+ 
+.dropdown--label-med,
+.dropdown--label-sm,
+.dropdown--label-xsm,
+.dropdown--item-icon{
+    color:                  #fff!important;
+}
+
+/* switch */
+
+.mdl-switch.is-checked .mdl-switch__thumb {
+    background:             rgb(29,161,242) !important;
+}
+
+.mdl-switch__label{
+    color:                  #fff !important;
+}
+
+.mdl-switch.is-disabled .mdl-switch__thumb {
+    background:             #666 !important;
+}
+
+.pref-cell-2 .mdl-switch.is-disabled .mdl-switch__track {
+    background:             rgba(255,255,255,.12) !important;
+}
+
+/* checkboxes */
+
+.mdl-checkbox__box-outline {
+    border:                 2px solid #fff  !important;
+}
+
+.mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+    border:                 2px solid rgb(29,161,242) !important;
+}
+
+.mdl-checkbox__label{
+    color:                  #fff !important;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, 
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{
+    background:             rgb(29,161,242) !important;
+}
+
+/* radio button */
+
+.mdl-radio__label{
+    color:                  #fff !important;
+}
+
+.mdl-radio__outer-circle {
+    border:                 2px solid  #fff !important;
+}
+
+.mdl-radio__inner-circle {
+   background:              rgb(29,161,242) !important
+}
+
+/* menu links */
+
+.menutabs--links{
+    color:                  #fff !important;
+    background:             transparent !important;
+}
+
+.mat-tab-link.mat-tab-label-active,
+.menutabs--links.active,
+.mat-tab-labels .mat-tab-label-active .mat-tab-label-content{
+    color:                  #71f141 !important;
+}
+
+.menutabs--links.mdl-button:hover, .menutabs--links:hover {
+    color:                  #71f141 !important;
+}
+
+.mat-ink-bar,
+hr{
+    background-color:       #71f141 !important;
+}
+
+.mat-tab-link{
+    color:                  #fff !important;
+}
+
+
+/* dropdown */
+
+
+.button--dropdown h4,
+.dropdown--label-menu,
+.mdl-menu__item {
+    color:                  #fff !important;
+}
+
+.mdl-menu__item:hover,
+.mat-menu-item:hover {
+    background:             rgba(21, 32, 43, .7) !important;
+}
+
+.mdl-menu__outline {
+    background:             #1e2c39 !important;
+}
+
+/* mat menu */
+
+.mat-menu-panel {
+    background:             #1e2c39 !important;
+}
+
+button.mat-menu-item {
+    color:                  #fff !important;
+}
+
+/* dialogs */
+
+.dialog-headline,
+.x-button{
+    color:                  #fff !important;
+    background:             transparent !important;
+}
+
+.x-button.close.mdl-button.mdl-button--raised{
+    border-radius:          50%;
+}
+.close.mdl-button.mdl-button--raised:hover{
+    background:             rgba(255,255,255,.3) !important;
+}
+
+.p-margins,
+.p-margins2 {
+    color:                  #fff !important;
+}
+
+.mat-dialog-container .mainContainer,
+.instructionsContainer{
+    background:             transparent !important;
+}
+
+.mdl-dialog__content label{
+    color:                  #fff !important;
+}
+
+/* mat dialog */
+
+.mat-dialog-container {
+    background:             rgb(21, 32, 43) !important;
+    box-shadow:             -1px 4px 29px 0px rgba(255,255,255,0.40);
+    -webkit-box-shadow:     -1px 4px 29px 0px rgba(255,255,255,0.40);
+    -moz-box-shadow:        -1px 4px 29px 0px rgba(255,255,255,0.40);
+    box-shadow:             -1px 4px 29px 0px rgba(255,255,255,0.40);
+}
+
+.cdk-overlay-dark-backdrop{
+    background:             rgba(110, 118, 125, 0.4) !important;
+}
+
+.dialog-headline {
+    color:                  #fff !important;
+}
+
+/* mdl text field inputs */
+
+.mdl-dialog__content .mdl-textfield__label,
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, 
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label, 
+.mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+    color:                  rgba(255,255,255,.5) !important;
+} 
+
+
+
+.mdl-textfield__input {
+    color:                  #fff !important;;
+}
+
+.mdl-textfield__input {
+    border-bottom:          1px solid rgba(255,255,255,.6) !important;
+}
+
+.mdl-textfield__label:after {
+    background:             rgb(29,161,242) !important
+}
+
+fieldset[disabled] .mdl-textfield .mdl-textfield__input, 
+.mdl-textfield.is-disabled .mdl-textfield__input {
+    border-bottom:          1px solid rgba(255,255,255,.2) !important;
+    color:                 rgba(255,255,255,.2) !important;
+}
+
+fieldset[disabled] .mdl-textfield .mdl-textfield__label, 
+.mdl-textfield.is-disabled.is-disabled .mdl-textfield__label {
+    color:                 rgba(255,255,255,.2) !important;
+}
+
+/* mat text field inputs */
+
+.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    color:                 rgba(255,255,255,.6) !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color:      rgba(255,255,255,.6) !important;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #fff !important;
+}
+.mat-form-field-prefix, .mat-form-field-suffix{
+    color:             #fff !important;
+}
+
+/* edit profile dialog */
+
+.display-name-label{
+    color:              rgba(255,255,255,.6) !important;
+}
+.dropdown--displayName{
+    border-bottom:      1px solid rgba(255,255,255,.6) !important;
+   
+}
+
+.button--dropdown-displayName{
+    background:         transparent !important;
+}
+/* placement test dialogs*/
+
+.headline-small,
+.goal-headline,
+placement-test-dialog .mdl-typography--display-1.mdl-typography--font-medium.mdl-color-text--grey-600.mdl-typography--text-center{
+    color:              #fff !important;
+}
+
+
+
+.card--answer-container{
+    background:         rgba(56, 68, 77, .8) !important;
+    color:              #fff !important;;
+}
+
+.card--answer-container:hover{
+    background:         rgba(56, 68, 77, .6) !important;
+}
+
+/* preferences dialog */
+
+.setting-label{
+    color:              #fff !important;
+}
+    
+.mdl-tabs__tab{
+    color:              #fff !important;
+ }
+    
+ .prefTabs.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active{
+    color:              rgb(29,161,242) !important
+ }
+ 
+.prefTabs.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+    background:         rgb(29,161,242) !important
+}
+
+/* set goals dialog */
+
+button.button--primary.set.mdl-button.mdl-button--raised.ng-star-inserted {
+    background-color:   #34ad07 !important;
+}
+
+.mdl-slider__background-upper {
+    background:         rgba(255,255,255,.66) !important;
+}
+
+/* adaptive learning dialog */
+
+.mdl-dialog__content p.mdl-color-text--grey-800.mdl-typography--subhead,
+.bluetd{
+    color:              #fff !important;
+}
+
+.greytd{
+    background-color:   rgba(255,255,255,.15) #fff !important;
+}
+
+/* exercises dialog */
+
+.search-txt .mdl-textfield__input{
+    border-bottom:      0px !important;
+}
+    
+.search-box{
+    background:         rgb(56, 68, 77) !important;
+    color:              #fff !important;
+}
+
+.search-box  .mdl-textfield__label:after {
+    background:         transparent !important;
+}
+
+.library-tile{
+
+    border:             2px solid rgb(21, 32, 43) !important;
+}
+
+button.mat-menu-item.selectedMenuItem{
+    background-color:   rgb(56, 68, 77) !important;
+}
+
+.preview-pane .mdl-textfield__label:after {
+    background:          transparent !important;
+}
+
+.library-tile::before {
+  /*  position:           absolute;
+    top:                0;
+    left:               0;
+    bottom:             0;
+    right:              0;
+    background-color:   #000;
+    opacity:            .5;
+    content:            "";
+    z-index:            -1;*/
+    position:               absolute;
+    top:                    1px;
+    left:                   2px;
+    bottom:                 5px;
+    right:                  2px;
+    background-color:       #000;
+    opacity:                .5;
+    content:                "";
+    z-index:                -1;
+    border-radius:          8px;
+}
+
+.search-icon,
+.book-title,
+.book-dot-menu .material-icons{
+    color:                  #fff !important;
+}
+
+.button--oval{
+    background:             rgb(56, 68, 77) !important;
+}
+
+mdl-menu-item.mdl-menu__item.selectedMenuItem{
+    background-color:       rgb(56, 68, 77) !important;
+}
+
+.option-li:hover {
+    background:             rgb(56, 68, 77) !important;
+}
+
+.preview-pane .mdl-textfield .mdl-textfield__input{
+
+    border-bottom:          none !important;
+}
+
+.preview-pane .mdl-textfield .mdl-textfield__input::after{
+    background:             transparent !important;
+}
+
+#usersTextAreaDiv,
+#sharedWithDivWrapper{
+    color:                  #fff;
+}
+/* login dialog*/
+
+.login-headline{
+    color:                  #fff !important;
+}
+
+.login-links{
+    color:                  rgb(29,161,242) !important;
+}
+
+/*
+.mdl-dialog__actions .button--primary-login,
+.mdl-dialog__actions .button--primary.login-button{
+    background-color: #34ad07 !important;
+}*/
+
+/* intro screen */
+
+.card--intro-screen .mdl-card__supporting-text{
+    background:             transparent !important;
+    color:                  #fff !important;
+}
+.card--intro-screen .mdl-card__title-text{
+    color:                  rgb(29,161,242) !important;
+}
+
+.card--intro-screen .mdl-card__title{
+    color:                  #fff !important;
+    background-color:       rgb(56, 68, 77) !important;
+}
+
+#wrap--video-ss-overlay{
+    background:             rgba(110, 118, 125, 0.3) !important;
+}
+
+.section--top-bottom{
+    color:                  #fff !important;
+}
+
+ /* activity screen -- */
+
+ /* lesson intro */
+
+
+ .section--center{
+    border:                 1px solid #fff !important;
+ }
+
+ .mdl-card__actions.mdl-card--border {
+    border-top:             1px solid #fff !important;
+}
+
+.closed-caption,
+.control-icon.cc{
+    color:                  #fff !important;
+}
+
+.control-icon.cc.disabled{
+   color:                   rgba(255, 255, 255,.7) !important; 
+}
+
+
+/* main card activity */
+
+#activityMainContainer .card--activity{
+    background:             rgb(21, 32, 43) !important;
+}
+
+.new-number-label{
+    color:                  #fff !important;
+}
+
+.keyboard--display img{
+    -webkit-filter:         brightness(100%);
+    filter:                 brightness(60%);
+}
+
+.new-typing-activity-container,
+.outer-container{
+    background:             transparent !important;
+}
+
+
+#textCell.currentLetter:after {
+    background:             rgba(204,204,204,.90) !important;
+}
+ /* bottom nav */
+
+.bottom-header{
+    background:             rgba(21, 32, 43, .85) !important;
+    border-top:             1px solid rgba(21, 32, 43, .85) !important;
+}
+
+.steps-text{
+    color:                  #fff !important;
+}
+ 
+ /* end activity screen -- */
+
+ /* games */
+
+ .mainContainer,
+ .scroller-container{
+     background:            rgb(21, 32, 43) !important;
+     color:                 #fff !important;
+ }
+
+#wordBox{
+    background:             rgb(21, 32, 43) !important;
+    
+}
+
+.wordBox{
+    background-color:       rgb(21, 32, 43) !important;
+}
+
+#words_mc .wordBox{
+    color:                  #fff !important;
+}
+
+ /* admin interface --*/
+
+.page-content-outer-wrap{
+    background-color:       rgb(56, 68, 77) !important;
+}
+
+.button--icon-admin .material-icons, 
+.button--icon-admin span,
+mdl-icon.close.material-icons,
+.mat-icon {
+    color:                  #fff !important;
+}
+
+.mat-menu-item .mat-icon:not([color]), 
+.mat-menu-item-submenu-trigger::after {
+    color:                  #fff !important;
+}
+
+.button--class-actions{
+    background:             rgb(56, 68, 77) !important;
+}
+
+/* header */
+
+.container--admin-reminder{
+    color:                  #f98686 !important;
+}
+#schoolName,
+.header-title-main a,
+#button--admin-help{
+    color:                  #fff !important;
+}
+
+.typesy-admin-header .typesy-desktop-header-row{
+    border-bottom:          none !important;
+}
+
+/* menu */
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    background-color:       rgba(21, 32, 43,.5) !important;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link.admin-menu{
+    color:                  #fff !important;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link.active{
+    background:             rgba(52,173,7,.80) !important;
+}
+
+.mdl-layout__drawer.is-visible {
+    Background:             rgb(21, 32, 43) !important;
+    border-right:           transparent !important;
+}
+
+.mdl-layout__drawer.is-visible.admin {
+    background:             transparent !important;
+}
+
+/* pagination */
+
+.button--page-number.active {
+    background:             rgb(29,161,242) !important;
+}
+
+.button--page-number:hover {
+    background:             rgb(56, 68, 77)  !important;
+}
+
+.pagination--size-dropdown{
+    color:                  #fff !important;
+}
+
+/* section cards */
+
+.card--admin .section--header{
+    background:             rgb(56, 68, 77) !important;
+}
+
+.card--admin .section--card-overview{
+    background:             transparent !important;
+}
+
+/* home */
+
+.header-title-main{
+    color:                  #fff !important;
+}
+
+.admin-grid .fixed-table-container-inner{
+    border:                 1px solid #ccc !important;
+}
+
+.admin-grid .fixed-table-container-inner table td {
+    border-bottom:          1px solid #ccc !important;
+}
+
+
+
+/* searchfield */
+
+.searchField {
+    background:             rgb(56, 68, 77) !important;
+    color:                  #fff !important;
+}
+
+.searchField .mdl-textfield__input {
+    border-bottom:          none !important;
+}
+
+.searchField--icon,
+.usersClearSearchBtn{
+    color:                  #fff !important;
+}
+
+.searchField .mdl-textfield__label:after {
+    background:             transparent !important;
+}
+
+
+
+/* empty screen */
+
+.empty-screen-icon-div {
+    background:             rgb(21, 32, 43) !important;
+}
+
+.empty-screen-container label{
+    color:                  #fff !important;
+}
+
+/* select container */
+
+.selection-container{
+    background:             transparent !important;
+}
+
+/* class overview */
+
+#table--mini tr td,
+.labels--subheadline button{
+    color:                  #fff !important;
+}
+
+class-overview .chartBlock1Full.mdl-card.mdl-shadow--2dp{
+    background:             transparent !important;
+}
+
+/* currriculum screen */
+
+.card-view.mdl-card{
+
+    background:             rgb(56, 68, 77) !important;
+}
+
+.curriculum-title,
+.curriculum-description{
+    color:                  #fff !important;
+}
+
+.mdl-switch__track,
+.mat-slide-toggle-bar {
+    background:             rgba(255,255,255,.46) !important;
+}
+
+
+
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background:             rgba(62,146,215,.5) !important;
+}
+
+.mdl-switch.is-checked .mdl-switch__track {
+    background:             rgba(62,146,215,.5) !important;
+}
+
+.switch--green.mdl-switch.is-checked .mdl-switch__track {
+    background:             rgba(52,173,7,.3) !important;
+}
+
+/* tests/assignments */
+
+button.button--mat-grey.mdl-shadow--2dp.mdl-button.mdl-js-button.mat-button {
+    background:             rgb(56, 68, 77) !important;
+}
+
+.mat-form-field-flex .mat-form-field-infix .mat-input-element:disabled,
+.container--dropdown label {
+    color:                  #fff !important;
+}
+
+class-test-overview-component .mat-form-field-label, 
+class-test-overview-component .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    color:                  #fff !important;
+}
+
+.select-container{
+    background:             rgba(21, 32, 43, .7) !important;
+    color:                  #fff !important;
+}
+
+.mdl-card.mdl-shadow--2dp.card--test-type{
+    background:             rgb(56, 68, 77) !important;
+}
+
+/*
+.preview-btn{
+    background: rgb(56, 68, 77) !important;
+   
+}*/
+
+/* create grading template dialog */
+
+.grade-table--content{
+    border-left:            1px solid #fff !important;
+    border-right:           1px solid #fff !important;
+    border-top:             1px solid #fff !important;
+}
+
+rect.highcharts-background {
+    fill:                   transparent !important;
+}
+
+g.highcharts-axis-labels.highcharts-yaxis-labels text,
+g.highcharts-axis-labels.highcharts-xaxis-labels text,
+g.highcharts-axis.highcharts-yaxis text tspan,
+g.highcharts-axis.highcharts-xaxis text tspan{
+    fill:                   #fff !important;
+}
+
+/* student card view */
+
+.topCardSection,
+.localCardCheckBox{
+    background:             transparent !important;
+}
+
+.student-name,
+.status-label{
+    color:                  #fff !important;
+}
+
+/* student dashboard*/
+
+.card--admin-section .mdl-textfield .mdl-textfield__input,
+.card--admin-section .mdl-textfield.is-disabled.is-disabled label.mdl-textfield__label, 
+.card--admin-section .mdl-textfield.is-disabled.is-disabled label.mdl-textfield__label,
+h6.mdl-color-text--grey-700.mdl-typography--title.mdl-typography--text-center.header-title-2 {
+    color:                  #fff !important;
+    border-bottom:          none !important;
+}
+
+/* student enrollment */
+
+
+.button--user-actions{
+    background:             rgb(56, 68, 77) !important;
+}
+
+/* student progress*/
+.mdl-expansion-panel,
+.mdl-expansion-panel__header,
+.mdl-expansion-panel__header:hover,
+.mainRow{
+    background:             transparent !important;
+}
+
+
+.mdl-expansion-panel__header--expand-icon,
+.mdl-expansion-panel__header--list-content,
+.nestedRow {
+    color:                  #fff !important;
+}
+
+.mat-expansion-panel{
+    background:             transparent !important;
+}
+.mat-expansion-panel-header-title,
+.mat-expansion-indicator::after,
+.nestedRow{
+    color:                  #fff !important;
+}
+
+.mat-expansion-panel-header.mat-expanded:hover,
+.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
+    background:             rgb(56, 68, 77) !important;
+}
+
+
+/* account screen */
+
+.manage-subscription{
+
+    border-top:             1px solid #fff !important;
+}
+
+.label--form,
+account-info-view-component .row1 .mdl-textfield__input.schoolNameField{
+
+    color:                  #fff !important;
+}
+
+.class-textfield.users .mdl-textfield__label:after{
+    background:             transparent !important;
+}
+
+/* support screen */
+
+.info-div h2,
+.info-div p{
+    color:                  #fff !important;
+}
+
+/* import users dialog */
+
+.dialog-label,
+.instructions-label{
+    color:                  #fff !important;
+}
+
+/* settings screen*/
+
+.settings--wrap{
+    background:             transparent !important;
+}
+
+.tabs-menu-link.sub{
+    color:                  #fff !important;
+}
+
+.tabs-menu-link.sub.active {
+    background:             rgb(29,161,242) !important
+}
+
+/* enroll student dialog */
+
+.list-container{
+    border:                 1px solid #fff !important
+}
+
+.list-container .mdl-list__item:hover {
+    background:             rgb(56, 68, 77) !important
+}
+
+.mdl-list__item.active{
+    background:             rgba(144, 202, 249, .4) !important
+}
+
+add-user-to-group-dialog div{
+   color:                   #fff !important;
+}
+
+add-user-to-group-dialog div a{
+   color:                   rgb(29,161,242) !important;
+}
+
+/* parent lettter*/
+
+.mdl-dialog__content p,
+#letterTxtField{
+    color:                  #fff !important;
+}
+
+/* create test dialog*/
+
+label.exercise-name{
+    background:             rgba(56, 68, 77, .3) !important;     
+}
+
+.activities-container .course-col{
+    border:                 4px solid rgb(21, 32, 43) !important;
+}
+
+.activities-container .course-col.selected,
+.activities-container .course-col:hover{
+    border:                 4px solid #34ad07 !important;
+}
+
+.activities-container .course-tile.mdl-shadow--2dp.mdl-card {
+    background:             rgb(56, 68, 77) !important;
+}   
+
+.mat-tab-label-container {
+    border-bottom:          1px solid #fff !important;
+}
+
+.mat-tab-label .mat-tab-label-content,
+button.btn.btn-outline-primary {
+    color:                  #fff!important;
+}
+
+/* reset password */
+
+#details-container{
+    background:             transparent !important;
+    border:                 1px solid #fff !important;
+}
+
+#details-container .column1,
+#details-container .column2{
+    color:                  #fff !important;
+    background:             transparent !important;
+}
+
+
+/* curriculum more info */
+
+h2.mdl-typography--display-1.mdl-typograph--font-light.headline{
+    color:                  #fff!important;
+}
+
+.mdl-data-table{
+    border:                 1px solid #fff !important;
+}
+ 
+
+.mdl-data-table td {
+     border-top:            1px solid #fff !important;
+     border-bottom:         1px solid #fff !important;
+}
+ 
+
+.mdl-data-table td.mdl-typography--text-right  a{
+     background:           rgb(56, 68, 77) !important;
+     color:                #fff !important;
+}
+ 
+/* account screens*/
+
+.details-container{
+    color:                 #fff!important;
+}
+
+.third-colc{
+    background:            rgb(56, 68, 77) !important;
+    color:                 #fff!important;
+}
+
+.top-border{
+    border:                 1px solid #fff !important;
+}
+
+/*snackbar*/
+
+.mdl-snackbar{
+    background:             #22303e !important;
+}
+
+/* clever / districts*/
+
+.sync-admin-container{
+    background:             transparent !important;
+    color:                  #fff !important;
+}
+
+.sync-admin-container img,
+.clever-logo-column {
+    filter:                 invert(1);
+}
+
+.labels--subheadline span{
+    color:                  #fff !important;
+}
+
+.mdl-typography--subhead.clever-message{
+    color:                  #fff !important;
+}
+
+img.clever-logo-msg{
+    filter:                 invert(1);
+}
+
+/* pause class */
+
+.paused-message{
+    color:                  #fff !important;
+}
+
+/* tour bubble */
+
+.popover[class*="tour-"] {
+    background:             rgba(212,212,212,.90) !important;
+    color:                  #444 !important;
+    font-weight:            400 !important;
+}
+
+.btn-default {
+    border-color:           #888 !important;
+}
+
+.btn-group .btn {
+    color:                  #444 !important;
+}
+
+
+.popover.bottom>.arrow:after{
+    border-bottom-color:    rgba(212,212,212,.90)  !important;
+}
+
+.popover.left>.arrow:after{
+    border-left-color:      rgba(212,212,212,.90)  !important;
+}
+
+
+.popover.right>.arrow:after{
+    border-right-color:     rgba(212,212,212,.90) !important;
+}
+
+.popover.top>.arrow:after{
+    border-top-color:       rgba(212,212,212,.90)  !important;
+}
+
+/* new tab bar floating headers */
+
+admin-view-component .container--top-bar,
+admin-view-component .menutabs--container,
+.table--container.screen--list .table--header,
+.table--header-topbar.floating--header-topbar{
+    background:             rgb(56, 68, 77) !important;
+}
+
+.card--wrap,
+admin-view-component .container--top-bar .searchField{
+    background:             rgb(21, 32, 43) !important;
+}
+
+.table--container.screen--list .table--content,
+.table--container.screen--list .table--header {
+    border:                 0px !important;
+}
+
+admin-view-component  table.mat-table td,
+.table--container.screen--list .table--content tr td {
+    background:             rgb(21, 32, 43) !important;
+    background-clip:        padding-box !important;
+}
+
+admin-view-component  table.mat-table tbody tr td,
+.table--container.screen--list .table--content tr td{
+
+    border-bottom:          1px solid #fff !important;
+}
+
+admin-view-component  table.mat-table tbody tr:last-child td,
+.table--container.screen--list .table--content tr:last-child td {
+    border-bottom:          0px !important;
+}
+
+admin-view-component  table.mat-table tbody tr:hover,
+admin-view-component  table.mat-table tbody tr:hover td{
+    background:             #1e2c39  !important;
+}
+
+.table--container.screen--list .table--content tr:hover,
+.table--container.screen--list .table--content tr:hover td{
+    background:             #1e2c39  !important;
+}
+
+/* edit group dialog */
+
+.mdl-cell.mdl-cell--7-col.pref-cell .button--dropdown.curriculum.mat-button[disabled][disabled]{
+    border:             1px solid #444 !important;
+}
+
+.mdl-cell.mdl-cell--7-col.pref-cell .button--dropdown.curriculum.mat-button[disabled][disabled] h4,
+.mdl-cell.mdl-cell--7-col.pref-cell .button--dropdown.curriculum.mat-button[disabled][disabled] .dropdown--item-icon{ 
+    color:              #444 !important;
+}
+
+class-test-pending-view-component p{
+    color:              #fff !important;
+}
+
+ /* end admin interface */
+
+ .mdl-tooltip{
+
+    background:         rgba(212,212,212,.90) !important;
+    color:              #444 !important;
+ }
+
+
+
+
+ 
+
+
+
+

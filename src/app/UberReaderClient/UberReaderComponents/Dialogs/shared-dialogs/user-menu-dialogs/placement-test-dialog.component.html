@@ -1,0 +1,104 @@
+<div class="mainContainer">
+    <h3 class="mdl-typography--headline mdl-color-text--grey-800 dialog-headline" [class.hide]="screen != 'questions'">Question {{ questionIndex + 1 }} of {{ questions.length }}</h3>
+    <h3 class="mdl-typography--headline mdl-color-text--grey-800 dialog-headline" [class.hide]="screen != 'results'">Results and Recommendations</h3>
+    <button class="x-button close" [class.hide]="screen == 'test'" (click)="closeDialog(false)" mdl-button mdl-button-type="raised" mdl-ripple mdl-colored>
+        <mdl-icon>close</mdl-icon>   
+    </button>
+    <div class="sectionContainer" [class.hide]="screen != 'welcome'">
+        <img src="{{ 'assets/icon/laptop.svg' | resourceLoc }}" class="welcome-img"/>
+        <label _ngcontent-c16="" class="mdl-typography--display-3 mdl-color-text--blue-600">Hello {{ displayName }}, Welcome to Typesy!</label><Br/>
+        <label _ngcontent-c16="" class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600 headline-small">Let’s customize your Typesy experience....</label>
+        <br/>
+        <!--button class="button--primary-continueGoals" mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple (click)="screen = 'questions';">Start</button-->
+        <button mat-raised-button class="button--primary button--primary-continueGoals"  (click)="screen = 'questions';">Start</button>
+    </div>
+
+    <div class="mdl-grid" [class.hide]="screen != 'questions'">  
+        <div class="mdl-cell mdl-cell--6-col center-items" >
+            <div _ngcontent-c16="" class="mdl-typography--display-1 mdl-typography--font-medium mdl-color-text--grey-600 mdl-typography--text-center">
+                {{ questions[questionIndex]?.Question_text }}
+            </div>
+            <div id="answers-container" [class.questions-disabled]="processingAnswer">	
+                <div [class.hide]="questions[questionIndex]?.Option_1 == null" [class.selected]="answerValue == '1'" class="card--answer-container mdl-card mdl-shadow--2dp" (click)="submitAnswer('1')">
+                    {{ questions[questionIndex]?.Option_1 }}
+                </div>
+                <div [class.hide]="questions[questionIndex]?.Option_2 == null" [class.selected]="answerValue == '2'" class="card--answer-container mdl-card mdl-shadow--2dp" (click)="submitAnswer('2')">
+                    {{ questions[questionIndex]?.Option_2 }}
+                </div>
+                <div [class.hide]="questions[questionIndex]?.Option_3 == null" [class.selected]="answerValue == '3'" class="card--answer-container mdl-card mdl-shadow--2dp" (click)="submitAnswer('3')">
+                    {{ questions[questionIndex]?.Option_3 }}
+                </div>
+                <div [class.hide]="questions[questionIndex]?.Option_4 == null" [class.selected]="answerValue == '4'" class="card--answer-container mdl-card mdl-shadow--2dp" (click)="submitAnswer('4')">
+                    {{ questions[questionIndex]?.Option_4 }}
+                </div>
+                <div [class.hide]="questions[questionIndex]?.Option_5 == null" [class.selected]="answerValue == '5'" class="card--answer-container mdl-card mdl-shadow--2dp" (click)="submitAnswer('5')">
+                    {{ questions[questionIndex]?.Option_5 }}
+                </div>
+                <div [class.hide]="questions[questionIndex]?.Option_6 == null" [class.selected]="answerValue == '6'" class="card--answer-container mdl-card mdl-shadow--2dp" (click)="submitAnswer('6')">
+                    {{ questions[questionIndex]?.Option_6 }}
+                </div>
+                <div [class.hide]="questions[questionIndex]?.Option_7 == null" [class.selected]="answerValue == '7'" class="card--answer-container mdl-card mdl-shadow--2dp" (click)="submitAnswer('7')">
+                    {{ questions[questionIndex]?.Option_7 }}
+                </div>
+                <div [class.hide]="questions[questionIndex]?.Option_8 == null" [class.selected]="answerValue == '8'" class="card--answer-container mdl-card mdl-shadow--2dp" (click)="submitAnswer('8')">
+                    {{ questions[questionIndex]?.Option_8 }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <router-outlet name="recommendOutlet"></router-outlet>
+
+    <div class="sectionContainer" [class.hide]="screen != 'results'">
+        <div class="icon-container">
+            <mdl-icon class="end-screen-icon">assignment</mdl-icon>
+        </div>
+        <!-- <div>
+            <div _ngcontent-c16="" class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600 mdl-typography--text-center">{{ resultText }}</div> 
+            <div _ngcontent-c16="" class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600 mdl-typography--text-center">{{ recommendationText }}</div>
+        </div> -->        
+        <div class="mdl-grid" style="text-align: left; width: 50%">
+            <div [class.hide]= "userSpeed == null" class="goals mdl-cell mdl-cell--9-col">
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600">Your speed is:</label>
+            </div>
+            <div [class.hide]= "userSpeed == null" class="goals mdl-cell mdl-cell--3-col">
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600 number">{{ userSpeed }}</label> 
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600"> WPM</label>                
+            </div>
+            <div class="goals mdl-cell mdl-cell--9-col">
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600">Your recommended goal speed is:</label>
+            </div>
+            <div class="goals mdl-cell mdl-cell--3-col">
+                <mdl-textfield type="text" [(ngModel)]="recommendedSpeed"></mdl-textfield>
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600"> WPM</label>  
+            </div>
+            <br/>
+            <br/>
+            <div [class.hide]= "userAccuracy == null" class="goals mdl-cell mdl-cell--9-col">
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600">Your accuracy is:</label>
+            </div>
+            <div [class.hide]= "userAccuracy == null" class="goals mdl-cell mdl-cell--3-col">
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600 number">{{ userAccuracy }}</label>
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600"> %</label>
+            </div>
+            <div class="goals mdl-cell mdl-cell--9-col">
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600">Your recommended goal accuracy is:</label>
+            </div>
+            <div class="goals mdl-cell mdl-cell--3-col">
+                <mdl-textfield type="text" [(ngModel)]="recommendedAccuracy"></mdl-textfield>
+                <label class="mdl-typography--headline mdl-typography--font-medium mdl-color-text--grey-600"> %</label>
+            </div>
+        </div>
+       
+        <!-- If the user has passed the placement test, both the Beginner Course and Advance Course buttons should be displayed, otherwise, ONLY the Beginner Course GREEN button should be displayed -->
+        <!--button mdl-button mdl-button-type="raised" mdl-ripple class="button--primary-continueGoals" [class.hide]="!hasPassed || isEduUser" (click)="startBeginnerCourse()">Start Beginner Course</button>
+        <button mdl-button mdl-button-type="raised" mdl-ripple class="button--primary button--primary-continueGoals" [class.hide]="isEduUser" (click)="startRecommendedCourse()">Start {{hasPassed? 'Advance' : 'Beginner'}} Course</button-->
+        
+        <button mat-raised-button class="button--primary button--primary-continueGoals" [class.hide]="!hasPassed || isEduUser" (click)="startBeginnerCourse()">Start Beginner Course</button>
+        <button mat-raised-button class="button--primary button--primary-continueGoals" [class.hide]="isEduUser" (click)="startRecommendedCourse()">Start {{hasPassed? 'Advance' : 'Beginner'}} Course</button>
+        <!-- <button mdl-button mdl-button-type="raised" mdl-ripple class="button--primary-continueGoals" [class.hide]="!isEduUser" (click)="closeDialog(true)">Cancel</button> -->
+        <!--button mdl-button mdl-button-type="raised" mdl-ripple class="button--primary button--primary-continueGoals" [class.hide]="!isEduUser" (click)="setGoals()">Set Goals</button-->
+    
+        <button mat-raised-button class="button--primary button--primary-continueGoals" [class.hide]="!isEduUser" (click)="setGoals()">Set Goals</button>
+    </div>
+</div>

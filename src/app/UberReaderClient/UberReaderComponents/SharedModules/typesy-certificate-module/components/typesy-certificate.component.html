@@ -1,0 +1,58 @@
+<div id="certificateMainContainer">
+	<img src="{{ 'assets/icon/certificate.svg' | resourceLoc}}"/>	
+	<div id="contentContainer">
+		<div class="certificateText">
+			This is to certify that
+		</div>
+		<div class="studentName">
+			{{ certificateOwner }}
+		</div>
+		<div class="certificateText">
+			has successfully completed the <span class="courseTestName">{{ certificateTitle }}</span>
+		</div>		
+		<div class="certificateText">
+			and has achieved the skill levels noted below as documented and verified by Typesy on the date of <span class="courseTestName">{{formatDate(certificateDate)}}</span>
+		</div>
+		
+		<div class="skillLevelContainer" [class.hide]="certificateSpeed == null && certificateAccuracy == null">
+			<div class="col" >
+		    <!--img src="{{ 'assets/icon/blue-bg.png' | resourceLoc}}"/-->
+				<div class="skillContent1">
+					<div class="skillLevelHeadline">
+						Typing Speed
+					</div>
+					<div class="skillLevel">
+						{{ formatNumber(certificateSpeed) }} <span class="smallText1">wpm</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<!--img src="{{ 'assets/icon/blue-bg.png' | resourceLoc}}"/-->
+			 	<div class="skillContent2">
+					<div class="skillLevelHeadline">
+						Typing Accuracy
+					</div>
+					<div class="skillLevel">
+						{{ formatNumber(certificateAccuracy) }} <span class="smallText">%</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="skillLevelContainer2" [class.hide]="certificateScore == null">
+			<div class="col">
+				<img src="{{ 'assets/icon/blue-bg.png' | resourceLoc}}"/>
+				<div class="skillContent3" style="text-align: center;">
+					<div class="skillLevelHeadline">
+						Score
+					</div>
+
+					<div class="skillLevel">
+						{{ certificateScore }} <span class="smallText1"> points</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

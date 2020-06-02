@@ -1,0 +1,258 @@
+* {
+    box-sizing:         border-box;
+}
+
+.page-content-courses {
+
+   	/*position: 			absolute;*/
+    width: 				100%;
+    overflow-y: 		auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: 		hidden;
+    /*top: 				52px;*/
+	top: 				0px;
+    bottom: 			0px;
+}
+
+.page-content-courses-inner{
+ 
+	max-width: 			1100px;
+	margin:             0px auto;
+	padding:            50px 0 20px;
+	position:           relative;
+	box-sizing:         border-box;
+}
+
+/*
+
+.page-content-courses-outer{
+    position: absolute;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    top: 52px;
+    bottom: 0px;
+}
+
+.page-content-courses {
+	max-width: 			1200px;
+	margin:             0px auto;
+	padding:            20px 0;
+	position:           relative;
+	box-sizing:         border-box;
+
+}
+
+.page-headline-container{
+
+	height:             52px !important;
+	background:         rgba(255,255,255,.9);
+}
+
+.page-headline {
+
+	margin-top:         -5px !important;
+	padding-left:       0px !important;
+	margin-left: 		-10px;
+    font-size:          20px !important;
+    text-overflow:      ellipsis;
+	overflow:           hidden;
+	white-space:        nowrap;
+}
+
+.inner-header {
+    height: 			60px;
+    box-sizing: 		border-box;
+    padding: 			0px;
+}
+
+.inner-cell {
+    margin: 			0px 8px;
+}
+
+.mdl-cell.mdl-cell--6-col.fixed-header {
+    margin-left:        0px;
+}
+*/
+/* top bar css*/
+
+.exerciseLabel {
+    width: 				45%;
+    display: 			inline-block;
+    text-align: 		right;
+	box-sizing: 		border-box;
+}
+
+.mainButtons {
+    width: 				auto;
+    display: 			inline-block;
+	margin-right: 		10px;
+	margin-left: 		10px;
+}
+
+.exercise-headline {
+    padding-left: 		0px !important;
+    font-size: 			20px !important;
+    text-overflow: 		ellipsis;
+    overflow: 			hidden;
+    white-space: 		nowrap;
+	text-align: 		right;
+	height: 			30px;
+	font-style: 		oblique;
+	cursor: 			default;
+	padding-right:      3px;
+}
+
+.exercise-title {
+    width: 				350px;
+	font-size: 			20px !important;  
+}
+
+.main-btns {	
+	margin-top: 		-30px;
+	background: 		transparent;
+	color: 				#616161;
+	box-shadow: 		none;
+}
+
+.main-btns:hover {	
+	color: 				#212121;
+	background: 		#ececec;
+}
+	
+.x-button {		
+	position: 			absolute;
+    top: 				20px;
+    right: 				20px;
+    min-width: 			20px;
+    padding: 			0px 5px;
+	background: 		transparent !important;
+	box-shadow: 		none !important;
+}
+
+#switchSetting {	
+	display: 			inline-block;
+}
+
+
+.keyboard-setting {
+    float: 				right;
+	margin-left: 		5px;
+}
+
+.col1 {	
+	width: 				auto;
+	display: 			inline-block;
+	padding-right: 		10px;
+}
+
+.col2 {	
+	width: 				40px;
+	display: 			inline-block;
+}
+
+:host /deep/ .mdl-switch.is-checked .mdl-switch__thumb {		
+	background: 		#3e92d7 !important;
+}
+	
+:host /deep/ .mdl-switch.is-checked .mdl-switch__track {
+	background: 		rgba(62,146,215,.5);
+		
+}	
+
+.mdl-cell--10-col, .mdl-cell--10-col-desktop.mdl-cell--10-col-desktop {
+    width: 				calc(83.3333333333% - 16px) !important;
+}
+
+.mdl-cell--2-col, .mdl-cell--2-col-desktop.mdl-cell--2-col-desktop {
+    width: 				calc(16.6666666667% - 16px) !important;
+}
+
+@media (max-width: 1230px) {
+	.page-content-courses-inner {
+		max-width: 		1000px;
+	}
+}
+
+@media (max-width: 1030px) {
+	.page-content-courses-inner {
+		max-width: 		800px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.game-buttons {
+        margin-top:     -20px;
+        float:          left !important;
+    }
+
+	#game-button-dropdown {
+        padding-left:   0px;
+    }
+
+    .page-headline{
+
+	    margin-top:     -10px !important;
+
+    }
+
+
+    .fixed-header {
+        width:          calc(100% - 16px)
+    }
+
+    .page-content-courses-outer {
+        top:            90px;
+    }
+
+    .page-headline {
+        padding-left:   0px !important;
+    }
+}
+
+/*
+@media (max-width: 950px) {
+	.inner-cell {
+        width: calc(75% - 16px);
+    }
+}
+*/
+
+
+@media (max-width: 840px) {
+	.mdl-cell.mdl-cell--3-col.inner-cell.mdl-typography--text-right {
+        width: 			calc(10% - 16px);
+		position: 		absolute;
+		right: 			10px;		
+	}
+}
+
+@media (max-width: 830px) {
+	.page-content-courses-inner {
+		max-width:      550px;
+	}
+}
+
+@media (max-width: 810px) {
+
+	.exerciseLabel{
+
+		width:          35%;
+	}
+
+	.exercise-headline{
+
+		font-size: 		16px !important;
+	}
+
+}
+
+
+
+@media (max-width: 550px) {
+	.page-content-courses-inner {
+		max-width:      300px;
+	}
+}
+

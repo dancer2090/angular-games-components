@@ -1,0 +1,82 @@
+
+        <h3 class="mdl-typography--headline mdl-color-text--grey-800 dialog-headline">Edit Profile</h3>
+        <button class="x-button close" (click)="closeDialog()" mdl-button mdl-button-type="raised" mdl-ripple mdl-colored>
+            <mdl-icon>close</mdl-icon>   
+        </button>
+    <div class="mdl-dialog__content">
+        <div class="profileImages">
+            <div class="image-container">
+                <img [src]="profilePic" width="155" height="155">
+                <div class="buttons-container" [class.hide]="!displayChangeProfPicButton">
+                    <!-- class="{{ allowedProfilePic == 'Avatar Only' ? 'picture-button' : 'picture-button1' }}" -->
+                    <button mdl-button mdl-ripple class="picture-button" *ngIf="allowedProfilePic == 'Avatar or Photo' || allowedProfilePic == 'Avatar Only'" (click)="openAvatarBuilder($event)"><span class="label-span">Build Avatar</span></button>                
+                    <button mdl-button mdl-ripple class="picture-button" *ngIf="allowedProfilePic == 'Avatar or Photo' || allowedProfilePic == 'Photo Only'" (click)="changeProfilePicButton_clickHandler($event)"><span class="label-span">Upload Image</span></button>                
+                    <button mdl-button mdl-ripple class="picture-button" *ngIf="profilePic != defaultProfilePic" (click)="deleteProfilePic()"><span class="label-span">Delete Image</span></button>
+                </div>
+                <input #profilePicSelector type="file" height="20" (change)="profilePicSelected()" accept="image/*" class="hide">
+            </div>
+
+            <div class="image-container">
+                <img [src]="appBackgroundImg" width="155" height="155">                
+                <button class="picture-button3" mdl-button mdl-ripple #bgImageBtn="mdlButton" (click)="openChangeBgDialog()"><span class="label-span">Change Background</span></button>  
+                <!--<button class="picture-button" mdl-button mdl-ripple #bgImageBtn="mdlButton" (click)="bgImageMenu.toggle($event, bgImageBtn)"><span class="label-span">Change Background</span></button>  
+                <mdl-menu #bgImageMenu="mdlMenu" mdl-menu-position="bottom-left">
+                    <mdl-menu-item *ngFor="let image of typesyBgImages" mdl-ripple (click)="bgImageSelectedFromDefaults(image.fileName)"> <h4 class="mdl-color-text--grey-600 bgImage-select-menu">{{ image.displayName }}</h4></mdl-menu-item>
+                </mdl-menu>-->
+            </div>
+            <input #bgImageSelector type="file" height="20" (change)="bgImageSelected()" accept="image/*" class="hide">
+        </div>
+
+        <div class="mdl-grid login-form-grid profile-grid">
+            <div class="mdl-cell mdl-cell--6-col login-form-cell">
+                <div class="profile-form">
+                    <mdl-textfield type="text" label="First Name" [class.is-invalid]="!firstNameValid" [(ngModel)]="firstName" [disabled]="!isDetailsEditable"
+                        (keyup)="textBox_TextChanged()" required disableNativeValidityChecking floating-label error-msg="Please enter first name"></mdl-textfield>
+                    <mdl-textfield type="text" label="Username" [class.is-invalid]="!userNameValid" [(ngModel)]="userName" [disabled]="!isUsernameEditable"
+                        (keyup)="textBox_TextChanged()" required disableNativeValidityChecking floating-label [error-msg]="usernameErrorMsg"></mdl-textfield>
+                    <mdl-textfield type="password" label="Password" [class.is-invalid]="!passwordValid" [class.hide]="!isDetailsEditable" [(ngModel)]="password" [disabled]="disablePasswordChange || !isDetailsEditable"
+                        disableNativeValidityChecking floating-label [error-msg]="password1ErrorMsg" (focus)="onFocusPassword('pass')" (blur)="onBlurPassword('pass')" (keyup)="passwordChanged('pass')"></mdl-textfield>
+                    <mdl-textfield type="text" label="Email" [class.is-invalid]="!emailValid" [(ngModel)]="email" [class.hide]="!isDetailsEditable && !this.user.CleverUser && !this.user.ClasslinkUser" [disabled]="!isDetailsEditable"
+                        disableNativeValidityChecking floating-label [error-msg]="emailErrorMsg"></mdl-textfield>
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--6-col login-form-cell form2">
+                <div class="profile-form">
+                    <mdl-textfield type="text" label="Last Name" [class.is-invalid]="!lastNameValid" [(ngModel)]="lastName" [disabled]="!isDetailsEditable"
+                        (keyup)="textBox_TextChanged()" required disableNativeValidityChecking floating-label error-msg="Please enter last name"></mdl-textfield>
+                    
+                    <div class="display-name">
+                        <label class="display-name-label">Display Name</label>
+                        <button mdl-button class="button--dropdown-noborder button--dropdown-displayName" #displayNameBtn="mdlButton" (click)="displayNameMenu.toggle($event, displayNameBtn)">
+                            <h4 class="dropdown--label-sm dropdown--displayName">{{ displayNameSelected.text }}
+                            <mdl-icon class="dropdown--item-icon-fixed">arrow_drop_down</mdl-icon></h4>
+                        </button>
+                        <mdl-menu #displayNameMenu="mdlMenu" mdl-menu-position="bottom-left">
+                            <mdl-menu-item *ngFor="let name of displayNames" mdl-ripple (click)="setDisplayName(name);">{{ name.text }}</mdl-menu-item>
+                        </mdl-menu>
+                    </div>
+
+                    <mdl-textfield type="password" label="Verify Password" [class.is-invalid]="!passwordValid" [class.hide]="!isDetailsEditable" [(ngModel)]="verifyPassword" [disabled]="disablePasswordChange || !isDetailsEditable"
+                        disableNativeValidityChecking floating-label [error-msg]="password2ErrorMsg" (focus)="onFocusPassword('verify')" (blur)="onBlurPassword('verify')" (keyup)="passwordChanged('verify')"></mdl-textfield>
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col login-form-cell">                                
+                <div class="col"><label class="mdl-typography--subhead">Public Profile </label></div>
+                <div class="col"><mdl-switch [(ngModel)]="allowPublicProfileAccess" mdl-ripple (click)="publicProfileAccess_clickHandler()"></mdl-switch></div>
+                <div id="link-container">
+                    <a *ngIf="allowPublicProfileAccess" (click)="viewPublicProfile_clickHandler()">View Public Profile</a>
+                    <!-- <mdl-textfield *ngIf="allowPublicProfileAccess" type="text" label="Public Profile Link" [(ngModel)]="publicProfileLink" [readonly]="true" disabled></mdl-textfield> -->
+                </div>
+            </div>
+        </div>
+ </div>
+
+<div class="mdl-dialog__actions">
+    <!--button mdl-button class="green-button login-button" mdl-button-type="raised" mdl-ripple (click)="save()">Save</button>
+    <button mdl-button class="close" mdl-button-type="raised" mdl-ripple (click)="closeDialog()">Cancel</button-->
+
+    <button mat-raised-button class="button--primary login-button"  (click)="save()">Save</button>
+    <button mat-raised-button class="button--mat-secondary close" (click)="closeDialog()">Cancel</button>
+</div>

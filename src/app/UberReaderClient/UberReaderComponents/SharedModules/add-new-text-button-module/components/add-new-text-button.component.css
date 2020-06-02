@@ -1,0 +1,30 @@
+.button--oval {
+	background: #fff;
+    border-radius: 20px;
+	text-transform: none;
+	color: #757575;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.iconGreen {
+	margin-right: 10px;
+	color: #34ad07;
+}
+
+.main-btns {
+    padding: 0px 0px;
+    font-size: 28px;
+    background: transparent;
+    color: #616161;
+    box-shadow: none;
+}
+
+.main-btns span{
+    font-size: 			19px;
+    display:            block;
+}
+
+.main-btns .material-icons{
+    font-size:          28px;
+}

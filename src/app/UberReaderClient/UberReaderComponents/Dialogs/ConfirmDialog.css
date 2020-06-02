@@ -1,0 +1,25 @@
+.alert{
+    height: initial !important;
+   
+}
+
+.alert-icon{
+    margin: 0px 20px 0px 20px;
+    float: left;
+    font-size: 100px;
+    color: #09539d;
+}
+
+#messageContainer{
+
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+
+
+    
+}
+
+.login-button{
+    margin-left: 5px;
+}

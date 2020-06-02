@@ -1,0 +1,87 @@
+
+<audio #success>
+    <source src="{{'assets/audio/success.wav' | resourceLoc}}" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>    
+<div class="mdl-dialog__content">
+<div class="mdl-grid"  id="container-main-grid">  	
+    <div class="container--labels">
+        <label _ngcontent-c16="" class="mdl-typography--display-2 label--headlines" id="label--congrats">Congratulations,<span id="user"> {{ username }}</span>!</label>
+    </div>	
+            
+    <div class="mdl-cell mdl-cell--7-col" style="margin-top: -20px;">
+        <div class="container--labels">
+            <label _ngcontent-c16="" class="mdl-typography--headline mdl-typography--font-medium label--headlines" id="label--level">You have reached the {{ newLevel.Name }} level!</label>
+        </div>
+        <div id="container--level-up-animation">
+            <iframe *ngIf="newLevel.Name == 'Silver'" src="https://resources.ereflect.com/Typesy/webApp/assets/icon/new-status-level/trophy-animation-silver.html"></iframe>
+            <iframe *ngIf="newLevel.Name == 'Gold'" src="https://resources.ereflect.com/Typesy/webApp/assets/icon/new-status-level/trophy-animation-gold.html"></iframe>
+            <iframe *ngIf="newLevel.Name == 'Platinum'" src="https://resources.ereflect.com/Typesy/webApp/assets/icon/new-status-level/trophy-animation-platinum.html"></iframe>
+            <iframe *ngIf="newLevel.Name == 'Diamond'" src="https://resource.ereflect.com/Typesy/webApp/assets/icon/new-status-level/trophy-animation-diamond.html"></iframe>
+            <!-- <iframe *ngIf="newLevel.Name == 'Silver'" src="https://resources2.ereflect.com/appfiles/assets/icon/new-status-level/trophy-animation-silver.html"></iframe>
+            <iframe *ngIf="newLevel.Name == 'Gold'" src="https://resources2.ereflect.com/appfiles/assets/icon/new-status-level/trophy-animation-gold.html"></iframe>
+            <iframe *ngIf="newLevel.Name == 'Platinum'" src="https://resources2.ereflect.com/appfiles/assets/icon/new-status-level/trophy-animation-platinum.html"></iframe>
+            <iframe *ngIf="newLevel.Name == 'Diamond'" src="https://resources2.ereflect.com/appfiles/assets/icon/new-status-level/trophy-animation-diamond.html"></iframe> -->
+            <!-- <iframe src="{{ 'assets/icon/new-status-level/trophy-animation-' + newLevel.Name.toLowerCase() + '.html' | resourceLoc }}"></iframe> -->
+        </div>
+        <div class="container--labels" style="margin-top: 0px;">
+            <div id="container--points">
+                <div #odometer id="odometer" class="odometer">0</div> points
+            </div>
+        </div>
+    </div> <!-- end cell -->	
+    <div class="mdl-cell mdl-cell--5-col" style="margin-top: -20px;">	
+        <div class="container--labels">
+            <label _ngcontent-c16="" class="mdl-typography--headline mdl-typography--font-medium label--headlines" id="label--subheadline">You have unlocked the following features:</label>
+        </div>
+        <div class="section--card-overview" id="container--features">                        
+            <div class="section--content">            
+                <ul class="list--features mdl-list">
+                    <li class="mdl-list__item mdl-typography--font-medium mdl-color-text--grey-600">
+                        <span class="mdl-list__item-primary-content">
+                            <img src="{{ 'assets/icon/new-status-level/list-icon-avatar-01.svg' | resourceLoc }}" class=" mdl-list__item-icon"/>
+                            Build Avatar - {{ newAvatarFeatures }}
+                        </span>
+                    </li>
+                    <li class="mdl-list__item mdl-typography--font-medium mdl-color-text--grey-600">
+                        <span class="mdl-list__item-primary-content">
+                            <img src="{{ 'assets/icon/new-status-level/list-icon-bg-01.svg' | resourceLoc }}" width="30" style="margin-right: 15px;"/>
+                            Background - {{ newBackgrounds }}
+                        </span>
+                    </li>
+                    <li *ngIf="newLevel.Name != 'Silver'; else silverGames" class="mdl-list__item mdl-typography--font-medium mdl-color-text--grey-600">
+                        <span class="mdl-list__item-primary-content">
+                            <img src="{{ 'assets/icon/new-status-level/list-icon-game-01.svg' | resourceLoc }}" class=" mdl-list__item-icon"/>
+                            Games - {{ newGames }}
+                        </span>
+                    </li>
+                    <ng-template #silverGames>
+                        <li class="mdl-list__item mdl-typography--font-medium mdl-color-text--grey-600">
+                            <span class="mdl-list__item-primary-content">
+                                <img src="{{ 'assets/icon/new-status-level/list-icon-game-01.svg' | resourceLoc }}" class=" mdl-list__item-icon"/>
+                                All Accuracy Building Games
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-typography--font-medium mdl-color-text--grey-600">
+                            <span class="mdl-list__item-primary-content">
+                                <img src="{{ 'assets/icon/new-status-level/list-icon-game-01.svg' | resourceLoc }}" class=" mdl-list__item-icon"/>
+                                All Speed Boosting Games
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-typography--font-medium mdl-color-text--grey-600">
+                            <span class="mdl-list__item-primary-content">
+                                <img src="{{ 'assets/icon/new-status-level/list-icon-game-01.svg' | resourceLoc }}" class=" mdl-list__item-icon"/>    
+                                All Keyboard Skills Games
+                            </span>
+                        </li>
+                    </ng-template>
+                </ul>
+            </div>                            
+        </div>
+    </div> <!-- end cell -->	
+</div> <!-- end grid-->
+
+<div class="mdl-dialog__actions">	
+    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--primary" (click)="closeDialog()">Got it</button>
+</div>
+</div>

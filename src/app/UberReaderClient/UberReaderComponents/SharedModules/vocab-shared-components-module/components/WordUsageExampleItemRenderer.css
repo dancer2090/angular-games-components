@@ -1,0 +1,205 @@
+
+
+#wordExampleBoxWrapper{
+
+    position:         relative;
+}
+
+
+
+#wordExampleBox {
+    width:             280px;
+    box-sizing:        border-box;
+    float:             left;
+    border-radius:     10px;
+    padding:           10px;
+    box-sizing:        border-box;
+    border:            1px solid #ccc;
+    color:            #444;
+    line-height:       25px;
+    /*margin:            15px 8px;*/
+    position:          relative;
+    min-height:        50px;
+    font-size:         18px;
+    cursor:            default;
+}
+
+
+
+/*
+.wordExampleBox:after{
+
+    content:                "";
+    position:               absolute;
+    bottom:                 -15px;
+    left:                   175px;
+    border-style:           solid;
+    border-width:           15px 15px 0;
+    border-color:           #ccc transparent;
+    display:                block;
+    width:                  0;
+ 
+}*/
+
+
+#wordExampleBox:after{
+    content:                '';
+    position:               absolute;
+    border-style:           solid;
+    border-width:           15px 15px 0;
+    border-color:           #FFFFFF transparent;
+    display:                block;
+    width:                  0;
+    z-index:                1;
+    bottom:                 -15px;
+    left:                   178px;
+    z-index:                0;
+}
+
+
+
+#wordExampleBox:before {
+    content:                '';
+    position:               absolute;
+    border-style:           solid;
+    border-width:           15px 15px 0;
+    border-color:           #7F7F7F transparent;
+    display:                block;
+    width:                  0;
+    z-index:                0;
+    bottom:                 -16px;
+    left:                   178px;
+    z-index:                0;
+}
+
+#showInfoBtn{
+
+    background:             transparent url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/info-icon.svg') no-repeat;
+    width:                  12px;
+    height:                 12px;
+    border:                 none;
+    position:               absolute;
+    bottom:                 10px;
+    left:                   10px;
+    
+}
+
+#showInfoBtn:hover:enabled{
+
+    background:             url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/info-icon-a.svg') no-repeat;
+    cursor:                 pointer;
+    width:                  12px;
+    height:                 12px;
+
+}
+
+
+.showInfoBox,
+.hideInfoBox,
+#exampleInfoBox{
+
+    position:               absolute;
+    top:                    0px;
+    background:             rgba(0,0,0,.7);
+    width:                  100%;
+    height:                 100%;
+    color:                  #fff;
+    border-radius:          10px;
+    padding:                10px;
+    box-sizing:             border-box;
+    left:                   0px;
+    min-height:             150px;
+    z-index:                1;
+
+}
+
+/*
+
+.showInfoBox:after,
+.hideInfoBox:after,
+#exampleInfoBox:after{
+    content:                '';
+    position:               absolute;
+    border-style:           solid;
+    border-width:           15px 15px 0;
+    border-color:           #393939 transparent;
+    display:                block;
+    width:                  0;
+    z-index:                1;
+    bottom:                 -13px;
+    left:                   178px;
+    z-index:                1;
+}*/
+
+.showInfoBox:before,
+.hideInfoBox:before,
+#exampleInfoBox:before {
+    content:                '';
+    position:               absolute;
+    border-style:           solid;
+    border-width:           15px 15px 0;
+    border-color:           #393939 transparent;
+    display:                block;
+    width:                  0;
+    z-index:                0;
+    bottom:                 -15px;
+    left:                   178px;
+    z-index:                1;
+}
+
+
+#lblwordTitle{
+    text-align:             center;
+    font-size:              16px;
+    display:                block;
+    clear:                  both;
+}
+
+#lblwordYear{
+    text-align:             center;
+    font-size:              16px;
+    display:                block;
+}
+
+#lblwordCategory{
+    text-align:             center;
+    font-size:              16px;
+}
+
+#lbldataText{
+
+    text-align:             left;
+    font-size:              11px;
+    line-height:            15px;
+    float:                  left;
+    margin-top:             5px;
+}
+
+.showInfoBox{
+    opacity:                1;
+    transition:             2s ease-in-out all;
+}
+
+#exampleInfoMid{
+
+    max-width:              120px;
+    display:                block;
+    margin:                 0px auto;
+    
+}
+
+#exampleInfoMid .col1{
+    float:                 left;
+  
+}
+
+#exampleInfoMid .col2{
+    float:                 left;
+    padding-left:          5px;
+}
+
+
+.hideInfoBox{
+    opacity:               0;
+}
+

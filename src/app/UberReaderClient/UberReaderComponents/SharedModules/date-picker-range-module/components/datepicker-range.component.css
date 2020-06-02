@@ -1,0 +1,135 @@
+.mainContainer {
+    position:       absolute; 
+    right:          130px; 
+    z-index:        9999999;  
+    background:     #ffffff;
+    padding:        15px;
+    /*bottom:         -20px;*/
+}
+
+.datePickerContainer {
+    width:          100%;
+    border:         none;
+}
+
+
+
+:host /deep/ .ngb-dp-months{
+
+    display:        -ms-flexbox;
+    display:        flex;
+    border:         none;
+    margin:         15px 0px;
+
+}
+
+:host /deep/ .ngb-dp-month{
+  
+    /*width:          45%;*/
+    width:          230px;
+    margin:         0px auto;
+}
+
+
+:host /deep/ .ngb-dp-month-name{
+   
+    height:         3rem !important;
+    line-height:    3rem !important;
+    background:     #eeeeee;
+    font-family:    Roboto;
+    color:          #444;
+    font-size:      16px;
+}
+
+:host /deep/ .ngb-dp-week.ngb-dp-weekdays{
+    background:     #e0e0e0;
+    border:         none;
+}
+
+:host /deep/ .custom-select {
+
+    font-size:      13px;
+    border:         1px solid #ccc;
+    color:          #444444;
+
+}
+
+:host /deep/ .ngb-dp-weekday{
+    font-style:     normal;
+    font-size:      12px;
+    color:          #444444;
+    width:          2.2rem;
+}
+
+:host /deep/ .ngb-dp-day, 
+:host /deep/ .ngb-dp-weekday, 
+:host /deep/ .ngb-dp-week-number{
+
+    width:          2.2rem !important;
+    height:         2.2rem !important;
+    line-height:    2rem !important;
+    font-style:     normal !important;
+    color:          #444444 !important;
+
+}
+
+.date-labels{
+
+    display:        block;
+    text-align:     center;
+    margin-bottom:  10px;
+
+}
+
+
+:host /deep/ .custom-day {
+    text-align:     center;
+    padding:        0.1rem 0rem;
+    display:        inline-block;
+    height:         2rem;
+    width:          2.2rem; 
+}
+
+.custom-day.focused {
+    background-color:   #e6e6e6;
+}
+
+.custom-day.range, .custom-day:hover {
+    background-color:   rgb(2, 117, 216);
+    color:              white;
+}
+
+.custom-day.faded {
+    background-color:   rgba(2, 117, 216, 0.5);
+}
+
+:host /deep/ .ngb-dp-day.disabled, :host /deep/ .ngb-dp-day.hidden {
+    display:            block !important;
+}
+
+.button--primary-apply{
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    position: relative;
+    height: 36px;
+    margin: 0;
+    min-width: 64px;
+    padding: 0 16px;
+    display: inline-block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}

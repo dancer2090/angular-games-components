@@ -1,0 +1,69 @@
+/* word visibility css */
+
+
+
+
+.wordListDialogContainer{
+
+    
+    position:                 absolute;
+    width:                    500px;
+    height:                   170px;
+    background:               #fff;
+    top:                      50%;
+    left:                     50%;
+    margin-left:              -250px;
+    margin-top:               -85px;
+    -webkit-box-shadow:       0px 9px 25px -2px rgba(0,0,0,0.64);
+    -moz-box-shadow:          0px 9px 25px -2px rgba(0,0,0,0.64);
+    box-shadow:               0px 9px 25px -2px rgba(0,0,0,0.64);
+    box-sizing:               border-box;
+    font-size:                14px;
+    display:                  inline-block;
+    text-align:               center;
+}
+
+.wordListDialogContainer input{
+
+    margin-bottom:            15px;
+}
+
+
+:host /deep/ .mdl-radio__label{
+
+    font-size:  14px !important;
+}
+.wordListDialogContainer #buttonGroupDiv{
+
+    margin:                   10px auto 20px !important;
+}
+
+@media only screen and (max-width: 650px){
+
+
+    .wordListDialogContainer{
+
+        width:                   320px;
+        height:                  220px;
+        margin-left:             -160px;
+        margin-top:              -110px;
+    }
+
+    .wordListDialogContainer input{
+
+        line-height:             30px;
+
+    }
+
+    .wordListDialogContainer .contentDiv{
+
+        width:                   280px;
+    }
+
+    .wordListDialogContainer input{
+
+        margin-bottom:           0px;
+        margin-top:              10px;
+    }
+
+}

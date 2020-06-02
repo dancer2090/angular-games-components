@@ -1,0 +1,76 @@
+<div class="mdl-card mdl-shadow--2dp {{ forPublicProfile ? 'card--sectionsHome' : 'card--sectionsHome' }}">
+    <div *ngIf="!isTooltip" class="mdl-grid card-header">
+        <h6 class="mdl-color-text--grey-700 mdl-typography--title header-title">Typesy Level</h6>
+    </div>
+  
+    <div class="mdl-grid inner-grid" >
+        <div class="status-container" [class.status-container2]="isTooltip">
+                <div [mdl-tooltip]="typesyLeveltt">
+                    <div id="level--current-container" >
+                        <img src="{{currentLevelMedal | resourceLoc}}"/>
+                        <div id="label--current">Current</div>
+                    </div>
+                    <div *ngIf="currentLevel?.Name != 'Diamond'; else diamondLevelTemplate">
+                        <div id="label--points" class="mdl-typography--title mdl-typography--font-light " >{{currentStatusPoints}} / {{nextLevel?.RequiredStatusPoints}}</div>
+                        <div id="progress--bar-container" >
+                            <mdl-progress [progress]="currentStatusProgress"></mdl-progress>
+                        </div>
+                        <div id="level--next-container">
+                            <img *ngIf="nextLevelMedal != ''" src="{{nextLevelMedal | resourceLoc}}"/>
+                            <div id="label--next">Next</div>
+                        </div>
+                    </div>
+                </div>
+            <ng-template #diamondLevelTemplate>
+                <div id="message--container">			
+                    <p id="label--mainHeading">Congratulations!</p><Br/>
+                    <p class="label--subHeading">You have reached the Diamond Level!</p>
+                    <p class="label--subHeading">Total Typesy Points: {{ currentStatusPoints }}</p>
+                </div>	
+            </ng-template>
+        </div>
+        <!-- <mdl-icon *ngIf="!isTooltip" class="toolTip" [mdl-tooltip]="typesyLeveltt">help_outline</mdl-icon> -->
+        <mdl-tooltip #typesyLeveltt="mdlTooltip" class="typesyLeveltt"> Use Typesy, have fun, and earn Typesy Points. You get points by doing courses and playing games. Earn enough points and you will progress to the next level. With each new level you will unlock new games, avatar features, content, and backgrounds.</mdl-tooltip>  
+        <!--<div class="mdl-cell mdl-cell--5-col mobile-width-2 ">                    
+            <h6 class="mdl-color-text--grey-700 mdl-typography--title mdl-typography--text-center header-title-2">Current Level</h6>
+            <p class="mdl-color-text--grey-600 mdl-typography--subhead mdl-typography--text-center header-title-2">{{ currentLevel }}</p>
+            <img src="{{currentLevelMedal | resourceLoc}}" class="{{ forPublicProfile ? 'medal-img-profile' : 'medal-img'}}" />
+            <br/>
+            <h6 class="mdl-color-text--grey-700 mdl-typography--title mdl-typography--text-center header-title-2">Next Level</h6>
+            <p class="mdl-color-text--grey-600 mdl-typography--subhead mdl-typography--text-center header-title-2">{{ nextLevel }}</p>
+            <img src="{{nextLevelMedal | resourceLoc}}" class="{{ forPublicProfile ? 'medal-img-profile' : 'medal-img'}}" *ngIf="nextLevelMedal != ''"/>                        
+        </div>
+    
+        <div class="mdl-cell mdl-cell--6-col mobile-width-2">
+            <div class="status-div">
+                <circular-progressbar class="hide" #progressbar backgroundColor="#3E92D7" fillColor="#34ad07"></circular-progressbar>
+                <div style="position: relative;">
+                    <div #donutChart id="{{ forPublicProfile ? 'donutChartProfile' : 'donutChart'}}"></div>
+                </div> 
+                <div class="points-div hide">
+                    <div class="{{ pointsToGo > 0 ? 'withPointsToGo' : 'withoutPointsToGo' }}">
+                        <h4 class="mdl-color-text--grey-700 mdl-typography--display-1 mdl-typography--text-center header-title-2 points">{{ currentStatusPoints }}</h4>
+                        <h6 class="mdl-color-text--grey-700 mdl-typography--title mdl-typography--text-center header-title-2 points">points collected</h6>
+                    </div>
+                    <p *ngIf="pointsToGo > 0" class="mdl-color-text--grey-700 mdl-typography--body-2 mdl-typography--text-center header-title-2 points-2">{{ pointsToGo }} points to go</p>
+                </div>
+            </div>
+            
+            <div class="legend hide">
+                <div style="float:left">
+                    <mdl-icon class="legend-icon-1">stop</mdl-icon>
+                </div>
+                <div style="float:left">
+                    <p class="mdl-color-text--grey-700 mdl-typography--body-1 mdl-typography--text-center legend-title">Points collected</p>
+                </div>
+                
+                <div style="float:left">
+                    <mdl-icon class="legend-icon-2">stop</mdl-icon>
+                </div>
+                <div style="float:left">
+                    <p class="mdl-color-text--grey-700 mdl-typography--body-1 mdl-typography--text-center legend-title">Points Required</p>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>

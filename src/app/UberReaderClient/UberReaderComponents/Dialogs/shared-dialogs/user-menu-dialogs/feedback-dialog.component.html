@@ -1,0 +1,79 @@
+
+        <h3 class="mdl-typography--headline mdl-color-text--grey-800 dialog-headline">Send Feedback</h3>
+        <button class="x-button close" (click)="closeDialog()" mdl-button mdl-button-type="raised" mdl-ripple mdl-colored>
+            <mdl-icon>close</mdl-icon>   
+        </button>
+        <div class="mdl-dialog__content">
+       <div class="feedback-content-div">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--7-col">
+                <div class="col">
+                    <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Type of Feedback</p>
+                </div>
+                <div class="col margins">
+                    <div *ngFor="let type of feedbackTypes">
+                        <mdl-radio name="typeOfFeedback" [value]="type" [(ngModel)]="feedbackType" class="typesy-radio-btns" mdl-ripple (click)="enableOkButton()">{{ type }}</mdl-radio>
+                        <Br/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="mdl-cell mdl-cell--5-col">
+                <div class="col">
+                    <p class="setting-label mdl-typography--subhead mdl-color-text--grey-800">Relating to:</p>
+                </div>
+                <div class="col margins">
+                    <div *ngFor="let source of feedbackSources">
+                        <mdl-radio name="sourceOfFeedback" [value]="source" [(ngModel)]="feedbackSource" class="typesy-radio-btns" mdl-ripple (click)="enableOkButton()">{{ source }}</mdl-radio>
+                        <Br/>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="feedback mdl-textfield mdl-js-textfield">
+            <mdl-textfield label="Please write your feedback here..." [(ngModel)]="feedbackDescription" (keyup)="enableOkButton()" rows="3" maxrows="3"></mdl-textfield>
+            <!--<textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea>
+            <label class="mdl-textfield__label" for="sample5">Please write your feedback here...</label>-->
+        </div>
+
+        <ul class="demo-list-icon mdl-list">
+            <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">fiber_manual_record</i>
+                    Thank you for submitting feedback. We will read your feedback and use it to improve the software.
+                </span>
+            </li>
+            <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">fiber_manual_record</i>
+                    If you are reporting a bug, please be as specific as possible. Tell us exactly what happened and how you made it happen.
+                </span>
+            </li>
+            <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">fiber_manual_record</i>
+                    This form cannot be used to request support. For support, please visit our website.
+                </span>
+            </li>
+            <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">fiber_manual_record</i>
+                    You will also be sending information about your typesy account and the state of the software. No private data is collected.
+                </span>
+            </li>
+        </ul>
+        </div>
+        </div>
+
+        <div class="mdl-dialog__actions">
+            <!--button mdl-button class="button--primary login-button" (click)="sendFeedback()" [disabled]="!enableOkBtn" mdl-button-type="raised" mdl-ripple>Send</button>
+            <button mdl-button class="close" (click)="closeDialog()" mdl-button-type="raised" mdl-ripple>Cancel</button-->
+
+            <button mat-raised-button class="button--primary login-button" (click)="sendFeedback()" [disabled]="!enableOkBtn">
+                Send
+            </button>
+            <button mat-raised-button class="button--mat-secondary close"  (click)="closeDialog()">
+                Cancel
+            </button>
+        </div>

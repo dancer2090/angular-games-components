@@ -1,0 +1,786 @@
+/* login */
+
+.disableDialogOverlay {
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    z-index:                  200000;
+}
+
+.disableDialog{
+    width:                    100%;
+    height:                   100%;
+    background:               rgba(255,255,255,.5);
+}
+
+.mdl-textfield{
+    width:                      100%;
+}
+
+
+:host /deep/ .mdl-textfield textarea.mdl-textfield__input {		
+    height:                     200px;
+    border:                     1px solid #ccc;
+    padding:                    5px;
+}
+
+.login-form-grid {
+    padding:                    1em;
+}
+
+.login-links{		
+    color:                      #09539d;
+    text-decoration:            underline;
+    cursor:                     pointer;
+}
+
+.loginDialogOverlay{
+
+    width:                   100%;
+    height:                  100%;
+    background:               rgba(0,0,0,.7);
+    position:                absolute;
+    top:                     0;
+    left:                    0;
+    z-index:                 4;
+
+}
+
+.loginDialogContainer{
+
+    width:                   485px;
+    height:                  540px;
+    position:                absolute;
+    top:                     50%;
+    left:                    50%;
+    margin-left:             -242.5px;
+    margin-top:              -270px;
+    -webkit-box-shadow:      0px 9px 25px -2px rgba(0,0,0,0.64);
+    -moz-box-shadow:         0px 9px 25px -2px rgba(0,0,0,0.64);
+    box-shadow:              0px 9px 25px -2px rgba(0,0,0,0.64);
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/login-bg.svg') no-repeat;
+
+}
+
+
+
+.dialogHeader{
+
+    background:              #09539d;
+    width:                   100%;
+    height:                  30px;
+}
+
+.dialogHeader h3{
+
+    color:                   #fff;
+    font-size:               12px;
+    padding:                 0px 10px;
+    font-weight:             normal !important;
+    margin:                  0;
+    line-height:             30px;
+}
+
+.lblsignUp{
+
+    text-align:              center;
+    color:                   #444;
+    margin-bottom:           10px;
+    display:                 block;
+}
+
+.lblHeading{
+
+    font-size:               27px;
+    line-height:             35px;
+}
+
+.lblsubHeading{
+
+    font-size:               17px;
+    line-height:             19px;
+}
+
+.lblLink{
+
+    color:                   #09539d;
+    text-decoration:         underline;
+    font-size:               17px;
+    background:              none;
+    border:                  none;
+}
+
+.lblLink:hover:enabled{
+
+    cursor:                  pointer;
+}
+
+
+#inputWrap input::-webkit-input-placeholder {
+   color:                   #999;
+}
+
+#inputWrap input:-moz-placeholder { /* Firefox 18- */
+   color:                   #999;  
+}
+
+#inputWrap input::-moz-placeholder {  /* Firefox 19+ */
+   color:                   #999; 
+}
+
+#inputWrap input:-ms-input-placeholder {  
+   color:                   #999;
+}
+
+
+
+.loginLogo{
+
+    background:              url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/prep-ed-logo-login-160.svg') no-repeat;
+    background-size:         120px 50px;
+    width:                   120px;
+    height:                  50px;
+    position:                absolute;
+    bottom:                  10px;
+    left:                    50%;
+    margin-left:             -60px;
+}
+
+.loginDetailsWrap{
+
+    text-align:              center;
+    padding:                 10px 20px;
+    position:                relative;
+    height:                  490px;
+
+}
+
+#inputWrap{
+    border:                 1px solid #ccc;
+    border-radius:          5px;
+    padding:                0px;
+    margin-bottom:          30px;
+    height:                 100px;
+}
+
+.loginDetailsWrap input{
+
+    -moz-border-radius:      5px 5px 0px 0px;
+    -webkit-border-radius:   5px 5px 0px 0px;
+    border-radius:           5px 5px 0px 0px;
+    padding-left:            5px;
+    -webkit-box-sizing:      border-box;
+    -moz-box-sizing:         border-box;
+    box-sizing:              border-box;
+    width:                   360px;
+    border-top:              none;
+    border-bottom:           1px solid #ccc;
+    border-right:            none;
+    border-left:             none;
+    width:                   100%;
+    height:                  50px;
+    font-size:               20px;
+    color:                   #000;
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/email.svg') no-repeat 10px 11px;
+    background-size:         25px;
+    padding-left:            50px;
+    margin-bottom:           1px;
+    
+    
+}
+
+.loginDetailsWrap input[type="password"]{
+
+    -moz-border-radius:      0px 0px 5px 5px !important;
+    -webkit-border-radius:   0px 0px 5px 5px !important;
+    border-radius:           0px 0px 5px 5px !important;
+    padding-left:            5px;
+    -webkit-box-sizing:      border-box;
+    -moz-box-sizing:         border-box;
+    box-sizing:              border-box;
+    border-top:              none;
+    width:                   360px;
+    border-right:            none;
+    border-left:             none;
+    width:                   100%;
+    height:                  50px;
+    font-size:               20px;
+    color:                   #000;
+    border-top:              none;
+    margin-bottom:           20px;
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/password-13.svg') no-repeat 10px 11px;
+    background-size:         25px;
+    padding-left:            50px;
+}
+
+.loginDetailsWrap .loginDetailsBtns{
+
+    margin-top:              5px;
+}
+
+.loginDetailsWrap .loginDetailsBtns button{
+
+    font-size:               17px;
+    background:              transparent;
+    border:                  none;
+    margin-top:              8px;
+    font-family:             arial;
+    padding:                 0px;
+    color:                   #444;
+    text-decoration:         underline;
+    color:                  #09539d;
+}
+
+.loginDetailsWrap .loginDetailsBtns button:hover:enabled{
+
+    cursor:                  pointer;
+    text-decoration:         underline;
+}
+
+
+.errorMessageLabel
+{
+    font-size:               14px; 
+    color:                   #e00c0c;      
+    display:                 block;
+    width:                   370px;
+    height:                  20px;  
+    padding-top:             5px; 
+    margin:                  0px auto;  
+}
+/*
+.bottomContainer label{
+
+    font-size:               12px; 
+    color:                   #e00c0c;      
+    display:                 block;
+    width:                   370px;
+    height:                  20px;  
+    padding-top:             5px; 
+    margin:                  0px auto;
+}
+*/
+.loginDetailsWrap .loginDetailsRM{
+
+    display:                 block;
+    width:                   370px;
+    height:                  30px;  
+    margin-top:              10px;
+    line-height:             25px;   
+}
+
+.loginDetailsWrap .loginDetailsRM label{
+
+    color:                   #444 !important;
+    font-size:               17px; 
+    display:                 inline;
+}
+
+.loginDetailsWrap .loginDetailsRM input[type="checkbox"]{
+
+    border-radius:           none;
+    padding-left:            0px;
+    border:                  none;
+    height:                  13px;
+    width:                   13px;
+}
+
+
+
+.loginDetailsWrapLeft{
+
+    text-align:              left;
+    padding:                 10px 20px;
+    font-size:               14px;
+}
+
+.loginBtnGroup{
+
+    margin:                  10px auto;
+    text-align:              center;
+    color:                   #444;
+    font-size:               17px;
+}
+
+.loginBtnGroup .row{
+
+    margin-bottom:           10px;
+    margin-top:              10px;
+    clear:                   both;
+  
+}
+
+.loginBtnGroup .row2{
+
+    margin-bottom:           0px;
+    margin-top:              70px;
+    clear:                   both;
+  
+}
+
+.loginBtnGroup .col1{
+
+    width:                   130px;
+    text-align:              right;
+    float:                   left;
+}
+
+.loginBtnGroup .col2{
+
+    width:                   130px;
+    text-align:              left;
+    float:                   right;
+}
+
+.loginDetailsRM #col1{
+
+    float:                   left;
+    margin-left:             80px;
+}
+
+.loginDetailsRM #col2{
+
+    float:                   right;
+    margin-right:            80px;
+}
+
+.switch {
+    position:                relative;
+    display:                 inline-block !important;
+    width:                   60px !important;
+    height:                  19px !important;
+}
+
+.switch input{
+    
+    display:                 none;
+    
+}
+
+.slider {
+
+    position:                absolute;
+    cursor:                  pointer;
+    top:                     0px;
+    left:                    0px;
+    right:                   0px;
+    bottom:                  0px;
+    background-color:        #ccc;
+    -webkit-transition:      .4s;
+    transition:              .4s;
+    border-radius:           34px;
+
+}
+
+.slider:before {
+
+    position:                absolute;
+    content:                 "";
+    height:                  19px;
+    width:                   19px;
+    left:                    4px;
+    bottom:                  2px;
+    background-color:        #fff;
+    -webkit-transition:      .4s;
+    transition:              .4s;
+    border-radius:           50%;
+  
+}
+
+input:checked + .slider {
+
+     background-color:       #338B03;
+}
+
+input:focus + .slider {
+
+     box-shadow: 0 0 1px     #49d149;
+}
+
+input:checked + .slider:before {
+
+    -webkit-transform:          translateX(33px);
+    -ms-transform:              translateX(33px);
+    transform:                  translateX(33px);
+}
+
+/*signup reset*/
+
+
+.loginDialogSignUpContainer{
+
+    width:                   485px;
+    height:                  540px;
+    position:                absolute;
+    top:                     50%;
+    left:                    50%;
+    margin-left:             -242.5px;
+    margin-top:              -270px;
+    -webkit-box-shadow:      0px 9px 25px -2px rgba(0,0,0,0.64);
+    -moz-box-shadow:         0px 9px 25px -2px rgba(0,0,0,0.64);
+    box-shadow:              0px 9px 25px -2px rgba(0,0,0,0.64);
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/login-bg.svg') no-repeat;
+
+
+}
+
+.loginDialogResetContainer{
+
+    /*width:                   400px;
+    height:                  340px;
+    background:              #fff;
+    position:                absolute;
+    top:                     50%;
+    left:                    50%;
+    margin-left:             -200px;
+    margin-top:              -170px;
+    -webkit-box-shadow:      0px 9px 25px -2px rgba(0,0,0,0.64);
+    -moz-box-shadow:         0px 9px 25px -2px rgba(0,0,0,0.64);
+    box-shadow:              0px 9px 25px -2px rgba(0,0,0,0.64);*/
+    
+    width:                   485px;
+    height:                  500px;
+    position:                absolute;
+    top:                     50%;
+    left:                    50%;
+    margin-left:             -242.5px;
+    margin-top:              -270px;
+    -webkit-box-shadow:      0px 9px 25px -2px rgba(0,0,0,0.64);
+    -moz-box-shadow:         0px 9px 25px -2px rgba(0,0,0,0.64);
+    box-shadow:              0px 9px 25px -2px rgba(0,0,0,0.64);
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/login-bg.svg') no-repeat;
+
+
+}
+
+
+
+
+.resetPassInputEmail{
+
+    -moz-border-radius:      5px;
+    -webkit-border-radius:   5px;
+    border-radius:           5px;
+    padding-left:            5px;
+    -webkit-box-sizing:      border-box;
+    -moz-box-sizing:         border-box;
+    box-sizing:              border-box;
+    border:                  1px solid #d1d1d1;
+    width:                   100%;
+    height:                  50px;
+    font-size:               16px;
+    color:                   #000;
+    background:              #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/email.svg') no-repeat 10px 11px;
+    background-size:         25px;
+    padding-left:            50px;
+    margin-bottom:           1px;
+}
+
+
+.resendLink{
+
+    color:                   #09539d;
+    text-decoration:         underline;
+    border:                  none;
+    background:              transparent;
+    font-size:               14px;
+}
+
+.resendLink:hover:enabled{
+
+    cursor:                  pointer;
+}
+
+:host /deep/ .mdl-dialog__actions{
+
+    width:                  220px;
+    float:                  right;
+    padding:                0px;
+}
+
+
+.button--primary-login{
+
+    width:                  210px !important;
+    height:                 40px;
+}
+/* google login button */
+
+#spacingLabel {
+    width:                  200px;
+    text-align:             center;
+    margin-right:           0px;
+    height:                 20px;
+    line-height:            30px;
+}
+
+#icon-wrap {
+    float:                  left;
+    height:                 100%;
+    background:             #fff;
+    width:                  40px;
+    display:                flex;
+    justify-content:        center;
+    align-items:            center;
+}
+
+span.label {
+    font-family:            serif;
+    font-weight:            normal;
+}
+
+span.icon {
+    background:             url('https://resources.ereflect.com/Typesy/webApp/assets/icon/google_new_logo.svg') transparent 5px 50% no-repeat;
+    display:                inline-block;
+    vertical-align:         middle;
+    width:                  30px;
+    height:                 20px;
+}
+
+span.icon2 {
+    background:             url('https://resources.ereflect.com/Typesy/webApp/assets/icon/login_clever_logo.svg') transparent 5px 50% no-repeat;
+    display:                inline-block;
+    vertical-align:         middle;
+    width:                  25px;
+    height:                 20px;
+    margin-left:            8px;
+}
+
+
+span.icon3 {
+    background:             url('https://resources.ereflect.com/Typesy/webApp/assets/icon/login_classlink_logo.svg') transparent 5px 50% no-repeat;
+    display:                inline-block;
+    vertical-align:         middle;
+    width:                  25px;
+    height:                 20px;
+    margin-left:            8px;
+}
+
+span.buttonText {
+    display:                inline-block;
+    vertical-align:         middle;
+    font-size:              14px;
+    font-weight:            500;
+    font-family:            'Roboto', sans-serif;
+    text-transform:         uppercase;
+    margin-left:            10px;
+    line-height:            40px;
+}
+
+#googleSignIn span.buttonText{
+
+    margin-top:             0px;
+    margin-left:            12px;
+    line-height:            40px;
+}
+/* end of google login button */
+
+.back-btn {
+
+    margin-top:             10px;
+    margin-right:           0px;
+}
+
+/* end login  */
+
+/* responsive  */
+
+
+
+@media only screen and (max-height: 650px){
+
+    :host /deep/ .mdl-typography--subhead{
+
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+}
+
+@media only screen and (max-width: 650px){
+
+    #googleSignIn{
+
+       margin-top: 10px;
+       margin-right: 0px !important; 
+    }
+
+}
+
+
+
+@media only screen and (max-height: 500px){
+
+    .loginDialogContainer,
+    .loginDialogResetContainer,
+    .loginDialogSignUpContainer{
+
+        width:               500px;
+        height:              320px;
+        margin-left:         -240px;
+        margin-top:          -160px;
+        background:          #fff url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/login-bg.svg') no-repeat;
+        background-size:     500px 500px;
+    }
+
+    #inputWrap{
+
+        margin-bottom:       20px;
+        height:              80px;
+    }
+
+    .loginDetailsWrap input,
+    .loginDetailsWrap input[type="password"]{
+    
+        height:              40px;
+    }
+
+    .loginBtnGroup .row2{
+ 
+        margin-top:          10px;
+
+    }
+
+    .bottomContainer,
+    .loginLogo{
+
+        display:             none;
+    }
+
+    .loginDetailsWrap{
+
+        height:              260px
+    }
+
+    .loginBtnGroup .row{
+
+        margin-bottom:       10px;
+
+    }
+
+    .lblHeading{
+
+        font-size:            20px;
+    
+    }
+
+    .lblsubHeading{
+
+        font-size:            15px;
+        line-height:          16px;
+    }
+
+    
+   
+
+    
+    
+}
+
+@media only screen and (max-height: 500px) and (min-width: 500px){
+
+     .loginDialogSignUpContainer .loginBtnGroup{
+
+        position:             absolute;
+        top:                  150px;
+        right:                5px;
+        width:                200px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .loginDialogContainer,
+    .loginDialogSignUpContainer,
+    .loginDialogResetContainer{
+
+        width:                   300px;
+        height:                  500px;
+        margin-left:             -150px;
+        margin-top:              -250px;
+        background-size:         500px 500px;
+
+    }
+
+
+ 
+    /*.loginDetailsWrap input,
+    .loginDetailsWrap input[type="password"]{
+
+       width:                    250px;
+
+    }*/
+
+
+
+    .dialogHeader{
+
+        width:                   300px;
+    
+    }
+
+
+    .loginLogo{
+
+        background:              url('https://resources.ereflect.com/PrepEd/webApp/assets/icon/prep-ed-logo-login-xs.svg') no-repeat;
+        width:                   80px;
+        height:                  35px;
+        left:                    50%;
+        margin-left:             -40px;
+    }
+    
+    .loginDetailsRM #col1{
+
+        float:                   left;
+        margin-left:             20px;
+
+    }
+
+    .loginDetailsRM #col2{
+
+        float:                   left;
+        margin-left:             30px;
+
+    }
+
+    .bottomContainer label{
+
+        width:                   250px;
+    
+    }
+
+    .loginDetailsWrap{
+
+        height:                   450px;
+    }
+
+    .loginBtnGroup{
+
+        font-size:                16px;
+    }
+
+    .loginBtnGroup .row2{
+
+        margin-top:               40px;
+
+    }
+
+    .loginDetailsWrap input,
+    .loginDetailsWrap input[type="password"]{
+
+        font-size:                16px;
+
+    }
+
+    .lblsubHeading{
+    
+        font-size:                14px;
+        line-height:              18px;
+
+    }   
+
+
+}

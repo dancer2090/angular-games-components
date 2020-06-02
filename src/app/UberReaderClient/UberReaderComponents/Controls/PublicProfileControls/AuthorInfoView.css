@@ -1,0 +1,581 @@
+/* author info view */
+
+.page-content-inner{			
+	max-width: 1300px;
+	margin: 0px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	/*height: 100%;*/
+}
+
+.mdl-cell.mdl-cell--12-col.page-headline-inner.filter{
+    
+    padding:                0px 3px;
+}
+
+.course-col{
+	width: calc(20% - 16px);
+	display: inline-block;
+	margin: 8px;
+}
+
+@media (max-width: 1220px) {
+	.course-col {
+		width: calc(25% - 16px);
+	}
+}
+
+@media (max-width: 970px) {
+	.course-col {
+		width: calc(33% - 16px);
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+}
+
+@media (max-width: 650px) {
+	.course-col {
+		width: calc(50% - 16px);
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+}
+
+
+@media (max-width: 400px) {
+	.course-col {
+		width: calc(100% - 16px);
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+.label-headline{
+
+    padding-left: 6px;
+}
+
+.activePageBtn{
+    
+    background:             #09539d !important;
+    color:                  #fff !important;
+}
+
+.paginationContainer{
+    
+    text-align:           center;
+    margin:               50px 0px;
+}
+
+.paginationContainer button{
+
+    outline:                none;
+    border:                 none;
+    font-size:              18px;
+    color:                  #09539d;
+    font-weight:            bold;
+    font-family:            arial;
+    padding:                5px 7px;
+    background:             transparent;
+    cursor:                 pointer;
+
+}
+
+@media (max-width: 1220px) {
+	.course-col {
+		width: calc(25% - 16px);
+	}
+}
+
+@media (max-width: 970px) {
+	.course-col {
+		width: calc(33% - 16px);
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+}
+
+@media (max-width: 650px) {
+	.course-col {
+		width: calc(50% - 16px);
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+}
+
+
+@media (max-width: 400px) {
+	.course-col {
+		width: calc(100% - 16px);
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+.page-headline-container {
+    height:                 80px;
+    border-bottom:          1px solid #ccc;
+    position:               fixed;
+    z-index:                3;
+    background:             #fff;
+    width:                  100%;
+    box-sizing:             border-box;
+}
+
+.page-headline.marginb-none{
+
+    margin-bottom:          0px;
+}
+
+.authorInfoContainerMain{
+
+    position:               absolute;
+    width:                  100%;
+    bottom:                 0px;
+    top:                    80px;/*50px;*/
+    overflow-y:             auto;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+.authorInfoContainer{
+     
+    max-width:                  1200px;
+    margin:                     0px auto 0px auto;
+    border-right:               1px solid #ccc;
+    border-left:                1px solid #ccc;
+    box-sizing:                 border-box;
+    background:                 #fff;
+    display:                    block;
+    overflow-y:                 hidden;
+    overflow-x:                 hidden;
+    min-height:                 100%;
+}
+
+
+.authorInfoHeader{
+
+   
+    height:                 80px;
+    background:             #09539d;
+    padding:                20px;
+ 
+
+}
+
+.authorInfoHeader .blueHeadlineInner2{
+
+    max-width:                 1200px;
+    margin:                    0px auto;
+    font-size:                 10px;
+    color:                     #fff;
+    padding-left:              5px;
+    box-sizing:                border-box;
+    position:                  relative;
+}
+
+.nameTitleDiv{
+
+    float:                  left;
+    width:                  50%;
+}
+
+.lblauthorInfoName{
+
+    color:                  #fff;
+    font-size:              35px;
+
+
+}
+
+.lblauthorInfoTitle{
+    
+    
+    color:                  #fff;
+    font-size:              22px;
+    
+}
+
+.coursesReviewsDiv{
+
+    float:                  right;
+
+
+  
+}
+
+.columnInfo{
+
+    color:                  #fff;
+    float:                  left;
+    width:                  130px;
+    height:                 55px;
+    font-size:              22px;
+    font-weight:            bold;
+    padding-left:           12px;
+    
+}
+
+#btnsDiv{
+
+    float:                 right;
+    position:              relative;
+    border-left:           1px solid #bab8b8;
+}
+
+.lblHeader, .lblNum{
+
+    width:                   130px;
+    display:                 block;
+}
+
+.authorImgBgContainer{
+
+    /*position:               relative;*/
+    margin-top:             20px;
+
+}
+
+.authorImgContainer{
+
+    float:                   left;
+    display:                 block;
+    width:                   235px;
+    margin:                  0px 10px 20px 20px;
+
+}
+
+.authorImgContainer img{
+
+    width:                   225px;
+    height:                  225px;
+    border-radius:           10px;
+    border:                  1px solid #ccc;
+}
+
+.authorBgContainer{
+
+   
+     width:                   75%;
+     height:                  auto;
+     margin:                  0px 10px 20px 20px;
+     display:                 block;
+     left:                    250px;
+     float:                   left;
+     min-height:              1px;
+     /*position:                absolute;*/
+    
+}
+
+:host /deep/ .authorBgContainer p{
+    color:                   #444 !important;
+    font-size:               18px !important;
+    line-height:             25px !important;
+}
+
+/*:host /deep/ .authorInfoContainer p {
+    color:                   #444 !important;
+    font-size:               18px !important;
+    line-height:             25px !important;
+}*/
+
+
+.courseDescripHeader{
+
+     background:             #e0e0e0;
+     padding:                10px 10px 10px 20px;
+     clear:                  both;
+}
+
+
+
+.courseDescripHeader h2{
+
+    color:                  #444;
+    font-size:              30px;
+    font-family:            'thinfont';
+
+}
+
+.authorViewDiscoverItemRendererContainer{
+
+    margin:                 20px auto;
+    position:               relative;
+    width:                  1140px;
+     
+}
+
+
+
+@media only screen and (max-width: 1600px){
+
+
+    .authorBgContainer{
+
+        width:                   70%;
+    }
+}
+
+@media only screen and (max-width: 1370px){
+
+    .authorViewDiscoverItemRendererContainer{
+
+        width:                   855px;
+     
+    }
+}
+
+
+@media only screen and (max-width: 1100px){
+
+    .columnInfo{
+
+        width:                   100px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+
+
+    .authorBgContainer{
+
+        width:                   55%;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+	
+
+    .nameTitleDiv{
+
+        float:                  left;
+        width:                  30%;
+    }
+
+    .lblauthorInfoName{
+
+        color:                  #fff;
+        font-size:              25px;
+
+    }
+
+    .lblauthorInfoTitle{
+    
+        color:                  #fff;
+        font-size:              15px;
+    
+    }
+
+    .columnInfo{
+
+        width:                   100px;
+        padding-left:            0px;
+    }
+
+    .page-headline.marginb-none{
+
+        font-size:                20px;
+    }
+
+    .number-label{
+
+        font-size:                16px;
+    }
+
+}
+
+@media only screen and (max-width: 980px){
+
+
+    .authorViewDiscoverItemRendererContainer{
+
+        width:                  816px;
+    }
+}
+
+
+
+@media only screen and (max-width: 840px){
+
+
+    .page-headline-container {
+        height:                  130px;
+   
+    }
+
+  
+
+    .coursesReviewsDiv{
+        float:                   left;
+
+    }
+
+    .mdl-cell.mdl-cell--5-col.mdl-typography--text-right{
+
+        text-align:              left !important;
+        width:                   calc(100% - 16px);
+    }
+
+
+    .authorInfoContainerMain{
+
+        top:                     130px;
+    }
+}
+
+
+@media only screen and (max-width: 830px){
+
+
+    .authorViewDiscoverItemRendererContainer{
+
+        width:                   612px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+
+    .authorImgContainer{
+
+ 
+        float:                   none;
+        margin:                  0px auto;
+        text-align:              center;
+
+    }
+
+
+
+
+
+    .authorBgContainer{
+
+        width:                   95%;
+        position:                relative;
+        left:                    0px;
+    }
+
+    .authorInfoHeader{
+
+        height:                   130px;
+    }
+
+    .nameTitleDiv{
+
+        width:                    100%;
+        float:                    left;
+
+    }
+
+    .coursesReviewsDiv{
+
+        float:                    left;
+    }
+
+
+ 
+
+}
+
+@media only screen and (max-width: 630px){
+
+
+    .authorViewDiscoverItemRendererContainer{
+
+        width:                   90%;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+
+
+    .authorImgContainer img{
+
+        width:                   125px;
+        height:                  125px;
+    }
+
+    .coursesDiv, 
+    .reviewsDiv{
+
+        width:                   60px;
+        font-size:               13px;
+        padding-left:            5px;
+    }
+
+    .authorBgContainer{
+
+        font-size:                15px;
+        line-height:              20px;
+        width:                    90%;
+
+    }
+
+    .courseDescripHeader h2{
+
+        font-size:                25px;
+       
+    }
+}
+
+
+@media only screen and (max-width: 430px){
+
+
+    .authorViewDiscoverItemRendererContainer{
+
+        width:                    350px;
+    }
+}
+
+
+@media only screen and (max-width: 350px){
+
+
+    .columnInfo{
+        width:                    90px;
+    }
+
+    .page-headline.marginb-none{
+
+        font-size:                18px;
+    }
+
+    .number-label{
+        font-size:                14px;
+    }
+
+}
+   
+
+
+/*
+
+@media only screen and (max-width: 300px){
+
+     .coursesReviewsDiv{
+
+        float:                    left;
+    }
+  
+
+  
+
+}*/
+
+h1, h2
+{
+    font-weight:                normal;
+    -webkit-margin-before:      0;
+    -webkit-margin-after:       0;
+    -webkit-margin-start:       0;
+    -webkit-margin-end:         0;
+    margin:                     0;
+}

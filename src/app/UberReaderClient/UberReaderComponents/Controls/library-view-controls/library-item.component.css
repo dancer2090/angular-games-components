@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.library-tile {
+    width:              100%;
+	box-sizing:         border-box;
+    background-size:    100%;
+    height:             265px;
+}
+
+.current-text {
+	border:             2px solid #34ad07;
+}
+
+
+i.material-icons.current-text-icon {
+    position:           absolute;
+    top:                -10px;
+    right:              -20px;
+    font-size:          40px;
+	color:              #34ad07;
+}
+
+.supporting-text-3 {
+	padding:            10px 10px 10px 55px;
+	height:             50px;
+}
+
+.book-author {
+	margin:             0px;
+	font-weight:        400 ;
+	color:              #212121;
+    overflow:           hidden;
+    text-overflow:      ellipsis;
+    white-space:        nowrap;
+}
+
+.mdl-card__actions.library-actions {
+	padding:            0px 8px 15px 50px;
+}
+
+.button--primary-tile {
+    width:              90px;
+	font-size:          12px;
+    /*background-color: #34ad07 !important;*/
+}
+
+.library-col {
+	/*width: calc(20% - 16px);*/
+    width:              215px;
+}
+
+/* .library-image {
+	background:         transparent;
+	height:             140px;
+	position:           relative;
+	margin:             16px 30px 10px 60px;
+    padding:            0px;
+} */
+
+.library-image {
+	background:         transparent;
+	height:             140px;
+	position:           relative;
+	padding:            40px 30px 16px 30px;
+}
+
+.book-title {
+    width:              100%;
+    height:             100%;
+    overflow:           hidden;
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+    font-size:          20px;
+	text-align:         center;
+	font-family:        "Times New Roman", "serif";
+}
+
+
+
+.card-buttons {	
+	visibility:         hidden;
+}
+
+.book-dot-menu {
+	width:              initial;
+	color:              #757575 !important;
+	background-color:   transparent !important;
+	position:           absolute;
+    right:              25px;
+}
+
+.current-text.div-label {
+    position:           absolute;
+    top:                0px;
+    width:              100%;
+    text-align:         center;
+    background:         rgba(52,173,7,.8);
+    color:              #fff;
+    border:             none;
+    height:             35px;
+    line-height:        35px;
+    z-index:            1;
+}

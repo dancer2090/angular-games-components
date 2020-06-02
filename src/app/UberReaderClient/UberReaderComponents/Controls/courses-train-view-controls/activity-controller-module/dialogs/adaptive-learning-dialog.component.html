@@ -1,0 +1,28 @@
+<h3 class="mdl-typography--headline mdl-color-text--grey-800 dialog-headline">Adaptive Learning Prompt</h3>
+<div class="mdl-dialog__content">
+    <table id="table--prompt">            
+        <tbody>            
+            <tr>
+                <td class="headertd featuredtd mdl-typography--subheadline greybg"></td>
+                <td class="headertd mdl-typography--subheadline blkbg">Your Result</td>
+                <td class="headertd mdl-typography--subheadline bluebg">Recommended Result</td>
+            </tr>
+            <tr>
+                <td class="featuredtd">Speed</td>
+                <td class="greytd" [class.red]="userSpeed < requiredSpeed" [class.green]="userSpeed >= requiredSpeed">{{ userSpeed }}</td>
+                <td class="bluetd">{{ requiredSpeed }}</td>
+            </tr>            
+            <tr>
+                <td class="featuredtd">Accuracy</td>
+                <td class="greytd" [class.red]="userAccuracy < requiredAccuracy" [class.green]="userAccuracy >= requiredAccuracy">{{ userAccuracy }}</td>
+                <td class="bluetd">{{ requiredAccuracy }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="mdl-color-text--grey-800 mdl-typography--subhead ">You're getting better! But to make sure you have mastered this activity, we recommend that you do it again.</p>
+    <p *ngIf="!forceRepeat" class="mdl-color-text--grey-800 mdl-typography--subhead ">Would you like to redo this activity?</p>
+</div>
+<div class="mdl-dialog__actions">        
+    <button class="green-button mdl-button mdl-js-button mdl-button--raised" (click)="redoActivity()">REDO ACTIVITY</button>
+    <button *ngIf="!forceRepeat" class="preview-btn mdl-button mdl-js-button mdl-button--raised" (click)="continueNextActivity()">CONTINUE TO NEXT ACTIVITY</button>
+</div>

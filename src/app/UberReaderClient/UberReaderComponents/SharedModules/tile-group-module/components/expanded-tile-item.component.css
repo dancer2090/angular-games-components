@@ -1,0 +1,232 @@
+/* curriculum screen*/
+    
+.course-col.curriculum {
+    width:                520px;
+}
+
+.course-tile.curriculum {
+    height:             245px;
+    padding:            0px;
+}
+
+.course-image.curriculum {
+    height:             145px;
+    background:         #f5f5f5;
+    border-top-left-radius:  5px;
+    border-top-right-radius: 5px;
+}
+
+.course-tile-img {
+    position:           absolute;
+    left:               0px;
+    top:                0px;
+    width:              51%;
+    height:             145px;
+    border-top-left-radius: 5px;
+}
+
+.mdl-cell.mdl-cell-2-col.course-col.curriculum .card--button-wrap .card--info-container {
+    color:              #fff;
+    font-size:          12px;
+    line-height:        20px;
+    margin:             10px;
+    height:             80px;
+}
+
+.card--info-container .bullets-info {
+    font-size:          12px;
+}
+
+.tile-button,
+.flat-tile-button {
+    border-radius:      4px;
+    text-transform:     none;
+}
+
+.flat-tile-button {
+
+  color:                #fff;
+  background:           transparent;
+}
+
+.course-description {
+    line-height:        15px;
+    overflow:           hidden;
+    font-size:          13px;
+    margin-top:         0px;
+    z-index:            0;
+    margin-bottom:      13px;
+    height:             30px;
+    position:           absolute;
+    right:              10px;
+    top:                10px;
+    width:              44%;
+    height:             auto;
+    color:              #616161;
+}
+
+.course-description-bullets {
+    position:           absolute;
+    right:              20px;
+    top:                47px;
+    width:              42%;
+    height:             auto;
+    color:              #616161;
+}
+
+.course-description-bullets .bullets-info {
+    font-size:          12px;
+    line-height:        18px;
+}
+.course-description-bullets .material-icons {
+    font-size:          13px;
+    vertical-align:     middle;
+    margin-right:       8px;
+}
+
+mat-card-subtitle.supporting-text-2.mat-card-subtitle {
+    padding:            5px 10px;
+}
+
+.course-title {
+    margin:             0px;
+    font-weight:        400;
+    color:              #212121;
+    height:             40px;
+    line-height:        18px;
+    overflow:           hidden;
+}
+
+.mdl-cell.mdl-cell-2-col.course-col .card--button-wrap {
+    background:         rgba(0,0,0,.8);	
+    display:            none;
+    width:              100%;
+    height:             145px;
+    z-index:            2;
+    position:           absolute;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom:     5px;
+    box-sizing:         border-box;
+}
+
+.mdl-cell.mdl-cell-2-col.course-col .card--button-wrap .card--info-container {
+    color:              #fff;
+    font-size:          12px;
+    line-height:        20px;
+    margin:             10px;
+    height:             80px;
+}
+    	
+.mdl-cell.mdl-cell-2-col.course-col .card--button-wrap .card--info-container .material-icons {
+		font-size:          13px;
+    vertical-align:     middle;
+    margin-right:       8px;
+}
+	    
+.mdl-cell.mdl-cell-2-col.course-col .card--button-wrap .card--button-container {
+    margin:             -5px 10px 0px;
+}
+	
+.mdl-cell.mdl-cell-2-col.course-col:hover .card--button-wrap {
+    display:            block;
+    animation:          fadeIn ease .5s;
+    -webkit-animation:  fadeIn ease .5s;
+    -moz-animation:     fadeIn ease .5s;
+    -o-animation:       fadeIn ease .5s;
+    -ms-animation:      fadeIn ease .5s;
+}
+
+.progress-description {
+    line-height:        15px;
+    overflow:           hidden;
+    font-size:          13px;
+    margin-top:         5px;
+    z-index:            99;
+    margin-bottom:      0px;
+    height:             15px;
+    color:              rgba(0, 0, 0, .54);
+}
+
+#progress-bar-container {
+    margin-top:         18px;
+}
+
+mat-progress-bar {
+    height:             2px !important;
+}
+
+:host /deep/ .mat-progress-bar-fill::after {
+  background-color:     #34ad07 !important;
+}
+
+:host /deep/ .mat-progress-bar-buffer {
+  background-color:     #CCCCCC !important;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@media (max-width: 1320px){
+
+  .course-col.curriculum{
+      width:        450px;
+  }
+
+  .course-description{
+      width:        37%;
+      font-size:    12px;
+  }
+
+  .course-description-bullets{
+      width:        35%;
+  }
+
+  .course-tile-img{
+      width:        59%;
+  }
+  
+}
+  

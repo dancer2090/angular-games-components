@@ -1,0 +1,72 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "strictNullChecks": false,
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@angular/*": ["node_modules/@angular/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "hammerjs",
+      "jasmine",
+      "node",
+      "uglify-js",
+      "webpack"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+
+    //Unused files:
+    "src/app/UberReaderClient/UberReaderComponents/Controls/LoginControl.ts",
+    "src/app/UberReaderClient/UberReaderComponents/UtilComponents/MenuComponent/MenuList.ts",
+    "src/app/UberReaderClient/UberReaderComponents/UtilComponents/MenuComponent/MenuItemRenderer.ts",
+    "src/app/UberReaderClient/UberReaderComponents/SharedModules/shared-components-module/pipes/possessive-filter.pipe.ts",
+    "src/app/UberReaderClient/UberReaderComponents/SharedModules/shared-components-module/pipes/max.pipe.ts",
+    "src/app/UberReaderClient/UberReaderComponents/SharedModules/shared-components-module/pipes/FormatDatePipe.ts",
+    "src/app/UberReaderClient/UberReaderComponents/SharedModules/shared-components-module/pipes/default.pipe.ts",
+    "src/app/UberReaderClient/UberReaderComponents/SharedModules/shared-components-module/components/DialogManager.ts",
+    "src/app/UberReaderClient/UberReaderComponents/Dialogs/LazyDialog.ts",
+    "src/app/UberReaderClient/UberReaderComponents/Dialogs/ImageCropDialog.ts",
+    "src/app/UberReaderClient/UberReaderComponents/Dialogs/CourseStepPreviewDialog.ts",
+    "src/app/UberReaderClient/UberReaderComponents/Dialogs/AlertDialog.ts",
+    "src/app/UberReaderClient/UberReaderComponents/Dialogs/AlertCheckBoxDialog.ts",
+    "src/app/UberReaderClient/UberReaderComponents/SharedModules/shared-components-module/pipes/SafeHtmlPipe.ts",
+    
+    //Files for PrepEd only
+    "src/app/UberReaderClient/UberReaderComponents/UtilComponents/AlgoliaSearchBar.ts",
+    "src/app/UberReaderClient/UberReaderComponents/Controls/PrepEdControls/PrepEdProfileView.ts", //uses EditUserControl component
+    "src/app/UberReaderClient/UberReaderComponents/Dialogs/ProfileDialog.ts", //uses EditUserControl component
+    "src/app/UberReaderClient/UberReaderComponents/Controls/EditUserControl.ts",
+    "src/app/UberReaderCalculator/PrepEdCalculator.ts",
+    "src/app/UberReaderCalculator/comp/CalculatorButton.ts",
+    "src/app/UberReaderClient/UberReaderComponents/Dialogs/ProfileBuilderDialog.ts",
+    "src/app/UberReaderClient/UberReaderComponents/Dialogs/ActivatePurchaseByCodeDialog.ts",
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

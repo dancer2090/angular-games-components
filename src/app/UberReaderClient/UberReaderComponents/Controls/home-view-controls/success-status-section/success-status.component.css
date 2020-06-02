@@ -1,0 +1,714 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*#donutChart{
+		
+    width: 550px;
+    height: 350px;
+    margin-top: -50px;
+    margin-left: -150px;
+}
+
+#donutChartProfile {
+    width: 550px;
+    height: 290px;
+    margin-top: -50px;
+    margin-left: -150px;
+}*/
+
+.top-right-col {
+    width: 100%;
+    height: 300px;
+}
+
+.inner-grid {
+	width:              100%;
+	height:             50%;
+    box-sizing:         border-box;
+}
+
+.header-title {
+  /*  margin-top:         5px;*/
+    font-size:          19px;
+}
+
+/*.header-title-2 {
+	margin:             0px;
+}
+
+.legend-icon-1 {
+	color:              #34ad07 ;
+	font-size:          35px;
+}
+
+.legend-icon-2 {
+	color:              #3e92d7;
+	font-size:          35px;
+}
+
+.medal-img {
+	width:              30%;
+	margin:             0 auto;
+    display:            block;
+    margin-top:         10px;
+	margin-bottom:      10px;
+}
+
+.medal-img-profile {
+    width:              20%;
+    margin:             0 auto;
+    display:            block;
+    margin-top:         10px;
+}
+
+.status-div {
+	position:           relative;
+}
+
+.points-div {
+    position:           absolute;
+    top:                45%;
+    left:               52%;
+    margin-left:        -110px;
+    margin-top:         -35px;
+    height:             50px;
+    width:              200px;
+    line-height:        50px;
+}
+
+.legend-title {
+	line-height:        35px;
+    font-size:          13px;
+}*/
+
+.toolTip {
+	color: 				#757575;
+	position: 			absolute;
+    bottom: 			10px;
+    right: 				10px;
+    cursor:             default;
+}
+
+.typesyLeveltt{
+	margin-top:         -50px;
+	width:              200px;
+    /* margin-left:        5px !important; */
+}
+
+/** new status progress css **/
+.status-container {
+    width: 100%;
+    height: 95%;
+    /*position: relative;
+	margin-top: -15px;*/
+}
+
+.status-container2 {
+    width: 100%;
+    height: 100%;
+}
+
+#level--current-container {
+    width: 190px;
+    height: 190px;
+    background: #fff;
+    border-radius: 50%;
+    border: 7px solid #3e92d7;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 20px;
+	margin-top: -82px;
+}
+
+#level--current-container img {
+	width: 80%;
+    margin: 10px auto;
+    display: block;
+		
+}
+
+#label--current {
+	color: #3e92d7;
+	text-align: center;
+	font-weight: bold;
+}
+ 
+#level--next-container {
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    border: 6px solid #3e92d7;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	margin-top: -27px;
+	right:20px;
+}
+
+#level--next-container img {	
+	width: 65%;
+    margin: 10px auto 0px;
+    display: block;
+}
+	
+#label--next {
+    font-size: 11px;
+    text-align: center;
+    color: #3e92d7;
+	font-weight:bold;
+}
+	
+#progress--bar-container {
+    background: #3e92d7;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 45%;
+    position: absolute;
+    top: 59%;
+    z-index: 0;
+    left: 59%;
+    transform: translate(-50%, -50%);
+}
+
+.card-header{
+	padding: 			0px 8px;
+    display: 			flex;
+    align-items: 		center;
+}
+
+#progress--bar-outer-container {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    top: 45%;
+    z-index: 0;
+    left: 230px;
+}	
+	
+#label--title {
+	font-size: 30px;
+	text-align: center;
+	color: #3e92d7;
+	position: absolute;
+    top: 25%;
+    left: 44%;
+}
+	
+#label--points {
+	text-align: center;
+	color:#3e92d7;
+	position: absolute;
+    top: 35%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+	font-weight: 300;
+}
+	
+:host /deep/ .mdl-progress {
+    height: 30px;
+}
+	
+:host /deep/ .mdl-progress >.progressbar {
+    background-color: #34ad07;
+}
+
+:host /deep/ .mdl-progress >.bufferbar {
+    background: #fff;
+}
+
+#button--homeLink {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    color: #616161;
+}
+
+@media (max-width: 1180px) {
+    #label--title {
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        top: 25%;
+        left: 47%;
+    }
+
+    #label--points {
+        font-size: 20px;
+    }
+}
+/** new status progress css **/
+
+/* diamond level css */
+	
+#label--mainHeading {
+    
+    text-align: center;
+    font-size: 28px;
+    margin: 0px;
+}
+
+.label--subHeading {
+    
+	text-align: center;
+    font-size: 20px;
+	line-height: 25px;
+	font-weight: 300;
+	
+}
+	
+#message--container {
+    width: 42%;
+    position: absolute;
+    left: 48%;
+    top: 27%;
+    color: #3e92d7;
+}
+/* diamond level css */
+
+
+
+@media (max-height: 865px) {
+    
+    #level--current-container{
+        width:              160px;
+        height:             160px;
+        border:             6px solid #3e92d7;
+        margin-top:         -70px;
+    }
+
+    #progress--bar-container{
+        width:              54%;
+        left:               58%;
+    }
+
+    #level--current-container img{
+        margin:             10px auto 0px;
+    }
+
+    #label--current{
+        font-size:          14px;
+    }
+
+    #level--next-container img{
+        margin:             5px auto 0px;
+    }
+
+    #label--next{
+        font-size:          10px;
+    }
+
+    #level--next-container{
+        width:              75px;
+        height:             75px;
+        border:             5px solid #3e92d7;
+    }
+
+  
+}
+
+@media (max-height: 715px){
+    .card-header{
+		height: 			30px;
+	}
+
+    .toolTip{
+        bottom:             5px;
+    }
+
+    #level--current-container   {
+        width:              115px;
+        height:             115px;
+        border:             5px solid #3e92d7;
+        margin-top:         -45px;
+    }
+
+     #level--current-container img{
+        margin:             5px auto 0px;
+    }
+
+    #label--current{
+        font-size:          12px;
+    }
+
+    #progress--bar-container{
+        width:              62%;
+        left:               55%;
+        height:             40px;
+    }
+
+    #level--next-container{
+        width:              65px;
+        height:             65px;
+        border:             4px solid #3e92d7;
+    }
+
+    #label--points{
+        left:               53%;
+    }
+
+    #label--next{
+        font-size:          9px;
+    }
+
+    #message--container{
+        width:              60%;
+        left:               32%;
+    }
+
+    #label--mainHeading{
+        font-size:          24px;
+    }
+
+    .label--subHeading{
+        font-size:          16px;
+        line-height:        20px;
+        margin:             0px;
+    }
+}
+
+
+@media (max-height: 650px){
+    .card-header{
+		height: 			30px;
+	}
+
+    .toolTip{
+        bottom:             5px;
+    }
+
+    #level--current-container   {
+        width:              115px;
+        height:             115px;
+        border:             5px solid #3e92d7;
+        margin-top:         -45px;
+    }
+
+     #level--current-container img{
+        margin:             5px auto 0px;
+    }
+
+    #label--current{
+        font-size:          12px;
+    }
+
+    #progress--bar-container{
+        width:              61%;
+        left:               55%;
+        height:             40px;
+    }
+
+    #level--next-container{
+        width:              65px;
+        height:             65px;
+        border:             4px solid #3e92d7;
+    }
+
+    #label--points{
+        left:               53%;
+    }
+
+    #label--next{
+        font-size:          9px;
+    }
+
+    #message--container{
+        width:              60%;
+        left:               32%;
+    }
+
+    #label--mainHeading{
+        font-size:          24px;
+    }
+
+    .label--subHeading{
+        font-size:          16px;
+        line-height:        20px;
+        margin:             0px;
+    }
+}
+
+
+
+@media (max-width: 1050px) {
+    
+    #level--current-container{
+        width:              160px;
+        height:             160px;
+        border:             6px solid #3e92d7;
+        margin-top:         -70px;
+    }
+
+    #progress--bar-container{
+        width:              45%;
+        left:               59%;
+    }
+
+    #level--current-container img{
+        margin:             10px auto 0px;
+    }
+
+    #label--current{
+        font-size:          14px;
+    }
+
+    #level--next-container img{
+        margin:             5px auto 0px;
+    }
+
+    #label--next{
+        font-size:          10px;
+    }
+
+    #level--next-container{
+        width:              75px;
+        height:             75px;
+        border:             5px solid #3e92d7;
+        margin-top:         -17px;
+    }
+
+  
+}
+
+
+@media (max-width: 950px) {
+    #progress--bar-container{
+            width:              40%;
+            left:               59%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #label--points{
+        left:               60%;
+    }
+}
+
+@media (max-width: 1050px) and (max-height: 768px){
+    .card-header{
+		height: 			30px;
+	}
+
+    .toolTip{
+        bottom:             5px;
+    }
+
+    #level--current-container   {
+        width:              115px;
+        height:             115px;
+        border:             5px solid #3e92d7;
+        margin-top:         -45px;
+    }
+
+     #level--current-container img{
+        margin:             5px auto 0px;
+    }
+
+    #label--current{
+        font-size:          12px;
+    }
+
+    #progress--bar-container{
+        width:              61%;
+        left:               55%;
+        height:             40px;
+    }
+
+    #level--next-container{
+        width:              65px;
+        height:             65px;
+        border:             4px solid #3e92d7;
+    }
+
+    #label--points{
+        left:               53%;
+    }
+
+    #label--next{
+        font-size:          9px;
+    }
+}
+
+
+
+@media (max-width: 890px) and (min-width: 480px){
+   
+   .middle .mdl-cell.mdl-cell--6-col.mobile-width {
+        margin:             8px 8px 4px !important;
+    }
+
+	#progress--bar-container{
+		width: 				68%;
+		left: 				55%;
+	}
+
+	#label--points{
+		left: 				52%;
+	}
+}
+
+@media (max-width: 890px) and (max-height: 768px){
+
+    #progress--bar-container{
+        width:              74%;
+        left:               53%;
+    }
+}
+
+/*@media (max-width: 1200px){
+
+    p.mdl-color-text--grey-700.mdl-typography--body-1.mdl-typography--text-center.legend-title {
+        font-size:      10px;
+    }
+
+    .legend-icon-1,
+    .legend-icon-2 {
+        font-size:      25px;     
+    }
+
+    .legend-title{
+        line-height:    25px;
+    }
+}
+
+@media (max-width: 1100px){
+
+    .status-div {
+        width:          220px;
+    }   
+
+    #donutChartProfile {
+        
+        margin-left:    -200px;
+    }
+
+}
+
+@media (max-width: 839px) and (min-width: 480px) {
+    .mobile-width-2 {
+        width:          calc(30% - 16px);
+    }
+
+     .status-div{
+        width:          220px;
+        margin:         0 auto;
+    }  
+}
+
+
+@media (max-height: 925px) {
+    .medal-img{
+        width:          20%;
+    }   
+
+    .status-div {
+    	width:          220px;
+		margin-top:     -10px;
+        margin:         0 auto;
+	}
+}
+
+@media (max-height: 865px) {
+    .medal-img {
+        width:          15%;
+        margin-top:     5px;
+        margin-bottom:  0px;
+    } 
+
+    .legend-title {
+        font-size:      13px;
+    }
+     
+    .mobile-width-2 {
+        margin-top:     0px;
+    }
+
+    .points-div {
+    	margin-left:    -105px;
+    	margin-top:     -45px;
+	}
+
+    h4.mdl-color-text--grey-700.mdl-typography--display-1.mdl-typography--text-center.header-title-2.points {
+        font-size:      24px;
+    }
+
+    h6.mdl-color-text--grey-700.mdl-typography--title.mdl-typography--text-center.header-title-2.points {
+        font-size:      16px;
+    }
+
+    .header-title-2.points-2 {
+        font-size:      12px;
+    }
+}
+
+@media (max-width: 839px){
+
+	.mdl-cell.mdl-cell--6-col.mobile-width-2 {
+    	width:          calc(65% - 16px);
+	}
+
+    p.mdl-color-text--grey-700.mdl-typography--body-1.mdl-typography--text-center.legend-title {      
+        line-height:    25px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .mdl-cell.mdl-cell--5-col.mobile-width-2 {
+        width: calc(35% - 16px);
+    }
+
+    .mdl-cell.mdl-cell--6-col.mobile-width-2 {
+        width: calc(60% - 16px);
+    }
+
+    .header-title-2 {
+	    font-size: 13px;
+    }
+ 
+    .header-title-2.points-2 {
+        font-size: 13px;
+    }
+
+    .medal-img {
+        width: 25%;      
+    } 
+
+    .status-div {
+        width: 100%;
+    }
+
+     p.mdl-color-text--grey-700.mdl-typography--body-1.mdl-typography--text-center.legend-title {
+    
+        line-height: 15px;
+    }
+} 
+
+@media (max-width: 1075px) {
+    #donutChart {
+        margin-left:    -200px;
+    }
+}
+
+@media (max-width: 450px) {
+    #donutChart {
+        margin-left:    -230px;
+    }
+}
+
+@media (max-height: 925px) {
+	#donutChart {	
+		height:             300px !important;
+    }
+}
+
+@media (max-height: 865px) {
+	#donutChart {	
+		height:             250px !important; 
+	}
+}*/

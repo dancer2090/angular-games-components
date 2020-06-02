@@ -1,0 +1,8 @@
+.matSnackBar-content {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.placeholder-icon {
+  margin-right: 7px;
+}
