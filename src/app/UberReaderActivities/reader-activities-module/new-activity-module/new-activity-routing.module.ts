@@ -1,9 +1,9 @@
-import { Routes, RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
-import { NewActivity } from './components/new-activity.component';
+import {RouterModule, Routes} from '@angular/router';
+import {NgModule} from '@angular/core';
+import {NewActivityComponent} from './components/new-activity.component';
 
 const routes: Routes = [
-    { path: '', component: NewActivity }
+    { path: '', component: NewActivityComponent }
 ];
 
 @NgModule({

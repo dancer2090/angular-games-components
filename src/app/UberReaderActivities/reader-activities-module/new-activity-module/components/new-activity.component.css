@@ -34,15 +34,3 @@
   z-index: 10;
   background-color: rgba(195, 195, 195, 0.3);
 }
-
-.navigate-up {
-  font-size: 3rem;
-  cursor: pointer;
-}
-
-.gameOver {
-  font-size: 2rem;
-  color: #9b9b9b;
-  width: 100%;
-  text-align: center;
-}
