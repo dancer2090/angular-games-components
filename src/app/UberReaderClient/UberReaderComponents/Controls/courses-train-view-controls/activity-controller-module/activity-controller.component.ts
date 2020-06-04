@@ -1,46 +1,54 @@
-import { Component, ComponentFactoryResolver, ViewContainerRef, ViewChild, ComponentRef, Type, Input, Output, EventEmitter, OnInit, HostListener } from '@angular/core';
+import {
+  Component,
+  ComponentFactoryResolver,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+  ViewContainerRef
+} from '@angular/core';
 
-import { VisualComponent } from '../../../VisualComponent';
-import { TrainingHelpView } from './training-help-view.component';
-import { IntroCounterView } from './intro-counter-view.component';
-import { VideoActivityView } from './video-activity-view.component';
-import { EndScreen } from './end-screen.component';
-import { Activity } from '../../../../../UberReaderData/DataClasses/db/Activity';
-import { Course_Activity } from '../../../../../UberReaderData/DataClasses/db/Course_Activity';
-import { DictionaryString } from '../../../../../UberReaderData/Utils/Dictionary';
-import { ProductInfo } from '../../../../../UberReaderData/DataClasses/db/ProductInfo';
-import { UberApplication } from '../../../../../UberReaderData/UberApplication';
-import { ActivityService } from '../../../../../UberReaderActivities/activity.service';
-import { HistoryNavigation } from '../../../../../UberReaderData/uber.navigation.service';
-import { UberReader } from '../../../../UberReader';
-import { UberReaderLoadingMessage } from '../../../Dialogs/UberReaderLoadingMessage';
-import { ActivityEvent } from '../../../../../UberReaderData/Events/ActivityEvent';
-import { ErrorMessage } from '../../../../../UberReaderData/Utils/ErrorMessage';
-import { AppSettings } from '../../../../../UberReaderData/AppSettings';
-import { User_Course } from '../../../../../UberReaderData/DataClasses/db/User_Course';
-import { ActivityRecommendEvent } from '../../../../../UberReaderData/Events/ActivityRecommendEvent';
-import { Text } from '../../../../../UberReaderData/DataClasses/db/Text';
-import { StringUtils } from '../../../../../UberReaderData/Utils/StringUtils';
-import { Setting } from '../../../../../UberReaderData/DataClasses/db/Setting';
-import { AControlUtil } from '../../../ActivityControls/activity-control-util';
-import { GenericControl } from '../../../ActivityControls/generic-control';
-import { AControl } from '../../../../../UberReaderData/DataClasses/db/AControl';
-import { AControlFactory } from '../../../ActivityControls/activity-control-factory';
-import { ClosePopUpEvent } from '../../../../../UberReaderData/Events/ClosePopUpEvent';
-import { Router, ActivatedRoute, Params, RouterOutlet } from '@angular/router';
-import { Result } from '../../../../../UberReaderData/DataClasses/db/Result';
-import { NextRecommendedTextEvent } from '../../../../../UberReaderData/Events/NextRecommendedTextEvent';
-import { UserSettingSyncEvent } from '../../../../../UberReaderData/Events/UserSettingSyncEvent';
-import { UberApplicationEventTypes } from '../../../../../UberReaderData/Events/UberApplicationEventTypes';
-import { BuildSettings } from '../../../../BuildSettings';
-import { GamesLibraryService } from '../games-module/games-view.service';
-import { ProxyActivity } from 'app/UberReaderData/DataClasses/other/ProxyActivity';
-import { Location } from '@angular/common';
-import { StatusPointsEvent } from 'app/UberReaderData/Events/StatusPointsEvent';
-import { MatDialog } from '@angular/material';
-import { AdaptiveLearningDialog } from './dialogs/adaptive-learning-dialog.component';
-import { UserStatusService } from '../../status-points-control/user-status.service';
-import { NewStatusLevelDialog } from './dialogs/new-status-level-dialog.component';
+import {VisualComponent} from '../../../VisualComponent';
+import {TrainingHelpView} from './training-help-view.component';
+import {IntroCounterView} from './intro-counter-view.component';
+import {VideoActivityView} from './video-activity-view.component';
+import {EndScreen} from './end-screen.component';
+import {Activity} from '../../../../../UberReaderData/DataClasses/db/Activity';
+import {Course_Activity} from '../../../../../UberReaderData/DataClasses/db/Course_Activity';
+import {DictionaryString} from '../../../../../UberReaderData/Utils/Dictionary';
+import {ProductInfo} from '../../../../../UberReaderData/DataClasses/db/ProductInfo';
+import {UberApplication} from '../../../../../UberReaderData/UberApplication';
+import {ActivityService} from '../../../../../UberReaderActivities/activity.service';
+import {HistoryNavigation} from '../../../../../UberReaderData/uber.navigation.service';
+import {UberReader} from '../../../../UberReader';
+import {UberReaderLoadingMessage} from '../../../Dialogs/UberReaderLoadingMessage';
+import {ActivityEvent} from '../../../../../UberReaderData/Events/ActivityEvent';
+import {ErrorMessage} from '../../../../../UberReaderData/Utils/ErrorMessage';
+import {AppSettings} from '../../../../../UberReaderData/AppSettings';
+import {User_Course} from '../../../../../UberReaderData/DataClasses/db/User_Course';
+import {ActivityRecommendEvent} from '../../../../../UberReaderData/Events/ActivityRecommendEvent';
+import {Text} from '../../../../../UberReaderData/DataClasses/db/Text';
+import {StringUtils} from '../../../../../UberReaderData/Utils/StringUtils';
+import {Setting} from '../../../../../UberReaderData/DataClasses/db/Setting';
+import {AControlUtil} from '../../../ActivityControls/activity-control-util';
+import {GenericControl} from '../../../ActivityControls/generic-control';
+import {AControl} from '../../../../../UberReaderData/DataClasses/db/AControl';
+import {AControlFactory} from '../../../ActivityControls/activity-control-factory';
+import {ClosePopUpEvent} from '../../../../../UberReaderData/Events/ClosePopUpEvent';
+import {ActivatedRoute, Router, RouterOutlet} from '@angular/router';
+import {Result} from '../../../../../UberReaderData/DataClasses/db/Result';
+import {NextRecommendedTextEvent} from '../../../../../UberReaderData/Events/NextRecommendedTextEvent';
+import {UserSettingSyncEvent} from '../../../../../UberReaderData/Events/UserSettingSyncEvent';
+import {UberApplicationEventTypes} from '../../../../../UberReaderData/Events/UberApplicationEventTypes';
+import {BuildSettings} from '../../../../BuildSettings';
+import {GamesLibraryService} from '../games-module/games-view.service';
+import {ProxyActivity} from 'app/UberReaderData/DataClasses/other/ProxyActivity';
+import {StatusPointsEvent} from 'app/UberReaderData/Events/StatusPointsEvent';
+import {MatDialog} from '@angular/material';
+import {AdaptiveLearningDialog} from './dialogs/adaptive-learning-dialog.component';
+import {UserStatusService} from '../../status-points-control/user-status.service';
+import {NewStatusLevelDialog} from './dialogs/new-status-level-dialog.component';
 
 export const enum ViewState {
     TRAINING_HELP = 1,
@@ -67,6 +75,7 @@ export const enum CourseViewMode {
                     <!--<div id="helpBtnDiv"><mdl-icon id="helpButton" (click)="showTrainingHelp()" *ngIf="!forCourse">help_outline</mdl-icon></div>-->
                     <div #activityContainer style="height: 100%;">
                         <router-outlet (activate)="onRouterOutletActivate($event)"></router-outlet>
+                        <!--<h1>#testPoint here should be a game</h1>-->
                     </div>
 
                     <!--<button *ngIf="!forCourse && !isPublic" mdl-button mdl-button-type="raised" mdl-colored="accent" mdl-ripple class="skip button--primary button--primary-continue button--centered"

@@ -1,6 +1,8 @@
-import { Routes, RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
-import { ActivityController } from './activity-controller.component';
+import {RouterModule, Routes} from '@angular/router';
+import {NgModule} from '@angular/core';
+import {ActivityController} from './activity-controller.component';
+
+// #testPoint routing of games
 
 const routes: Routes = [
   { path: '', component: ActivityController, children: [
